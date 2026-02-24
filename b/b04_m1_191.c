@@ -68,7 +68,8 @@ section "b04_m1_191"{
         Voice_PlayVoice("B0401191_A00400", #1, "");
         Message_Who(1);
         Message_MsgDisp("Saeki", "Seeing the entire mountain in fall\ncolors is overwhelming, as\nexpected...");
-        Message_MsgSel("It was worth painfully climbing the mountain.", "There are places that have no fall colors.", "It's Mother Nature's greatest art.");
+        Message_MsgSel("It was worth painfully climbing the mountain.", "There are places that have no fall colors.", "It's Mother Nature's greatest art.
+test");
         switch (Message_TextSelect()){
             case 0:
             Date_InData_Date(124, 3);
