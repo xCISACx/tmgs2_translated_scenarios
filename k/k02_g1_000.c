@@ -1,0 +1,156 @@
+section "k02_g1_000"{
+    Character_BlinkStart(10, 1, (#1), 1);
+    Character_BlinkStart(10, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    if (Parameter_ChkPlayer(6) == 0){
+        Background_Bg_GS2("BG_SC210_?_0", 1, #1, 0);
+        Character_Chara_GS2(10, "G1_01F", 0);
+        Music_PlayBGM(0, "MN_C_10_000_D00", 127, 40);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Toudou＊＊｝.\nWhat's up?");
+        Voice_PlayVoice("K0210000_J00000", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "It's your birthday today, isn't it?\nHappy Birthday.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Is that perhaps a present for me?");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(10, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("K0210000_J00100", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "Yeah.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(10, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 1){
+        Background_Bg_GS2("BG_HO100_CO_2", #1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes～?");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_10_000_D00", 127, 40);
+        Character_Chara_GS2(10, "G1_04F", 0);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh, ｛Toudou＊＊｝.\nWhat's up?");
+        Voice_PlayVoice("K0210000_J00200", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "It's your birthday, so I came here\nto give you a present.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy...!\nThanks for coming all the way here!");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("K0210000_J00300", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "The present isn't worth your thanks.\nLater.");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(10, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I received a present from\n｛Toudou＊＊｝!\nI'm glad!)");
+        }
+    else if (Parameter_ChkPlayer(6) == 2){
+        Background_Bg_GS2("BG_SC210_?_0", 1, #1, 0);
+        Character_Chara_GS2(10, "G1_01F", 0);
+        Music_PlayBGM(0, "MN_C_10_000_D00", 127, 40);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Toudou＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("K0210000_J00400", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "It's a little late, but here's your\nbirthday present.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh, you remembered. Thanks!");
+        Character_ChFace(0, 2, 2);
+        Voice_PlayVoice("K0210000_J00500", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "It's not much.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "No, thanks!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(10, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 3){
+        Background_Bg_GS2("BG_HO100_CO_2", #1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes～.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_10_000_D00", 127, 40);
+        Character_Chara_GS2(10, "G1_04F", 0);
+        Voice_PlayVoice("", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Toudou＊＊｝.\nWhat's wrong?");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("K0210000_J00600", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "I wanted to give it to you on the\nactual day...\nIt's a little late, but here's your\nbirthday present.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy...!\nThanks for coming all the way here!");
+        Character_ChFace(0, 2, 0);
+        Voice_PlayVoice("K0210000_J00700", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "The present isn't worth your thanks.\nLater.");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(10, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I received a present from\n｛Toudou＊＊｝!\nI'm glad!)");
+        }
+    else if (Parameter_ChkPlayer(6) == 8){
+        System_Call_GS2("K02", "G1", 10);
+        }
+    else if (Parameter_ChkPlayer(6) == 5){
+        Background_Bg_GS2("BG_HO100_CO_2", #1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes～.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_10_000_D00", 127, 40);
+        Character_Chara_GS2(10, "G1_04F", 0);
+        Voice_PlayVoice("", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Toudou＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("K0210000_J00600", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "I wanted to give it to you on the\nactual day...\nIt's a little late, but here's your\nbirthday present.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy...!\nThanks for coming all the way here!");
+        Character_ChFace(0, 2, 0);
+        Voice_PlayVoice("K0210000_J00700", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "The present isn't worth your thanks.\nLater.");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(10, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I received a present from\n｛Toudou＊＊｝!\nI'm glad!)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(10, 86, 1);
+    System_Call_GS2("K02", "G1", 20);
+    Parameter_InPl1Param(339, #1);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

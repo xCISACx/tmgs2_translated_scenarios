@@ -1,0 +1,93 @@
+section "s07_m3_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(3, "M3_??F", 0);
+    Background_Bg_GS2("BG_EX140_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_B_EX_140_000", 127, 40);
+    if (Parameter_GetCh1Param(3, 130) <= 2){
+        Voice_PlayVoice("S0703000_C00000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "There seems to be a crowd behind and\nin front of us.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I think we're going to be a little\nlost.");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(3, 2, (#1));
+        Voice_PlayVoice("S0703000_C00100", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Ah, we should be careful not to lose\nsight of each other.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "O-Okay...");
+        Voice_PlayVoice("S0703000_C00200", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "In case you get lost, stand on the\nright of the offertory box.\nNow, let's go.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Waaah, wait for me!");
+        }
+    else if (Parameter_GetCh1Param(3, 130) == 3){
+        Voice_PlayVoice("S0703000_C00300", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "... What on earth...\nSo many people are gathered here.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "As expected, it is New Year's Day.");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("S0703000_C00400", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "A child could go missing in this\ncrowd of people.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah, I'm a bit worried...");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("S0703000_C00500", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "... It will be fine.\nLet us call each other out and\nstrongly wave if we get separated.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ehh!?");
+        Voice_PlayVoice("S0703000_C00600", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Be careful not to get lost.\nDo not be embarrassed if you do\nhappen to.");
+        Voice_PlayVoice("S0703000_C00700", 3, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Now, let's go,\n｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I will absolutely try my best not\nto get lost...)");
+        }
+    else {
+        Voice_PlayVoice("S0703000_C00800", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "...\nNever in my imagination did I expect\nfor the people visiting the shrine\nfor New Year's Day to multiply.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah, it's terribly busy...\nI feel like I'll be a little lost.");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("S0703000_C00900", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "That would be troubling.\nIf we went our own ways, there'd be\nno meaning for us to come here\ntogether.");
+        Voice_PlayVoice("S0703000_C01000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "And then what would I do? .........\nHah!");
+        Character_ChFace(0, 0, 11);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("S0703000_C01100", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "No, that is not what I meant...\nBut...... I-It can't be helped!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Is something wrong,\n｛Hikami＊＊｝?");
+        Voice_PlayVoice("S0703000_C01200", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "My proposal basically means, we\nshould not get separated.\nIt is not an ulterior motive of mine\nby any means.");
+        Voice_PlayVoice("S0703000_C01300", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "With this in mind, umm...\ny-your hand!! We will hold hands!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh...?");
+        Voice_PlayVoice("S0703000_C01400", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Please do not misunderstand me.\nI am only doing this so you do not\nget lost.\nTherefore... let's hold hands!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Okay... Thank you!");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

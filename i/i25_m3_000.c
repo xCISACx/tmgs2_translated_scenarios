@@ -1,0 +1,93 @@
+section "i25_m3_000"{
+    if (Parameter_GetCh1Param(3, 130) <= 2){
+        Background_Bg_GS2("BG_AR200_?_0", 1, #1, 0);
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(3, "M3_??F", 0);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", 3, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Hikami＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 2, 4);
+        Character_BlinkStart(3, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("I2503000_C00000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "So it was you.\nI thought that it looked like you.");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("I2503000_C00100", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "I only came in here to confirm that\nfact, so keep working.\nExcuse me.");
+        }
+    else if (Parameter_GetCh1Param(3, 130) == 3){
+        Background_Bg_GS2("BG_AR200_?_0", 1, #1, 0);
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(3, "M3_??F", 0);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", 3, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Hikami＊＊｝. Welcome.");
+        Character_ChFace(0, 2, 4);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I2503000_C00200", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "This place has so many instruments.\nDo you remember them all?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Hmm, maybe most of them?");
+        Character_ChFace(0, 0, 3);
+        Character_BlinkStart(3, 3, (#1));
+        Voice_PlayVoice("I2503000_C00300", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "It would be better to remember all\nof them.\nNow then, excuse me.");
+        }
+    else {
+        Background_Bg_GS2("BG_AR200_?_0", 1, #1, 0);
+        Character_ChFace(0, 3, 3);
+        Character_BlinkStart(3, 2, (#1));
+        Character_Chara_GS2(3, "M3_??F", 0);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", 3, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Hikami＊＊｝. Welcome.");
+        Character_ChFace(0, 2, 5);
+        Character_BlinkStart(3, 2, (#1));
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("I2503000_C00400", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Umm...\ndo you sell any bells here that make\na nice sound?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah, we have a variety of bells.\nWhat kind of bell are you looking\nfor?");
+        Character_ChFace(0, 0, 11);
+        Voice_PlayVoice("I2503000_C00500", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Eh, you have a variety? ...\nCrap, uhh..........\nUmm--");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hikami＊＊｝?");
+        Character_ChFace(0, 0, 9);
+        Character_BlinkStart(3, 3, (#1));
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("I2503000_C00600", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Bells for a b-bicycle...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh!?");
+        Character_ChFace(0, 0, 11);
+        Character_BlinkStart(3, 2, (#1));
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("I2503000_C00700", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Ah, I should just go to the bicycle\nstore.\nRight, haha! Excuse me!");
+        Character_Chara_GS2(3, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I wonder what ｛Hikami＊＊｝\ncame here for...)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(3, 86, 1);
+    }

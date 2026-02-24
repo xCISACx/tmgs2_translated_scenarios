@@ -1,0 +1,76 @@
+section "p14_m2_000"{
+    if (Parameter_bunka_jyu(0) == 1){
+        Character_ChFace(0, 0, 3);
+        Character_Chara_GS2(2, "M2_01F", 0);
+        Background_Bg_GS2("BG_SC910_LI_0", #1, #1, 0);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("P0402000_B00000", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "Delicious.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "... Really?");
+        Voice_PlayVoice("P0402000_B00100", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "Yes.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Great!");
+        Character_ChFace(0, 2, 3);
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("P0402000_B00200", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... Why are you so happy?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "To be honest, I made this.");
+        Voice_PlayVoice("P0402000_B00300", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "Heh... I wasn't expecting that.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, that's mean.");
+        Character_ChFace(0, 2, 3);
+        Character_ChFace(0, 3, 5);
+        Voice_PlayVoice("P0402000_B00400", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... Even for a joke?\nIt was very delicious. A treat.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I did it!\nI was praised by\n｛Shiba＊＊｝!)");
+        }
+    else {
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 0);
+        Character_Chara_GS2(2, "M2_01F", 0);
+        Background_Bg_GS2("BG_SC910_LI_0", #1, #1, 0);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("P0402000_B00500", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "...\nThis was the first time I had a\nsweet tuna sandwich.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh!?");
+        Character_ChFace(0, 2, 1);
+        Character_BlinkStart(2, 3, (#1));
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("P0402000_B00600", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "You should taste this before serving\nit to a customer.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I-I'm sorry!\nI got the seasoning wrong...");
+        Character_BlinkStart(2, 0, (#1));
+        Voice_PlayVoice("P0402000_B00700", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... Did you make this?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Y-Yeah...");
+        Character_BlinkStart(2, 3, (#1));
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("P0402000_B00800", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "...\nYou should take this opportunity to\nlearn something about business from\nscratch.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ugh... Big mistake...)");
+        }
+    Message_CloseMsg();
+    Music_StopBGM(0, 40);
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(2, 86, 1);
+    }

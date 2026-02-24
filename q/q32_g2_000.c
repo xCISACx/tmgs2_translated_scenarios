@@ -1,0 +1,30 @@
+section "q32_g2_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(11, "G2_01F", 0);
+    Background_Bg_GS2("BG_SCB80_LI_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_BGG_016_000", 127, 40);
+    Voice_PlayVoice("", #1, "Q1011000_K00000");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "Are you going to get souvenirs,\n｛主人公｝?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "I do want to buy one.\nWe should look for a souvenir shop.");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("Q1011000_K00100", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "Very well.\nThen let us meet back here again if\nwe get separated.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Okay.");
+    Character_ChFace(0, 0, 11);
+    Voice_PlayVoice("Q1011000_K00200", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "Oh, there!\nThey have lovely accessories.\nLet's go there,\n｛主人公｝.");
+    Character_Chara_GS2(11, "NON");
+    SoundEffect_PlayStream(3, "SS_T_00_044_M00");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(... I got a late start.\nI wonder what ｛Onoda＊＊｝\nfound?)");
+    SoundEffect_StopStream(3, 40);
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

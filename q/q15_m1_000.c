@@ -1,0 +1,38 @@
+section "q15_m1_000"{
+    Character_ChFace(0, 0, 11);
+    Character_Chara_GS2(1, "M1_01F", 0);
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 1, "FD_01_050_00000");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "｛主人公｝, you're still\nhere.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Saeki＊＊｝! Ah...\nAre you hiding from the girls?");
+    Character_ChFace(0, 0, 0);
+    Voice_PlayVoice("FD_01_050_00100", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "Well... No, I'm fine.\nAre you waiting for... that guy?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, about that...\nWould you be angry if I asked you to\nvisit places with me?");
+    Character_ChFace(0, 0, 8);
+    Voice_PlayVoice("FD_01_050_00200", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "Hey you...\nPeople go with couples during the\nschool field trip, don't they?\nWhat are you doing with me...");
+    Character_ChFace(0, 2, 4);
+    Character_ChFace(0, 3, 1);
+    Character_BlinkStart(1, 3, (#1));
+    Voice_PlayVoice("FD_01_050_00300", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "... Don't make that miserable face.\nCome, I'll treat you to eight\ndumplings.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_GlobalWork(0, 2, 1);
+    System_GlobalWork(2, 2, 1);
+    System_Call_GS2("Q16", "M1", 0);
+    System_Call_GS2("Q17", "M1", 0);
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(1, 86, 1);
+    }

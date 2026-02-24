@@ -1,0 +1,73 @@
+section "p33_m6_000"{
+    Background_Bg_GS2("BG_SC930_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    if (Parameter_bunka_jyu(0) == 1){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ugh, I'm extremely nervous right\nbefore the performance...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(6, "M6_16F", 0);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Oh, ｛Amachi＊＊｝..\nWhat should I do...\nMy heart is racing...");
+        Voice_PlayVoice("P2306000_F00000", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Yeah!\nWhen I entered it was full of\nguests.\nI'm looking forward to this!");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P2306000_F00100", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "... Huh? Are you nervous, Senpai?");
+        Voice_PlayVoice("P2306000_F00200", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "It'll be all right.\nAnyway, it's not like the guests\nwill be reading the scripts, right?");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(6, 3, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P2306000_F00300", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Even if you make a little mistake,\nplay it off.\nJust play it off.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Amachi＊＊｝ relaxed\nme...)");
+        Character_BlinkStart(6, 0, (#1));
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P2306000_F00400", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Hey, it's starting soon.\nLet's go, Senpai!");
+        Voice_PlayVoice("P2301000_W00200", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Broadcaster", "Hanegasaki Academy's school play\nwill now begin.");
+        SoundEffect_PlayStream(3, "SS_T_00_041_M00");
+        Message_CloseMsg();
+        Screen_WipeOut(2);
+        Screen_ClearScreen();
+        System_Call_GS2("P34", "M6", 0);
+        }
+    else {
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Good, I'm in time...\nHopefully the play will go\nsmoothly!)");
+        Voice_PlayVoice("", 6, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "｛主人公｝.");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(6, "M6_08F", 0);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Amachi＊＊｝. Good job.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Finally!");
+        Character_ChFace(0, 2, 3);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("P2306000_F00600", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Yeah!\nWhen I entered it was full of\nguests.\nI'm looking forward to it!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah!");
+        Voice_PlayVoice("P2301000_W00800", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Broadcaster", "Hanegasaki Academy's school play\nwill now begin.");
+        SoundEffect_PlayStream(3, "SS_T_00_041_M00");
+        Message_CloseMsg();
+        Screen_WipeOut(2);
+        Screen_ClearScreen();
+        System_Call_GS2("P34", "M6", 10);
+        }
+    }

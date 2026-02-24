@@ -1,0 +1,33 @@
+section "h8g_m6_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(6, "M6_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 6, "H7G06000_F00000");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Heeey, ｛主人公｝!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Amachi＊＊｝!");
+    Voice_PlayVoice("H7G06000_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I heard that your work in the\nStudent Council was recognized and\nyou got an award?");
+    Voice_PlayVoice("H7G06000_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Amazing.\nI haven't received any awards, not\neven for perfect attendance.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks.\nBut all I did was stay in the\nStudent Council.");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(6, 3, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H7G06000_F00300", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Hmm～, is that all?\nBut it's amazing that you stayed.\nI'm the kind to get sick of it.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Haha, ｛Amachi＊＊｝.\nBut I'm glad that you complimented\nme.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(...\nI'm glad I did my best in Student\nCouncil activities!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(6, 86, 1);
+    }

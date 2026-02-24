@@ -1,0 +1,37 @@
+section "b50_m4_010"{
+    Background_Bg_GS2("BG_EX150_CO_1", #1, #1, 0);
+    Character_Chara_GS2(4, "M4_??F", 0);
+    Character_ChFace(0, 0, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Umm, ｛Hariya＊＊｝...\nThere's someone that I'm interested\nin...");
+    Voice_PlayVoice("FD_04_010_00000", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "So then...");
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(0, 6, 1);
+    Voice_PlayVoice("FD_04_010_00100", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "I see.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Hariya＊＊｝.");
+    Character_ChFace(0, 2, 2);
+    Character_ChFace(0, 3, 5);
+    Voice_PlayVoice("FD_04_010_00200", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "I'm not mad, so don't make that\nface.");
+    Voice_PlayVoice("FD_04_010_00300", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "I was just shocked.... Seriously.");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("FD_04_010_00400", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "... Okay! I'll support you.");
+    Voice_PlayVoice("FD_04_010_00500", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "In return, you gotta make something\nof it!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "... Okay. I'll do my best. Thanks...");
+    }

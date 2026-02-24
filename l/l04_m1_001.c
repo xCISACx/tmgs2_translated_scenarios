@@ -1,0 +1,30 @@
+section "l04_m1_001"{
+    int var0;
+    int var1;
+    Character_ChFace(0, 4, 0);
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("L0401000_A05300", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "For me?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh!? ... Hey, are you kind of angry?");
+    Character_BlinkStart(1, 0, (#1));
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("L0401000_A05500", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "Me? As if!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Then, here...");
+    Character_ChFace(0, 2, 1);
+    Character_BlinkStart(1, 2, (#1));
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("L0401000_A05600", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "I'll decline.\nI've got plans to accept it from\nmany other people.\nI have to hurry.");
+    Character_Chara_GS2(1, "NON");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(He didn't accept it...\nIs he actually really angry...)");
+    Music_StopBGM(0, 40);
+    }

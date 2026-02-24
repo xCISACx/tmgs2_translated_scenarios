@@ -1,0 +1,34 @@
+section "y01_g3_001"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(12, "G3_03F_CW", 0);
+    Background_Bg_GS2("BG_EX000_?_1", 1, #1, 0);
+    Environment_StopME(0, 40);
+    Screen_WipeIn(2);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 8);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 9);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 10);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 11);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(0, 4, 1);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 8);
+    Character_ChFace(0, 4, 1);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 9);
+    Character_ChFace(0, 4, 1);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 10);
+    Character_ChFace(0, 4, 1);
+    System_ButtonWait();
+    Character_ChFace(0, 0, 11);
+    Character_ChFace(0, 4, 1);
+    System_ButtonWait();
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

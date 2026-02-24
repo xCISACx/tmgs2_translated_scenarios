@@ -1,0 +1,34 @@
+section "k02_m6_011"{
+    Character_BlinkStart(6, 1, (#1), 1);
+    Character_BlinkStart(6, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_HO000_?_2", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks for walking me home!");
+    Character_Chara_GS2(6, "M6_D?F", 0);
+    Voice_PlayVoice("K0206011_F00000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I was worried that something might\nhappen to you.");
+    Voice_PlayVoice("K0206011_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "... Ah, right.\nThere is something I want to give\nyou!");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("K0206011_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Hehe, here! It's a birthday present.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "So you remembered!");
+    Voice_PlayVoice("K0206011_F00300", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Since I gave you a present, treasure\nit.\nLater!");
+    Character_Chara_GS2(6, "NON");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_Call_GS2("K02", "M6", 20);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

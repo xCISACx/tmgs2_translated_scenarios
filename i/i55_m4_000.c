@@ -1,0 +1,91 @@
+section "i55_m4_000"{
+    Background_Bg_GS2("BG_AR500_?_0", 1, #1, 0);
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(4, "M4_??F", 0);
+    Screen_WipeIn(2);
+    if (Parameter_GetCh1Param(4, 130) <= 2){
+        Voice_PlayVoice("", 4, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hariya＊＊｝! Welcome.");
+        Character_ChFace(0, 2, 4);
+        Character_BlinkStart(4, 2, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I5504000_D00000", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "... Meaning you're working.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah. Are you out shopping?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("I5504000_D00100", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Haha, as if I'd buy flowers!\nI do get flowers often, though.\nLater.");
+        Character_Chara_GS2(4, "NON");
+        }
+    else if (Parameter_GetCh1Param(4, 130) == 3){
+        Voice_PlayVoice("I5504000_D00200", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Yo.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hariya＊＊｝.\nDid you come here to buy flowers?");
+        Character_ChFace(0, 2, 3);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I5504000_D00300", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "My mom asked me to get a potted\nplant.\nGot anything that's easy to take\ncare of?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "We do.\nThe ones over there are easy to take\ncare of.");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("I5504000_D00400", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Ehh... thanks. I'll go take a look.");
+        }
+    else {
+        Voice_PlayVoice("I5504000_D00500", 4, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Yo, ｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hariya＊＊｝.\nWhat are you up to today?");
+        Character_ChFace(0, 0, 11);
+        Character_BlinkStart(4, 2, (#1));
+        Voice_PlayVoice("I5504000_D00600", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Umm... Which ones are lilacs?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "We don't have any lilacs...\nAh, we do have princess lilacs,\nthough.");
+        Voice_PlayVoice("I5504000_D00700", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Princess...?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "It's a smaller version of lilacs.\nIn the language of flowers, it means\n\"first love\".");
+        Character_ChFace(0, 0, 11);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("I5504000_D00800", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "... Wah!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wah! W-What!?");
+        Character_ChFace(0, 7, 0);
+        Character_ChFace(0, 0, 9);
+        Character_BlinkStart(4, 3, (#1));
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("I5504000_D00900", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Why are you telling me about it?\nI didn't ask!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, sorry. It was unintentional.");
+        Character_ChFace(0, 0, 8);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("I5504000_D01000", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Ugh... Anyway!\nIt's fine if you don't have any!\nLater!");
+        Character_Chara_GS2(4, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(He left...\n｛Hariya＊＊｝ was acting\nstrange...)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

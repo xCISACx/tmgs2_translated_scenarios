@@ -1,0 +1,30 @@
+section "q25_g1_000"{
+    System_Wait(60);
+    SoundEffect_PlayStream(3, "SS_DSE_223_000");
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(10, "G1_08F", 0);
+    Background_Bg_GS2("BG_SCB31_LI_2", #1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Toudou＊＊｝!");
+    Character_ChFace(0, 2, 2);
+    Character_BlinkStart(10, 3, (#1));
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("Q2610000_J00000", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "What the- That was you?\nI was so sure...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh... So sure?");
+    Character_ChFace(0, 0, 0);
+    Character_BlinkStart(10, 2, (#1));
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("Q2610000_J00100", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "Nevermind. It's nothing. Forget it.");
+    Character_Chara_GS2(10, "NON");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(It seemed like\n｛Toudou＊＊｝ was blushing.\nDid she mistake me for someone\nelse?)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

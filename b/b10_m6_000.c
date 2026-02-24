@@ -1,0 +1,34 @@
+section "b10_m6_000"{
+    Background_Bg_GS2("BG_EX100_?_2", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(*Sigh* Now why did I say that?)");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Ugh, I hate myself...)");
+    SoundEffect_PlaySE(19, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh? I wonder who it is.");
+    SoundEffect_StopSE(19, 0);
+    SoundEffect_PlaySE(20, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Hello.");
+    Voice_PlayVoice("B1006000_F00000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Hello... It's me.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh? ｛Amachi＊＊｝!?");
+    Voice_PlayVoice("B1006000_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "About today...\nPlease don't fuss about me so much.");
+    Voice_PlayVoice("B1006000_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "It's okay for Senpai to not worry so\nmuch....\nThat's all. Bye!");
+    SoundEffect_PlaySE(23, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Don't spend time fussing over\n｛Amachi＊＊｝...?)");
+    SoundEffect_StopSE(23, 0);
+    SoundEffect_PlaySE(20, 127);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

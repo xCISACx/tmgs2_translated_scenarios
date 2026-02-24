@@ -1,0 +1,90 @@
+section "f11_g4_100"{
+    Character_BlinkStart(13, 1, (#1), 1);
+    Character_BlinkStart(13, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_SC230_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    if (Parameter_GetCh1Param(13, 328) == 0){
+        Parameter_AddCh1Param(13, 328, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Mizushima＊＊｝.)");
+        Voice_PlayVoice("F1113100_W00000", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Female Student", "You've worked hard being the\nwelcomer～!\nBecause of you, our class is\nthriving!");
+        Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(13, "G4_01F", 0);
+        Voice_PlayVoice("F1113100_M00100", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "You're welcome.\nThe next time I start is at 4 p.m,\nright?");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("F1113100_M00200", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Uh, the next classroom is...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(It must be tough being popular...)");
+        }
+    else if (Parameter_GetCh1Param(13, 328) == 1){
+        Parameter_AddCh1Param(13, 328, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Mizushima＊＊｝.)");
+        Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(13, "G4_01F", 0);
+        Voice_PlayVoice("F1113100_M00300", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Right, the band performance starts\nat 3 p.m.\nYou're going to come and listen,\nright?");
+        Voice_PlayVoice("F1113100_W00400", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Male Student", "I-I'll definitely go!");
+        Character_ChFace(0, 2, 3);
+        Character_BlinkStart(13, 3, (#1), 1);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("F1113100_M00500", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Thank you～!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(The Brass Band's performance will\nprobably be a full house.\nProbably because of\n｛Mizushima＊＊｝...)");
+        }
+    else if (Parameter_GetCh1Param(13, 328) == 2){
+        Parameter_AddCh1Param(13, 328, 1);
+        Voice_PlayVoice("F1113100_M00600", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Just one more then, okay?");
+        Voice_PlayVoice("F1113100_W00700", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Underclassman", "Thank you very much!");
+        SoundEffect_PlayStream(3, "SS_T_00_055_M00");
+        Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(13, "G4_01F", 0);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "You're as popular as ever,\n｛Mizushima＊＊｝.");
+        Character_ChFace(0, 0, 0);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("F1113100_M00800", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Gee, please don't tease me.");
+        Voice_PlayVoice("F1113100_W00900", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Underclassman", "Umm, is it okay for me to ask for\none as well, Senpai?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh? With me? Umm, but...");
+        Character_ChFace(0, 0, 3);
+        Character_BlinkStart(13, 3, (#1), 1);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("F1113100_M01000", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Ah, you're so popular▼ Haha.");
+        SoundEffect_PlayStream(3, "SS_T_00_055_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(It's a little embarrassing...)");
+        }
+    Message_CloseMsg();
+    Music_StopBGM(0, 40);
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(13, 86, 1);
+    }

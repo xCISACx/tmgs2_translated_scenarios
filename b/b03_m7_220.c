@@ -1,0 +1,71 @@
+section "b03_m7_220"{
+    Character_Chara_GS2(7, "M7_17F", 0, 1, 1);
+    Background_Bg_GS2("BG_TR400_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_PauseSkinship();
+    Voice_PlayVoice("B0307220_G00000", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Please line up, everyone.\nLet's go inside.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Character_Chara_GS2(7, "NON");
+    Character_Chara_GS2(7, "M7_17F", 0, 1, 1);
+    Character_ChFace(1, 2, 0);
+    Character_ChFace(1, 3, 3);
+    Background_Bg_GS2("BG_TR410_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_PauseSkinship();
+    Voice_PlayVoice("B0307220_G00100", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Ah, found the sign....\nIsn't the castle tower's view\nextraordinary?\nGood, let's go.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Sensei, maybe you should listen to\nthe wishes of the students...");
+    SoundEffect_PlayStream(2, "SE_NS_AL_910_003000");
+    Character_ChFace(1, 2, 0);
+    Character_ChFace(1, 3, 2);
+    Voice_PlayVoice("B0307220_G00200", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "That's right.\nWell then, let the majority make the\ndecision.\nWhere do you want to go, everyone?");
+    Message_MsgSel("I raise my hand for the exhibition corner.", "I raise my hand on castle tower.");
+    switch (Message_TextSelect()){
+        case 0:
+        Character_ChFace(1, 2, 2);
+        Character_ChFace(1, 3, 3);
+        Message_PauseSkinship();
+        Voice_PlayVoice("B0307220_G00300", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "I have much to learn, everyone....\nI understand.\nSensei will compromise this time.");
+        Message_ResumeSkinship();
+        Character_ChFace(1, 2, 2);
+        Character_ChFace(1, 3, 3);
+        Voice_PlayVoice("B0307220_G00400", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Well then, let's go.");
+        Message_CloseMsg();
+        Screen_WipeOut(2);
+        Screen_ClearScreen();
+        System_Call_GS2("B04", "M7", 221);
+        break ;
+        case 1:
+        Character_ChFace(1, 0, 3);
+        Character_ChFace(1, 2, 3);
+        Character_ChFace(1, 3, 5);
+        Message_PauseSkinship();
+        Voice_PlayVoice("B0307220_G00500", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Majority rules!\nThe decision is castle tower!");
+        Character_ChFace(1, 0, 3);
+        Character_ChFace(1, 2, 3);
+        Character_ChFace(1, 3, 5);
+        SoundEffect_PlayStream(2, "SS_T_00_176_S00");
+        Message_ResumeSkinship();
+        Voice_PlayVoice("B0307220_G00600", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Let's hurry, everyone!\nLet's head over to the good place!");
+        Message_CloseMsg();
+        Screen_WipeOut(2);
+        Screen_ClearScreen();
+        System_Call_GS2("B04", "M7", 222);
+        break ;
+        }
+    }

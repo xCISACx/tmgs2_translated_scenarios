@@ -1,0 +1,156 @@
+section "k02_g2_000"{
+    Character_BlinkStart(11, 1, (#1), 1);
+    Character_BlinkStart(11, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    if (Parameter_ChkPlayer(6) == 0){
+        Background_Bg_GS2("BG_SC210_?_0", 1, #1, 0);
+        Character_Chara_GS2(11, "G2_01F", 0);
+        Music_PlayBGM(0, "MN_C_11_000_D00", 127, 40);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Onoda＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(11, 2, (#1));
+        Voice_PlayVoice("K0211000_K00000", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Today is your birthday. Here.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh, is this a present?");
+        Character_BlinkStart(11, 3, (#1));
+        Voice_PlayVoice("K0211000_K00100", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "It would be nice if you liked it...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(11, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 1){
+        Background_Bg_GS2("BG_HO100_?_2", 1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes～.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_11_000_D00", 127, 40);
+        Character_Chara_GS2(11, "G2_04F", 0);
+        Voice_PlayVoice("", #1, "K0211000_K00200");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Hello, ｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Onoda＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0211000_K00300", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Sorry for visiting without warning.\nI wanted to give you this.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh, is this a present?");
+        Character_BlinkStart(11, 2, (#1));
+        Voice_PlayVoice("K0211000_K00400", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Yes, for your birthday.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(11, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 2){
+        Background_Bg_GS2("BG_SC210_?_0", 1, #1, 0);
+        Character_Chara_GS2(11, "G2_01F", 0);
+        Music_PlayBGM(0, "MN_C_11_000_D00", 127, 40);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Onoda＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0211000_K00500", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Umm, it's a bit late, but this is\nfor your birthday...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh, you remembered. Thanks!");
+        Character_BlinkStart(11, 2, (#1));
+        Voice_PlayVoice("K0211000_K00600", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "It would be nice if you liked it...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(11, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 3){
+        Background_Bg_GS2("BG_HO100_?_2", 1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes～.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_11_000_D00", 127, 40);
+        Character_Chara_GS2(11, "G2_04F", 0);
+        Voice_PlayVoice("", #1, "K0211000_K00700");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Hello, ｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Onoda＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0211000_K00800", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Sorry for visiting without warning.\nUmm, it's late, but this...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh, is this a present?");
+        Character_BlinkStart(11, 2, (#1));
+        Voice_PlayVoice("K0211000_K00900", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Yes, for your birthday.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(11, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 8){
+        System_Call_GS2("K02", "G2", 10);
+        }
+    else if (Parameter_ChkPlayer(6) == 5){
+        Background_Bg_GS2("BG_HO100_?_2", 1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes～.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_11_000_D00", 127, 40);
+        Character_Chara_GS2(11, "G2_04F", 0);
+        Voice_PlayVoice("", #1, "K0211000_K00700");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Hello, ｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Onoda＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0211000_K00800", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Sorry for visiting without warning.\nUmm, it's late, but this...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh, is this a present?");
+        Character_BlinkStart(11, 2, (#1));
+        Voice_PlayVoice("K0211000_K00900", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Yes, for your birthday.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, I'm so happy!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(11, "NON");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(11, 86, 1);
+    System_Call_GS2("K02", "G2", 20);
+    Parameter_InPl1Param(339, #1);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

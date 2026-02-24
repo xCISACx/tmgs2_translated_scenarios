@@ -1,0 +1,33 @@
+section "h7g_m3_000"{
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 3, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "｛主人公｝.");
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(3, "M3_??F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Hikami＊＊｝.");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H8G03000_C00000", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "I heard that you won first prize in\na design contest.\nCongratulations.");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(3, 2, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H8G03000_C00100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "I heard it when I went to the\nteachers' staffroom.\nEven the teachers were singing\npraises about the clothes you made.");
+    Character_ChFace(0, 0, 10);
+    Character_BlinkStart(3, 2, (#1));
+    Voice_PlayVoice("H8G03000_C00200", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Even looking at it with my untrained\neyes, those clothes were amazing.\nYour talent and effort have been\nrecognized.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad that I did my best to\ncomplete the work.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(3, 86, 1);
+    }

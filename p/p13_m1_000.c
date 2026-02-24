@@ -1,0 +1,74 @@
+section "p13_m1_000"{
+    Background_Bg_GS2("BG_SC910_LI_0", #1, #1, 0);
+    Music_PlayBGM(0, "MN_B_SC_910_000", 127, 40);
+    Screen_WipeIn(2);
+    if (Parameter_GetCh1Param(1, 130) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Thank you for waiting!\nA lemon tea and a scone!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(*Sigh* A coffee shop is harder than\nI thought...)");
+        Character_ChFace(0, 0, 10);
+        Character_Chara_GS2(1, "M1_01F", 0);
+        Voice_PlayVoice("", 1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Saeki＊＊｝, what brings\nyou here?");
+        Voice_PlayVoice("P0301000_A00000", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "Well...\nTo drink some coffee, which you're\nserving.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ugh... Yeah.\n｛Saeki＊＊｝'s so\nprofessional...");
+        Character_ChFace(0, 2, 4);
+        Character_BlinkStart(1, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P0301000_A00100", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "Aaah, smells good.\nOne coffee, pleeeasse!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "E-Excuse me, did you want some\njuice, too?");
+        Character_ChFace(0, 2, 3);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("P0301000_A00200", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "But coffee is better!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ugh... Certainly!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Okay, I will see to it!)");
+        }
+    else if (Parameter_GetCh1Param(1, 130) >= 4){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Thank you for waiting!\nA lemon tea and a scone!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(*Sigh* A coffee shop is harder than\nI thought...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(1, "M1_01F", 0);
+        Voice_PlayVoice("", 1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Saeki＊＊｝, what brings\nyou here?");
+        Character_ChFace(0, 2, 1);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P0301000_A00300", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "Well.\nThey are Sangosho's rival, aren't\nthey?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "*Giggles* Well then, it's a\nchallenge!");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(1, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P0301000_A00400", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "What did you say? ...\nOne hot coffee. Please.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes, certainly.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Okay, I will do my best!)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    System_Call_GS2("P14", "M1", 0);
+    }

@@ -1,0 +1,31 @@
+section "h7g_m7_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(7, "M7_17F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 7, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Wakaouji＊＊｝!\nWhat is the matter?");
+    Voice_PlayVoice("H8G07000_G00000", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "You shouldn't be asking that, right?\nYou did something amazing.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh? ... I did?");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("H8G07000_G00100", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Yes.\nCongratulations on winning first\nprize in a design contest.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "T-Thank you very much!");
+    Voice_PlayVoice("H8G07000_G00200", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "You approached your Handicraft Club\nactivities seriously.\nYou've gotten quite good.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad that I did my best to\ncomplete the work.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(7, 86, 1);
+    }

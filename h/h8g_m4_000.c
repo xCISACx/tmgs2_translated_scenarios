@@ -1,0 +1,37 @@
+section "h8g_m4_000"{
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 4, "H7G04000_D00000");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "｛主人公｝. Yo.");
+    Character_ChFace(0, 0, 10);
+    Character_Chara_GS2(4, "M4_??F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Hariya＊＊｝.");
+    Voice_PlayVoice("H7G04000_D00100", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "I heard you got some kinda award for\nbeing in the Student Council?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, I did.");
+    Character_ChFace(0, 2, 2);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H7G04000_D00200", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "It's an award that I'd never win.\nYou're amazing～.");
+    Character_ChFace(0, 2, 1);
+    Voice_PlayVoice("H7G04000_D00300", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "Ah, but don't you try to supervise\nme, okay?");
+    Character_ChFace(0, 2, 4);
+    Character_BlinkStart(4, 2, (#1));
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("H7G04000_D00400", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "...\nWell, it's not like I won't listen\nto what you say...!\nHahaha!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(...\nI'm glad I did my best in Student\nCouncil activities!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

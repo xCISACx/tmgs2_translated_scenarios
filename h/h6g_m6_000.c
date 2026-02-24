@@ -1,0 +1,32 @@
+section "h6g_m6_000"{
+    Character_ChFace(0, 0, 10);
+    Character_Chara_GS2(6, "M6_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 6, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Amachi＊＊｝!");
+    Voice_PlayVoice("H6G06000_F00000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "It was an amazing performance!\nFor some reason, I got excited and\njust wanted to talk....");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "So you were there at the\nperformance.\nThanks!");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(6, 3, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H6G06000_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "It's amazing that you even won a\nprize....\nCongrats!!");
+    Character_BlinkStart(6, 0, (#1));
+    Voice_PlayVoice("H6G06000_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Well, it was natural that you won\nwith that performance.\nThe other bands were no match!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad that the Brass Band did\ntheir best.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(6, 86, 1);
+    }

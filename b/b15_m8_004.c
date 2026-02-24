@@ -1,0 +1,93 @@
+section "b15_m8_004"{
+    int var0;
+    Background_CarBGOpen2("BG_EX170_AU_2");
+    Background_CarBGScroll(0);
+    Background_CarBGScroll(#1);
+    Background_CarBgSpeedChange(#8, 8);
+    var0 = Parameter_GetSysParam(4);
+    switch (var0){
+        case 0:
+        Still_Event("EV_08_31", #1, 0, 1);
+        break ;
+        case 1:
+        Still_Event("EV_08_32", #1, 0, 1);
+        break ;
+        case 2:
+        Still_Event("EV_08_33", #1, 0, 1);
+        break ;
+        case 3:
+        Still_Event("EV_08_34", #1, 0, 1);
+        break ;
+        }
+    System_Wait(5);
+    Screen_WipeIn(3);
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H03400", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "... This is no good.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh!?");
+    SoundEffect_PlayStream(3, "SS_DSE_001_000");
+    Background_CarBgSpeedChange(0, 240);
+    System_Wait(240);
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 1);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H03500", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Umm... Masaki-senpai?");
+    Still_StillFace(0, 0, 0);
+    Still_StillFace(0, 2, 6);
+    Still_StillFace(0, 6, 3);
+    Voice_PlayVoice("XD_08_00_H03600", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Ah... Give me three minutes.\nNo, one is fine.");
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 1);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H03700", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Masaki-senpai... Are you okay?");
+    Voice_PlayVoice("XD_08_00_H03800", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Be quiet.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ugh... okay.");
+    Still_StillFace(0, 2, 4);
+    Still_StillFace(0, 3, 2);
+    Still_StillFace(0, 6, 2);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H03900", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "...\n*Phew* Alright, sorry to keep you\nwaiting.");
+    SoundEffect_PlayStream(3, "SS_DSE_004_000");
+    Background_CarBGScroll(0);
+    Background_CarBGScroll(#1);
+    Background_CarBgSpeedChange(#8, 240);
+    System_Wait(120);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Uhh.... Can I talk now?");
+    Still_StillFace(0, 2, 4);
+    Still_StillFace(0, 3, 2);
+    Still_StillFace(0, 6, 2);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H04000", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Yeah. But skinship is prohibited.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh...");
+    Still_StillFace(0, 0, 2);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H04100", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Don't say \"Eh\"....\nAh, that was close.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Masaki-senpai?)");
+    }

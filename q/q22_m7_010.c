@@ -1,0 +1,35 @@
+section "q22_m7_010"{
+    Background_Bg_GS2("BG_SCB10_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("Q2207000_G00000", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Oh, found you!");
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(7, "M7_17F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Wakaouji＊＊｝!");
+    Voice_PlayVoice("Q2207000_G00100", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "What are you doing in a place like\nthis?\nCome, quickly.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "I'm sorry!\nI'll go back to my room immediately\nand sleep!");
+    Character_ChFace(0, 2, 4);
+    Character_BlinkStart(7, 2, (#1));
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("Q2207000_G00200", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "What, do you have something you need\nto talk about?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yes.");
+    Character_ChFace(0, 2, 4);
+    Character_BlinkStart(7, 2, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("Q2207000_G00300", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "A pillow fight is starting! Hurry!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "E-Eh!?");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

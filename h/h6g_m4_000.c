@@ -1,0 +1,30 @@
+section "h6g_m4_000"{
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Hariya＊＊｝.");
+    Character_ChFace(0, 0, 10);
+    Character_Chara_GS2(4, "M4_??F", 0);
+    Voice_PlayVoice("H6G04000_D00000", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "Yo. I heard you won a contest!\nYou're awesome!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah! Thanks!");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(4, 2, (#1));
+    Voice_PlayVoice("H6G04000_D00100", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "...\nYou look really nice when you're\nplaying.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "R-Really?");
+    Character_BlinkStart(4, 3, (#1));
+    Voice_PlayVoice("H6G04000_D00200", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "Even I get happy seeing you.\nI gotta learn from you.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm so happy!\nI'm glad that the Brass Band did\ntheir best!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

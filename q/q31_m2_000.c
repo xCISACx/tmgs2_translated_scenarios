@@ -1,0 +1,97 @@
+section "q31_m2_000"{
+    if (Parameter_GetCh1Param(2, 130) <= 2){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Shiba＊＊｝.)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Good morning, ｛Shiba＊＊｝!");
+        Character_ChFace(0, 2, 5);
+        Character_BlinkStart(2, 2, (#1));
+        Character_ChFace(0, 3, 2);
+        Character_Chara_GS2(2, "M2_01F", 0);
+        Voice_PlayVoice("Q0902000_B00000", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "......... Okay.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "... Are you just waking up?");
+        Character_BlinkStart(2, 0, (#1));
+        Voice_PlayVoice("Q0902000_B00100", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "I'm awake.\nYou seem cheerful this morning...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Really?");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("Q0902000_B00200", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "Well... You ready to leave now?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah!");
+        }
+    else if (Parameter_GetCh1Param(2, 130) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, he came.)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Good morning, ｛Shiba＊＊｝!");
+        Character_ChFace(0, 2, 1);
+        Character_ChFace(0, 3, 3);
+        Character_Chara_GS2(2, "M2_01F", 0);
+        Voice_PlayVoice("Q0902000_B00300", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... Heh.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh? What is it?");
+        Character_BlinkStart(2, 3, (#1));
+        Voice_PlayVoice("Q0902000_B00400", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "I thought I was late 'cause I\noverslept....\nSomehow.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, that's terrible!");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("Q0902000_B00500", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "Even if it's a joke? Okay, let's go.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Okay!");
+        }
+    else {
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Maybe ｛Shiba＊＊｝ came\nahead of time...\nAh, he's here!)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Good morning, ｛Shiba＊＊｝!");
+        Character_ChFace(0, 2, 5);
+        Character_BlinkStart(2, 2, (#1));
+        Character_ChFace(0, 3, 2);
+        Character_Chara_GS2(2, "M2_01F", 0);
+        Voice_PlayVoice("", 2, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "........ ｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh? Did you get any sleep?");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("Q0902000_B00700", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... A little.\nI woke up early to have a run.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ehh!? A run?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("Q0902000_B00800", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "My body felt stiff, so it was just\nright....\nBut it's fine.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "What?");
+        Character_BlinkStart(2, 3, (#1));
+        Voice_PlayVoice("Q0902000_B00900", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... You're the reason why I woke up.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "... Huh?");
+        Character_BlinkStart(2, 2, (#1));
+        Voice_PlayVoice("Q0902000_B01000", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "Well.\nMy eyes are getting adjusted...\nLet's leave.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "O-Okay.");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

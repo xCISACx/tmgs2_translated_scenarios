@@ -1,0 +1,95 @@
+section "f10_g2_312"{
+    Character_BlinkStart(11, 1, (#1), 1);
+    Character_BlinkStart(11, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_SC210_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Character_ChFace(0, 0, 0);
+    if (Parameter_GetCh1Param(11, 327) == 0){
+        Parameter_AddCh1Param(11, 327, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, it's ｛Onoda＊＊｝ and\n｛Nishimoto＊＊｝.");
+        Character_ChFace(0, 0, 8);
+        Character_Chara_GS2(11, "G2_01F", 0);
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(12, "G3_01F", 0, 0, 1);
+        Voice_PlayVoice("F1011312_K00000", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Wait a second! Nishimoto-san!\nPlease clean up properly.");
+        Character_ChFace(1, 0, 10);
+        Voice_PlayVoice("F1011312_L00100", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Ahahaha.\nI'll do it later, so just look the\nother way!");
+        Character_ChFace(0, 2, 1);
+        Character_BlinkStart(11, 3, (#1), 1);
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("F1011312_K00200", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Good grief!");
+        Character_Chara_GS2(11, "NON");
+        Character_Chara_GS2(12, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Onoda＊＊｝ also seems\nlike she's got it rough.)");
+        }
+    else if (Parameter_GetCh1Param(11, 327) == 1){
+        Parameter_AddCh1Param(11, 327, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, it's ｛Onoda＊＊｝ and\n｛Nishimoto＊＊｝.");
+        Character_ChFace(0, 2, 1);
+        Character_ChFace(0, 3, 2);
+        Character_Chara_GS2(11, "G2_01F", 0);
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(12, "G3_01F", 0, 0, 1);
+        Voice_PlayVoice("F1011312_K00300", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Wait a second! Nishimoto-san!\nAre you skipping cleaning duties\nagain!?");
+        Character_ChFace(1, 0, 10);
+        Character_BlinkStart(12, 2, (#1), 2);
+        Voice_PlayVoice("F1011312_L00400", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Ahahaha. Sorry, sorry.\nI kind of have a slight cold.");
+        Character_ChFace(0, 2, 1);
+        Character_BlinkStart(11, 3, (#1), 1);
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("F1011312_K00500", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Good grief!");
+        Character_Chara_GS2(11, "NON");
+        Character_Chara_GS2(12, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Onoda＊＊｝ also seems\nlike she's got it rough.)");
+        }
+    else if (Parameter_GetCh1Param(11, 327) == 2){
+        Parameter_AddCh1Param(11, 327, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, it's ｛Onoda＊＊｝ and\n｛Nishimoto＊＊｝.");
+        Character_ChFace(0, 2, 1);
+        Character_BlinkStart(11, 2, (#1), 1);
+        Character_ChFace(0, 3, 4);
+        Character_Chara_GS2(11, "G2_01F", 0);
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(12, "G3_01F", 0, 0, 1);
+        Voice_PlayVoice("F1011312_K00600", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Nishimoto-san!\nI will have you clean up properly\ntoday!");
+        Character_ChFace(1, 0, 9);
+        Voice_PlayVoice("F1011312_L00700", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Please. Look the other way.");
+        Character_BlinkStart(11, 3, (#1), 1);
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("F1011312_K00800", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "I cannot.\nI will have you work off all those\ntimes you previously skipped as\nwell!");
+        Character_Chara_GS2(11, "NON");
+        Character_Chara_GS2(12, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Onoda＊＊｝ wins this\nround.)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(11, 86, 1);
+    Parameter_AddCh1Param(12, 86, 1);
+    }

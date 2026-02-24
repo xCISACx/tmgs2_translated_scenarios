@@ -1,0 +1,33 @@
+section "q32_m3_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(3, "M3_01F", 0);
+    Background_Bg_GS2("BG_SCB80_LI_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_BGG_016_000", 127, 40);
+    Voice_PlayVoice("Q1003000_C00000", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Souvenirs...\nWhat sort of item will please my\nparents' tastes?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "A souvenir for your parents?");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(3, 3, (#1));
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("Q1003000_C00100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Yes.\nBefore I left, both of my parents\ntold me not to buy them souvenirs.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "......");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(3, 0, (#1));
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("Q1003000_C00200", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "... But they do want something.\nIt would have helped greatly if they\nhad just told me what they wanted\nupfront.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "... Well, that's vague.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(What is ｛Hikami＊＊｝ going\nto choose?)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Character_Chara_GS2(3, "NON");
+    }

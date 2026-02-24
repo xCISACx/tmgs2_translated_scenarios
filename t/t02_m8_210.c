@@ -1,0 +1,31 @@
+section "t02_m8_210"{
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 8, "");
+    Message_Who(8);
+    Message_MsgDisp("？？？", "｛主人公｝.");
+    Character_Chara_GS2(8, "M8_06F_WI", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Masaki-senpai! Why are you here...");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(8, 0, (#1), 1);
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("FD_08_210_00100", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "There is something that I want to\ntell you.\nNo matter what.");
+    Voice_PlayVoice("FD_08_210_00200", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Got a minute?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yes...");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Background_Bg_GS2("BG_EX150_CO_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    System_Wait(40);
+    Environment_StopME(0, 40);
+    Message_CloseMsg();
+    Message_MessageWindow(1);
+    Message_Text_Color(16);
+    Still_Pair_Event("EV_08_15", "EV_99_00", 0, 0);
+    }

@@ -1,0 +1,93 @@
+section "f12_g1_000"{
+    Character_BlinkStart(10, 1, (#1), 1);
+    Character_BlinkStart(10, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_SC202_?_1", 1, #1, 0);
+    Music_PlayBGM(0, "MN_C_10_000_D00", 127, 40);
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(10, "G1_01F", 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", #1, "F1210000_J00000");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "｛主人公｝, are you going\nhome now?\nI'm going home too.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Then let's walk home together!");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Character_Chara_GS2(10, "NON");
+    Message_Who(0);
+    Message_MsgDisp("　　　", "　　　　　　・\n　　　　　　・\n　　　　　　・");
+    Character_Chara_GS2(10, "G1_01F", 0);
+    Background_Bg_GS2("BG_SC000_WI_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    if (Parameter_GetCh1Param(10, 315) == 0){
+        Parameter_AddCh1Param(10, 315, 1);
+        Voice_PlayVoice("F1210000_J00100", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "Right, it's almost Valentine's Day.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Are you also interested in\nValentine's Day,\n｛Toudou＊＊｝?");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("F1210000_J00200", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "Idiot. That's not it.\nI get it every year.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh? Chocolates?");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("F1210000_J00300", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "Yeah.\nLike from junior female students.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "You're loved, ｛Toudou＊＊｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(...\nSo it's almost Valentine's Day.)");
+        }
+    else if (Parameter_GetCh1Param(10, 315) == 1){
+        Parameter_AddCh1Param(10, 315, 1);
+        Voice_PlayVoice("F1210000_J00400", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "Valentine's Day is close.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Last year, you received lots of\nchocolate from girls.");
+        Character_ChFace(0, 0, 9);
+        Voice_PlayVoice("F1210000_J00500", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "Chocolate is the cause of pimples...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "You don't have to eat it.");
+        Character_BlinkStart(10, 3, (#1), 1);
+        Voice_PlayVoice("F1210000_J00600", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "But since I receive them, it's bad\nif I don't eat it, isn't it?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "You really have a strong sense of\nduty, ｛Toudou＊＊｝.");
+        }
+    else if (Parameter_GetCh1Param(10, 315) == 2){
+        Parameter_AddCh1Param(10, 315, 1);
+        Voice_PlayVoice("F1210000_J00700", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "It's almost Valentine's Day.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "You received lots of chocolates from\ngirls last year too.");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("F1210000_J00800", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "There are more juniors who I can\nreceive it from now.");
+        Character_ChFace(0, 2, 0);
+        Voice_PlayVoice("F1210000_J00900", #1, "");
+        Message_Who(10);
+        Message_MsgDisp("Toudou", "Because of that, I know a lot about\nchocolate now.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Recommend me some chocolate next\ntime.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(...\nIt's the last Valentine's Day at\nhigh school.)");
+        }
+    Message_CloseMsg();
+    Music_StopBGM(0, 40);
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(10, 86, 1);
+    }

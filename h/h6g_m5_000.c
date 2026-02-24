@@ -1,0 +1,32 @@
+section "h6g_m5_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(5, "M5_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Chris＊＊｝.\nWhat's up?");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H6G05000_E00000", #1, "");
+    Message_Who(5);
+    Message_MsgDisp("Chris", "Congrats on winning the Brass Band\ncompetition～!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks!");
+    Voice_PlayVoice("H6G05000_E00100", #1, "");
+    Message_Who(5);
+    Message_MsgDisp("Chris", "You played cleanly until the end,\nand as always, you were so cool～.");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(5, 3, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H6G05000_E00200", #1, "");
+    Message_Who(5);
+    Message_MsgDisp("Chris", "It made me say \"bravo\" without\nthinking and I gave you a standing\novation.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, I appreciated that.\nThanks, ｛Chris＊＊｝!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad that the Brass Band did\ntheir best!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(5, 86, 1);
+    }

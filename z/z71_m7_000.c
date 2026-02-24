@@ -1,0 +1,72 @@
+section "z71_m7_000"{
+    Environment_PlayME(1, "SN_P_00_026_000", 127, 0);
+    Background_Bg_GS2("BG_SC301_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    if (Parameter_GetSysParam(0) == 2){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Starting today, I am a 2nd year\nstudent.\nI wonder what kind of person my\nhomeroom teacher is?)");
+        SoundEffect_PlayStream(3, "SS_T_00_093_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, they've arrived!)");
+        Character_Chara_GS2(7, "M7_01F", 0);
+        Music_PlayBGM(0, "MN_C_07_000_D00", 127, 40);
+        Voice_PlayVoice("Z7107000_G00000", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Good morning, all 2nd year students.\nStarting today, I'm your homeroom\nteacher, Wakaouji Takafumi.");
+        Voice_PlayVoice("Z7107000_G00100", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Is there anyone who's a 1st year\nstudent who entered the classroom by\nmistake?\nSensei is mistaken.");
+        SoundEffect_PlayStream(2, "SE_NS_AL_910_003000");
+        Voice_PlayVoice("Z7107000_G00200", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Well then, my best regards for your\nfirst year.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Wakaouji＊＊｝ will be my\nhomeroom teacher this year.)");
+        SoundEffect_StopStream(2, 40);
+        Environment_StopME(1, 40);
+        }
+    else if (Parameter_GetSysParam(0) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Starting today, I am a third year\nstudent.\nI wonder what kind of person my\nhomeroom teacher is?)");
+        SoundEffect_PlayStream(3, "SS_T_00_093_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, they've arrived!)");
+        Environment_StopME(1, 40);
+        Character_Chara_GS2(7, "M7_01F", 0);
+        Music_PlayBGM(0, "MN_C_07_000_D00", 127, 40);
+        Voice_PlayVoice("Z7107000_G00300", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Good morning, all 3rd year students.\nStarting today, I'm your homeroom\nteacher, Wakaouji Takafumi.");
+        Voice_PlayVoice("Z7107000_G00400", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Is there anyone who's a 2nd year\nstudent who entered the classroom by\nmistake?\nSensei didn't make a mistake.");
+        SoundEffect_PlayStream(2, "SE_NS_AL_910_003000");
+        Voice_PlayVoice("", 7, "Z7107000_G00500");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "｛主人公｝.\nWe've come together for three years.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes!");
+        Voice_PlayVoice("Z7107000_G00600", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "... Do you not regret it?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "No, don't say such a thing...");
+        SoundEffect_StopStream(2, 40);
+        SoundEffect_PlayStream(2, "SE_NS_AL_910_003000");
+        Voice_PlayVoice("Z7107000_G00700", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "This year is an important year to\nselect a course for all of you.");
+        Voice_PlayVoice("Z7107000_G00800", #1, "");
+        Message_Who(7);
+        Message_MsgDisp("Wakaouji", "Because I think it is a good\nopportunity to focus on yourselves,\nlet's think about it together.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Wakaouji＊＊｝ was my\nhomeroom teacher for all three\nyears.)");
+        SoundEffect_StopStream(2, 40);
+        Environment_StopME(1, 40);
+        }
+    Message_CloseMsg();
+    Music_StopBGM(0, 40);
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(7, 86, 1);
+    }

@@ -1,0 +1,35 @@
+section "t02_m4_210"{
+    Screen_WipeIn(2);
+    Voice_PlayVoice("FD_04_210_00000", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("？？？", "Stop!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh...");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(4, 0, (#1), 1);
+    Character_ChFace(0, 3, 0);
+    Character_ChFace(0, 4, 0);
+    Character_Chara_GS2(4, "M4_01F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Hariya＊＊｝!\nWhy are you here?");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(4, 2, (#1), 1);
+    Character_ChFace(0, 3, 0);
+    Character_ChFace(0, 4, 0);
+    Voice_PlayVoice("FD_04_210_00100", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "Who cares.... I wanna talk to you.\nIs that okay?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Y-Yeah...");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Background_Bg_GS2("BG_EX150_CO_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    System_Wait(40);
+    Environment_StopME(0, 40);
+    Message_CloseMsg();
+    Message_MessageWindow(1);
+    Message_Text_Color(16);
+    Still_Pair_Event("EV_04_15", "EV_99_00", 0, 0);
+    }

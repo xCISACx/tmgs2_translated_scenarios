@@ -1,0 +1,34 @@
+section "b10_m3_000"{
+    Background_Bg_GS2("BG_EX100_?_2", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(*Sigh*... Why did I say that?)");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Ugh, I hate myself...)");
+    SoundEffect_PlaySE(19, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh? Who's calling me?");
+    SoundEffect_StopSE(19, 0);
+    SoundEffect_PlaySE(20, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Hello.");
+    Voice_PlayVoice("B1003000_C00000", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "It's Hikami.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh? ｛Hikami＊＊｝?");
+    Voice_PlayVoice("B1003000_C00100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "...\nI think that everyone has a time\nwhere their thoughts and actions\naren't in unison.");
+    Voice_PlayVoice("B1003000_C00200", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "... So do not worry.\nThat is all I wanted to say.");
+    SoundEffect_PlaySE(23, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Did ｛Hikami＊＊｝ call to\ncheck up on me...?)");
+    SoundEffect_StopSE(23, 0);
+    SoundEffect_PlaySE(20, 127);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

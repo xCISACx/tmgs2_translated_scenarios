@@ -1,0 +1,30 @@
+section "q15_m2_000"{
+    Character_ChFace(0, 0, 11);
+    Character_Chara_GS2(2, "M2_01F", 0);
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Shiba＊＊｝.\nHey, would you like to visit places\ntogether?");
+    Voice_PlayVoice("FD_02_050_00000", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "With me? Is that okay?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah...");
+    Character_ChFace(0, 0, 0);
+    Voice_PlayVoice("FD_02_050_00100", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "... I don't see why not.\nOkay, let's go.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thank you!");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_GlobalWork(0, 2, 1);
+    System_GlobalWork(2, 2, 2);
+    System_Call_GS2("Q16", "M2", 0);
+    System_Call_GS2("Q17", "M2", 0);
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(2, 86, 1);
+    }

@@ -1,0 +1,90 @@
+section "i65_m4_000"{
+    Background_Bg_GS2("BG_AR600_?_0", 1, #1, 0);
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(4, "M4_??F", 0);
+    Screen_WipeIn(2);
+    if (Parameter_GetCh1Param(4, 130) <= 2){
+        Voice_PlayVoice("", 4, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Hariya＊＊｝.");
+        Character_ChFace(0, 2, 3);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I6504000_D00000", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "So it was you. You work here?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah. Ah, welcome!");
+        Character_ChFace(0, 0, 11);
+        Character_BlinkStart(4, 2, (#1));
+        Voice_PlayVoice("I6504000_D00100", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Oh, a customer. Later.");
+        Character_Chara_GS2(4, "NON");
+        }
+    else if (Parameter_GetCh1Param(4, 130) == 3){
+        Voice_PlayVoice("I6504000_D00200", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Yo.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh, ｛Hariya＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("I6504000_D00300", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "I came here because I saw you....\nThis job looks quite average, yet\ntough.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah. We're quite busy.");
+        Character_ChFace(0, 2, 4);
+        Character_BlinkStart(4, 2, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I6504000_D00400", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "You're busy?\nYou look like you're free right now.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I-it just happens to be empty right\nnow.");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(4, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("I6504000_D00500", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "\"Just happens to be\"...\nAnyway, I should go. Do your best～.");
+        Character_Chara_GS2(4, "NON");
+        }
+    else {
+        Voice_PlayVoice("I6504000_D00600", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Yo.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Hariya＊＊｝. Yo.\nWhat are you doing today?");
+        Character_ChFace(0, 0, 11);
+        Character_BlinkStart(4, 2, (#1));
+        Character_ChFace(0, 4, 1);
+        Character_ChFace(0, 3, 1);
+        Voice_PlayVoice("I6504000_D00700", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "I came here to see you... Not!\nI came here for... right, a preview!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "A preview? Of what?");
+        Character_ChFace(0, 0, 8);
+        Character_BlinkStart(4, 3, (#1));
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("I6504000_D00800", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Huh!? Uhh...\nfor when I get a license for a car\nor motorbike...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Hmm... I see.");
+        Character_ChFace(0, 0, 8);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("I6504000_D00900", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "... Don't you try and understand!\nI'm leaving!");
+        Character_Chara_GS2(4, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(He left...\nDid I say something strange?)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

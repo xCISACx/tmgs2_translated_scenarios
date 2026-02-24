@@ -1,0 +1,170 @@
+section "t02_m3_011"{
+    Background_Bg_GS2("BG_BK000_CO_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Screen_WipeOut(3);
+    Screen_ClearScreen();
+    System_GlobalWork(3, 0, 0);
+    System_Wait(90);
+    Background_Bg_GS2("BG_EX110_SP_1", #1, #1, 0);
+    Screen_WipeIn(3);
+    Message_CloseMsg();
+    Message_MessageWindow(1);
+    Message_Text_Color(16);
+    Message_TextSpeed(8);
+    Message_DispMsg(1);
+    if (System_GlobalWork(2, 1) == 1){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Saeki＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 2){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Shiba＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 4){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Hariya＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 5){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Chris＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 6){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Amachi＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 7){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Wakaouji＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 8){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Masaki＊＊｝...)");
+        }
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(But as expected, I...)");
+    Voice_PlayVoice("", 3, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "｛主人公｝.");
+    Character_ChFace(0, 0, 10);
+    Character_ChFace(0, 4, 1);
+    Character_Chara_GS2(3, "M3_01F", 0);
+    Music_PlayBGM(0, "MN_C_03_090_D00", 127, 40);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh!? ... Ah, ｛Hikami＊＊｝!");
+    Character_ChFace(0, 2, 2);
+    Character_BlinkStart(3, 3, (#1));
+    Character_ChFace(0, 4, 0);
+    Voice_PlayVoice("T0203010_C00100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "I panicked because I could not find\nyou at school.\nYou came all the way out here.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "You've been looking for me,\n｛Hikami＊＊｝...?");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(3, 2, (#1));
+    Character_ChFace(0, 3, 5);
+    Voice_PlayVoice("T0203010_C00200", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Yes, I have been.\nI cannot go home without expressing\nmy determination.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Expressing your determination?");
+    Character_BlinkStart(3, 0, (#1));
+    Voice_PlayVoice("T0203010_C00300", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Will you listen to this speech of\nmine?\nI will only be performing once.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah... Let me hear it.");
+    Character_ChFace(0, 2, 1);
+    Character_BlinkStart(3, 3, (#1));
+    Character_ChFace(0, 3, 4);
+    Voice_PlayVoice("T0203010_C00400", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "......\nHikami Itaru announces his candidacy\nto be your boyfriend.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "!!");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(3, 2, (#1));
+    Character_ChFace(0, 3, 5);
+    Voice_PlayVoice("T0203010_C00500", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Until now, I believed that as long\nas I improved the school, I would\nnot regret it at all.");
+    Character_BlinkStart(3, 3, (#1));
+    Voice_PlayVoice("T0203010_C00600", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Because I had thought that if I\nchanged the borders, the people\ninside the school would also\nchange...");
+    Character_ChFace(0, 0, 3);
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("T0203010_C00700", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "But I was wrong.\nThe order in which I did things was\nwrong.\nAdjustments can be made later.");
+    Character_ChFace(0, 0, 3);
+    Voice_PlayVoice("T0203010_C00800", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Rather than forcing change, the\npower to change yourself is much\nstronger.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", ".........");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("T0203010_C00900", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "That is what you taught me.\nWhat had changed me was not the\nincident at the stairs.");
+    Voice_PlayVoice("T0203010_C01000", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "What changed was me.\nI began thinking that I wanted to\nlaugh with you.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Hikami＊＊｝...");
+    Character_ChFace(0, 2, 2);
+    Character_BlinkStart(3, 3, (#1));
+    Character_ChFace(0, 3, 1);
+    Voice_PlayVoice("T0203010_C01100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Severing these feelings because of\ngraduation is something that I\ncannot do.");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(3, 0, (#1));
+    Voice_PlayVoice("", 3, "T0203010_C01200");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "｛主人公｝.\nI want you to be my girlfriend.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Of course...!\nPlease continue to treat me well.");
+    Character_ChFace(0, 0, 10);
+    Character_ChFace(0, 2, 4);
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("T0203010_C01300", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "... Thank you! For some reason...\nThe words are not coming to me.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Haha.\nBut you've talked quite a lot\nalready.");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("T0203010_C01400", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", ".........");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "?");
+    Character_ChFace(0, 0, 6);
+    Character_ChFace(0, 4, 0);
+    Voice_PlayVoice("T0203010_C01500", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Then I will only say one more\nthing....\nClose your eyes, and listen.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh...? O-Okay.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Character_Chara_GS2(3, "NON");
+    Voice_PlayVoice("T0203010_C01600", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "I like you...");
+    Music_StopBGM(0, 40);
+    Message_CloseMsg();
+    Still_Event("EV_03_23", #1, 1, 60);
+    Screen_WipeIn(2);
+    System_Wait(120);
+    Still_Event("EV_03_23", #1, 0, 60, 0, 1);
+    System_Wait(120);
+    Screen_WipeOut(3);
+    System_GlobalWork(3, 0, 30);
+    Screen_ClearScreen();
+    Message_TextSpeed(#1);
+    Background_Bg_GS2("BG_BK000_CO_0", #1, #1, 0);
+    Screen_WipeIn(3);
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

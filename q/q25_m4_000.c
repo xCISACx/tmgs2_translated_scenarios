@@ -1,0 +1,72 @@
+section "q25_m4_000"{
+    System_Wait(30);
+    SoundEffect_PlayStream(3, "SS_DSE_223_000");
+    if ((Parameter_GetCh1Param(4, 130) <= 2) && (Parameter_GetPl1Param(312) == 4)){
+        Background_Bg_GS2("BG_SCB31_LI_2", #1, #1, 0);
+        Screen_WipeIn(2);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hariya＊＊｝!");
+        Character_ChFace(0, 0, 11);
+        Character_ChFace(0, 4, 1);
+        Character_Chara_GS2(4, "M4_08F", 0);
+        Voice_PlayVoice("Q2604000_D00400", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Wah!! Of all people-- You again!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "What do you mean, \"of all people\"?");
+        Character_ChFace(0, 0, 8);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("Q2604000_D00500", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Just what it means.\nY-You're getting too close!!");
+        Character_ChFace(0, 0, 9);
+        Character_BlinkStart(4, 3, (#1));
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("Q2604000_D00600", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Why for the second time? *Sigh*...");
+        Character_ChFace(0, 0, 8);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("Q2604000_D00700", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "... Oi, hey! I said don't come here!\nAh, whatever. Don't follow me!");
+        Character_Chara_GS2(4, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Hmm, I wonder what's wrong with\n｛Hariya＊＊｝...)");
+        }
+    else {
+        Character_ChFace(0, 0, 11);
+        Character_ChFace(0, 4, 1);
+        Character_Chara_GS2(4, "M4_08F", 0);
+        Background_Bg_GS2("BG_SCB31_LI_2", #1, #1, 0);
+        Screen_WipeIn(2);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hariya＊＊｝!");
+        Voice_PlayVoice("Q2604000_D00000", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "T-This is bad!");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("Q2604000_D00100", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "I started sweating during the pillow\nfight.\nI surely didn't think someone would\ncome in...!");
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(4, 2, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("Q2604000_D00200", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Or rather, how should I say this...");
+        Character_ChFace(0, 0, 8);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("Q2604000_D00300", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Anyway, forget it!\nRight here, right now!\nDo you understand!?");
+        Character_Chara_GS2(4, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Why is he fretting?\n｛Hariya＊＊｝...)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

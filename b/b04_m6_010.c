@@ -1,0 +1,250 @@
+section "b04_m6_010"{
+    int var0;
+    int var1 = System_Randam(0, 100);
+    if (var1 <= 50){
+        Date_GetDateOption(2, 0);
+        }
+    else {
+        Date_GetDateOption(1, 0);
+        }
+    if (Date_GetDateOption(1, 0) == 0){
+        Character_Chara_GS2(6, "M6_??F", 0, 1, 0);
+        var0 = System_Randam(0, 100);
+        if (var0 <= 50){
+            Background_Bg_GS2("BG_WFS00_?_0", 1, #1, 0);
+            Screen_WipeIn(2);
+            Music_PlayBGM(0, "MN_B_WF_S00_000", 127, 40);
+            }
+        else if (var0 >= 51){
+            Background_Bg_GS2("BG_WFS10_?_0", 1, #1, 0);
+            Screen_WipeIn(2);
+            Music_PlayBGM(0, "MN_B_WF_S10_000", 127, 40);
+            }
+        if (Parameter_GetCh1Param(6, 130) <= 2){
+            Voice_PlayVoice("B0406010_F00000", #1, "");
+            Message_Who(6);
+            Message_MsgDisp("Amachi", "This seems to suit you, Senpai.");
+            }
+        else {
+            Voice_PlayVoice("B0406010_F00100", #1, "");
+            Message_Who(6);
+            Message_MsgDisp("Amachi", "Doesn't this suit you?");
+            }
+        Message_MsgSel("Really? I'll try it out!", "What should I do? I'm not sure...", "No, I'll pass!");
+        switch (Message_TextSelect()){
+            case 0:
+            Date_InData_Date(124, 4);
+            Date_InData_Date(321, 1);
+            if (Parameter_GetCh1Param(6, 130) <= 2){
+                Character_Chara_GS2(6, "M6_??F", 0, 1, 1);
+                Character_ChFace(1, 0, 10);
+                Message_PauseSkinship();
+                Voice_PlayVoice("B0406010_F00200", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "Really? I'm very glad.");
+                Message_ResumeSkinship();
+                Message_SkinshipSet(1);
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Yes! I made a perfect impression!!)");
+                Message_SkinshipSet(0);
+                }
+            else {
+                Character_Chara_GS2(6, "M6_??F", 0, 1, 1);
+                Character_ChFace(1, 2, 0);
+                Character_BlinkStart(6, 3, (#1), 2);
+                Character_ChFace(1, 3, 3);
+                Message_PauseSkinship();
+                Voice_PlayVoice("B0406010_F00300", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "Yes, it does.\nIt absolutely suits you!");
+                Message_ResumeSkinship();
+                Message_SkinshipSet(1);
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Yes! I made a perfect impression!!)");
+                Message_SkinshipSet(0);
+                }
+            break ;
+            case 1:
+            Date_InData_Date(124, 2);
+            Date_InData_Date(321, 2);
+            if (Parameter_GetCh1Param(6, 130) <= 2){
+                Character_Chara_GS2(6, "M6_??F", 0, 1, 1);
+                Character_ChFace(1, 2, 2);
+                Character_ChFace(1, 3, 5);
+                Message_PauseSkinship();
+                Voice_PlayVoice("B0406010_F00400", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "I'm a little troubled.\nPlease choose carefully.");
+                Message_ResumeSkinship();
+                Message_SkinshipSet(1);
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Uhh, I made an okay impression.)");
+                Message_SkinshipSet(0);
+                }
+            else {
+                Character_Chara_GS2(6, "M6_??F", 0, 1, 1);
+                Character_ChFace(1, 2, 2);
+                Character_ChFace(1, 3, 0);
+                Message_PauseSkinship();
+                Voice_PlayVoice("B0406010_F00500", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "I think that it looks good...\nMaybe you can try it next time?");
+                Message_ResumeSkinship();
+                Message_SkinshipSet(1);
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Uhh, I made an okay impression.)");
+                Message_SkinshipSet(0);
+                }
+            break ;
+            case 2:
+            Date_InData_Date(124, 0);
+            Date_InData_Date(321, 3);
+            if (Parameter_GetCh1Param(6, 130) <= 2){
+                Character_ChFace(0, 2, 2);
+                Character_BlinkStart(6, 2, (#1));
+                Character_ChFace(0, 3, 1);
+                Voice_PlayVoice("B0406010_F00600", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "Is that so...\nI thought it was quite good,\nthough...");
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Argh～ Damn, I'm such an idiot!\nI made the worst impression～)");
+                }
+            else {
+                Character_ChFace(0, 2, 1);
+                Character_BlinkStart(6, 2, (#1));
+                Character_ChFace(0, 3, 2);
+                Voice_PlayVoice("B0406010_F00700", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "Ugh... All right then.");
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Argh～ Damn, I'm such an idiot!\nI made the worst impression.)");
+                }
+            break ;
+            }
+        }
+    else {
+        if (Parameter_GetCh1Param(6, 130) <= 2){
+            Character_Chara_GS2(6, "M6_??F", 0, 1, 0);
+            Character_ChFace(0, 0, 10);
+            Character_BlinkStart(6, 2, (#1));
+            var0 = System_Randam(0, 100);
+            if (var0 <= 50){
+                Background_Bg_GS2("BG_WFS00_?_0", 1, #1, 0);
+                Screen_WipeIn(2);
+                Music_PlayBGM(0, "MN_B_WF_S00_000", 127, 40);
+                }
+            else if (var0 >= 51){
+                Background_Bg_GS2("BG_WFS10_?_0", 1, #1, 0);
+                Screen_WipeIn(2);
+                Music_PlayBGM(0, "MN_B_WF_S10_000", 127, 40);
+                }
+            Voice_PlayVoice("B0406010_F00800", #1, "");
+            Message_Who(6);
+            Message_MsgDisp("Amachi", "How about this?");
+            }
+        else {
+            Character_Chara_GS2(6, "M6_??F", 0, 1, 0);
+            Character_ChFace(0, 2, 5);
+            Character_ChFace(0, 3, 3);
+            Background_Bg_GS2("BG_WFS00_?_0", 1, #1, 0);
+            Screen_WipeIn(2);
+            Music_PlayBGM(0, "MN_B_WF_S00_000", 127, 40);
+            Voice_PlayVoice("B0406010_F00900", #1, "");
+            Message_Who(6);
+            Message_MsgDisp("Amachi", "Hey, how about this?");
+            }
+        Message_MsgSel("Really? I'll try it out!", "What should I do? I'm not sure...", "No, I'll pass!");
+        switch (Message_TextSelect()){
+            case 0:
+            Date_InData_Date(124, 1);
+            Date_InData_Date(321, 3);
+            if (Parameter_GetCh1Param(6, 130) <= 2){
+                Character_ChFace(0, 0, 9);
+                Voice_PlayVoice("B0406010_F01000", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "Oh, I'm sorry.\nIt was intentionally a joke, though.");
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Ugh... I made a bad impression.)");
+                }
+            else {
+                Character_ChFace(0, 0, 11);
+                Voice_PlayVoice("B0406010_F01100", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "Just a minute! It was a joke.\nDid you really take it seriously?");
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Ugh... I made a bad impression.)");
+                }
+            break ;
+            case 1:
+            Date_InData_Date(124, 2);
+            Date_InData_Date(321, 2);
+            if (Parameter_GetCh1Param(6, 130) <= 2){
+                Character_Chara_GS2(6, "M6_??F", 0, 1, 1);
+                Character_ChFace(1, 2, 2);
+                Character_BlinkStart(6, 2, (#1), 2);
+                Character_ChFace(1, 3, 0);
+                Message_PauseSkinship();
+                Voice_PlayVoice("B0406010_F01200", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "... It's a joke.\nBut it does suit you more.");
+                Message_ResumeSkinship();
+                Message_SkinshipSet(1);
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Uhh, I made an okay impression.)");
+                Message_SkinshipSet(0);
+                }
+            else {
+                Character_Chara_GS2(6, "M6_??F", 0, 1, 1);
+                Character_ChFace(1, 2, 4);
+                Character_BlinkStart(6, 2, (#1), 2);
+                Character_ChFace(1, 3, 2);
+                Message_PauseSkinship();
+                Voice_PlayVoice("B0406010_F01300", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "It was a joke.\nYou shouldn't be confused.");
+                Message_ResumeSkinship();
+                Message_SkinshipSet(1);
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Uhh, I made an okay impression.)");
+                Message_SkinshipSet(0);
+                }
+            break ;
+            case 2:
+            Date_InData_Date(124, 4);
+            Date_InData_Date(321, 1);
+            if (Parameter_GetCh1Param(6, 130) <= 2){
+                Character_Chara_GS2(6, "M6_??F", 0, 1, 1);
+                Character_ChFace(1, 0, 3);
+                Character_BlinkStart(6, 3, (#1), 2);
+                Message_PauseSkinship();
+                Voice_PlayVoice("B0406010_F01400", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "I'm sorry. It was a little joke.");
+                Message_ResumeSkinship();
+                Message_SkinshipSet(1);
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Yes! I made a perfect impression!!)");
+                Message_SkinshipSet(0);
+                }
+            else {
+                Character_Chara_GS2(6, "M6_??F", 0, 1, 1);
+                Character_ChFace(1, 0, 10);
+                Character_BlinkStart(6, 3, (#1), 2);
+                Message_PauseSkinship();
+                Voice_PlayVoice("B0406010_F01500", #1, "");
+                Message_Who(6);
+                Message_MsgDisp("Amachi", "Rats.\nAs expected, you didn't fall for the\njoke.");
+                Message_ResumeSkinship();
+                Message_SkinshipSet(1);
+                Message_Who(0);
+                Message_MsgDisp("主人公", "(Yes! I made a perfect impression!!)");
+                Message_SkinshipSet(0);
+                }
+            break ;
+            }
+        }
+    Message_CloseMsg();
+    Music_StopBGM(0, 40);
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

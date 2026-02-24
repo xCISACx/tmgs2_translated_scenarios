@@ -1,0 +1,34 @@
+section "d01_ma_012"{
+    Background_Bg_GS2("BG_SC301_CO_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(7, "M7_01F", 0);
+    Voice_PlayVoice("NS_07_000_04700", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Everyone, I have an unfortunate\nannouncement to make.");
+    Voice_PlayVoice("NS_07_000_04800", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "It was a short time, but our friend\nKomori-kun has transferred schools.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Now that you mention it!)");
+    Character_BlinkStart(7, 2, (#1));
+    Voice_PlayVoice("NS_07_000_04900", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Komori-kun is in a delicate\nsituation.\nBut it's not something that he\nwanted.");
+    Voice_PlayVoice("NS_07_000_05000", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Of course, the actual person must\nput in effort.\nBut he just didn't know how to.");
+    Voice_PlayVoice("NS_07_000_05100", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Sometimes if you put in effort,\nthings still don't go well.\nWhat should such people do?");
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 5);
+    Voice_PlayVoice("NS_07_000_05200", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "It was a short time, but Sensei will\nremember Komori-kun.\nI won't forget.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Komori-kun was always absent, and\nnow he's transferred...)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

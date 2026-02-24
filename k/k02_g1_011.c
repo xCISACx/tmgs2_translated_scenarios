@@ -1,0 +1,30 @@
+section "k02_g1_011"{
+    Character_BlinkStart(10, 1, (#1), 1);
+    Character_BlinkStart(10, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Character_ChFace(0, 0, 3);
+    Voice_PlayVoice("K0210000_J02000", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "Right... I almost forgot. Here.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh, what is this?");
+    Character_ChFace(0, 2, 2);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("K0210000_J02100", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "It sounds like you, forgetting your\nown birthday.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh... you remembered. Thanks!");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("K0210000_J02200", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "Hah...\nIt feels good to be thanked, every\nonce in a while.\nLater.");
+    Character_Chara_GS2(10, "NON");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad...\nI received a present from\n｛Toudou＊＊｝!)");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_Call_GS2("K02", "G1", 20);
+    }

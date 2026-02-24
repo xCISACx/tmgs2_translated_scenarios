@@ -1,0 +1,30 @@
+section "h6g_m2_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(2, "M2_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Shiba＊＊｝!\nWhat's up?");
+    Voice_PlayVoice("H6G02000_B00000", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "...\nI heard the Brass Band won a\ncompetition.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Did you come here just for that?");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("H6G02000_B00100", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "No, I didn't.");
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H6G02000_B00200", 2, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "Good work, ｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks, ｛Shiba＊＊｝!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm so happy!\nI'm glad I joined the Brass Band!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(2, 86, 1);
+    }

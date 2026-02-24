@@ -1,0 +1,73 @@
+section "q14_g3_000"{
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "｛主人公｝!");
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(12, "G3_01F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Oh, ｛Nishimoto＊＊｝.");
+    Character_ChFace(0, 0, 11);
+    Voice_PlayVoice("Q0512000_L00000", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Any plans for the day?");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("Q0512000_L00100", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Hey, would you mind joining me on a\n\"Kyoto Mystery Tour\" field trip?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh, what's that?");
+    Character_ChFace(0, 0, 10);
+    Character_BlinkStart(12, 3, (#1));
+    Voice_PlayVoice("Q0512000_L00200", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "A title I made up for free day.\nSounds suspenseful, right?");
+    Message_MsgSel("Yeah, I'll go!", "Umm... I'm sorry.");
+    switch (Message_TextSelect()){
+        case 0:
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("Q0512000_L00300", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Great, sounds good!\nLet's go to the scene of the crime!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Whaaat?");
+        Character_ChFace(0, 2, 4);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("Q0512000_L00400", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "If they're making a two hour drama,\nthere's definitely going to be a\nmurder scene, right?\nIt's in the atmosphere!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Nishimoto＊＊｝ really likes\nbeing an enthusiast.)");
+        Message_CloseMsg();
+        Screen_WipeOut(2);
+        Screen_ClearScreen();
+        System_GlobalWork(0, 2, 1);
+        System_GlobalWork(2, 2, 12);
+        System_Call_GS2("Q16", "G3", 0);
+        System_Call_GS2("Q17", "G3", 0);
+        break ;
+        case 1:
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(12, 0, (#1));
+        Character_ChFace(0, 3, 1);
+        Voice_PlayVoice("Q0512000_L00500", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "What? That's just cold...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I'm sorry.");
+        Character_ChFace(0, 0, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("Q0512000_L00600", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "No problem.\nI'll just go immerse in mystery by\nmyself.\nI'm aiming for the edge of the\ncliff!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(She asked me to go with her...\nI wonder if I let her down...)");
+        System_GlobalWork(3, 0, 1);
+        break ;
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(12, 86, 1);
+    }

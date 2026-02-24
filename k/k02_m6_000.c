@@ -1,0 +1,90 @@
+section "k02_m6_000"{
+    Character_BlinkStart(6, 1, (#1), 1);
+    Character_BlinkStart(6, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_HO100_CO_2", #1, #1, 0);
+    Screen_WipeIn(2);
+    SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+    if (Parameter_ChkPlayer(6) == 1){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Character_Chara_GS2(6, "M6_??F", 0);
+        Music_PlayBGM(0, "MN_C_06_004_D00", 127, 40);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh, ｛Amachi＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0206000_F00000", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Hehe, here! It's a birthday present!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "So you remembered!");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("K0206000_F00100", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Well, yeah.\nYou're a senior that has helped\nme...");
+        Voice_PlayVoice("K0206000_F00200", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Since I gave you a present, treasure\nit.\nLater!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(6, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 0){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Character_Chara_GS2(6, "M6_??F", 0);
+        Music_PlayBGM(0, "MN_C_06_004_D00", 127, 40);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh, ｛Amachi＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0206000_F00000", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Hehe, here! It's a birthday present!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "So you remembered!");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("K0206000_F00100", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Well, yeah.\nYou're a senior that has helped\nme...");
+        Voice_PlayVoice("K0206000_F00200", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Since I gave you a present, treasure\nit.\nLater!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(6, "NON");
+        }
+    else {
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes,");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Character_Chara_GS2(6, "M6_??F", 0);
+        Music_PlayBGM(0, "MN_C_06_004_D00", 127, 40);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh, ｛Amachi＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0206000_F00000", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Hehe, here! It's a birthday present!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "So you remembered!");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("K0206000_F00200", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Since I gave you a present, treasure\nit.\nLater!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(6, "NON");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(6, 86, 1);
+    System_Call_GS2("K02", "M6", 20);
+    Parameter_InPl1Param(336, #1);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

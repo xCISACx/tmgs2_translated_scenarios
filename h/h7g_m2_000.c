@@ -1,0 +1,32 @@
+section "h7g_m2_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(2, "M2_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Shiba＊＊｝!\nWhat's up?");
+    Voice_PlayVoice("H8G02000_B00000", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "I came here because I heard that you\nwon first place in a design contest.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, that's right...\nSo you came here just for that?");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("H8G02000_B00100", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "I didn't know you had that kinda\ntalent.\nShow me your work next time.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Sure, of course!");
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H8G02000_B00200", 2, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "Congrats, ｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks, ｛Shiba＊＊｝!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm so happy!\nI'm glad that I tried my best in the\nHandicrafts Club...)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(2, 86, 1);
+    }

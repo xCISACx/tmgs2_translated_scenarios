@@ -1,0 +1,36 @@
+section "b04_m7_053"{
+    Character_ChFace(0, 0, 3);
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("", 7, "B0407053_G00000");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "｛主人公｝, what is it\nthat those children are throwing\naround?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Oh, that is a water balloon.\n｛Wakaouji＊＊｝, have you seen\none before?");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("B0407053_G00100", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Yes. They look really happy...\nI will buy one, too!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Wakaouji＊＊｝, please\nwait!");
+    Character_Chara_GS2(7, "M7_06F", 0);
+    Character_ChFace(0, 2, 2);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("B0407053_G00200", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "...\nI'm sorry, I am acting like a child.\nLet's go.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Character_Chara_GS2(7, "M7_06F", 0, 1, 1, 33);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_WF500_LI_2", #1, #1, 0);
+    Screen_WipeIn(2);
+    Character_ChFace(1, 2, 0);
+    Character_ChFace(1, 3, 5);
+    Voice_PlayVoice("B0407053_G00300", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "The fireworks are about to begin.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_Call_GS2("B90", "PL", 0);
+    }

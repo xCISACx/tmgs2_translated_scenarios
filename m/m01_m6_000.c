@@ -1,0 +1,93 @@
+section "m01_m6_000"{
+    int var0 = Parameter_GetPl1Param(12);
+    switch (var0){
+        case 0:
+        Background_Bg_GS2("BG_HO200_?_1", 1, #1, 0);
+        break ;
+        case 1:
+        Background_Bg_GS2("BG_HO210_?_1", 1, #1, 0);
+        break ;
+        case 2:
+        Background_Bg_GS2("BG_HO220_?_1", 1, #1, 0);
+        break ;
+        case 3:
+        Background_Bg_GS2("BG_HO230_?_1", 1, #1, 0);
+        break ;
+        }
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Argh～, I'm bored...\nI'm bored of just sleeping...)");
+    SoundEffect_PlayStream(2, "SS_T_00_056_M00");
+    System_Wait(90);
+    SoundEffect_PlayStream(2, "SS_DSE_037_000");
+    Music_PlayBGM(0, "MN_C_06_003_D01", 127, 40);
+    Character_ChFace(0, 0, 6);
+    Character_ChFace(0, 4, 0);
+    Character_Chara_GS2(6, "M6_??F", 0);
+    Voice_PlayVoice("", 6, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Wah, ｛Amachi＊＊｝!\nW-Why are you here!?");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(6, 3, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("M0106000_F00000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Ahahaha, did I surprise you?\nI thought about scaring you!");
+    Character_BlinkStart(6, 0, (#1));
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("M0106000_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Huh...\nI thought your room would be\nmessier, but it's quite clean.\nWell done.");
+    Character_ChFace(0, 2, 3);
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("M0106000_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "But who cares about that?\nIt was stupid of you to force\nyourself to the point you'd faint.\nIt sounds like something you'd do.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ugh...");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("M0106000_F00300", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Well, get well soon and come back to\nschool.\nIt's boring without you, Senpai.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Amachi＊＊｝...\nYeah, I'll do my best.");
+    Character_ChFace(0, 2, 4);
+    Character_BlinkStart(6, 2, (#1));
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("M0106000_F00400", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "You'll do your best? ...\nSenpai, you tried so hard that you\nfainted, right?\nDid you forget?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, right...");
+    Character_BlinkStart(6, 0, (#1));
+    Character_ChFace(0, 2, 3);
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("M0106000_F00500", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "That's your good perk, but try not\nto force yourself.");
+    Character_ChFace(0, 0, 9);
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("M0106000_F00600", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Also...\nI was really worried about you.\nI don't like worrying this much, you\nknow?");
+    Character_ChFace(0, 2, 4);
+    Character_BlinkStart(6, 2, (#1));
+    Character_ChFace(0, 3, 5);
+    Voice_PlayVoice("M0106000_F00700", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Ah... I should go home now.\nI don't wanna get infected. Later～!");
+    Music_StopBGM(0, 40);
+    Character_Chara_GS2(6, "NON");
+    SoundEffect_PlayStream(2, "SS_DSE_036_000");
+    System_Wait(90);
+    SoundEffect_PlayStream(2, "SS_DSE_037_000");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(He said what he wanted to say...\nThanks to ｛Amachi＊＊｝, I\nfeel better.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(6, 86, 1);
+    }

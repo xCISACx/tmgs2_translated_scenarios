@@ -1,0 +1,30 @@
+section "h5g_m2_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(2, "M2_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Shiba＊＊｝.\nWhat's up?");
+    Voice_PlayVoice("H5G02000_B00000", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "...\nI heard you won a prize for an art\ncompetition?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "News travels fast.\nYeah, but it's not a big deal.");
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H5G02000_B00100", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "Paintings that aren't \"big deals\"\ndon't win prizes, right?");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("H5G02000_B00200", 2, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "Let me see it next time....\nCongrats, ｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm so happy!\nI'm glad that I did my best to\ncomplete the drawing!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(2, 86, 1);
+    }

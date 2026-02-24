@@ -1,0 +1,73 @@
+section "d01_ma_004"{
+    int var0 = 0;
+    Background_Bg_GS2("BG_EX190_CO_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+    System_Wait(120);
+    SoundEffect_PlayStream(3, "SEQ_SE_EV_144");
+    Character_ChFace(0, 0, 0);
+    Character_BlinkStart(25, 2, (#1));
+    Character_Chara_GS2(25, "MA_??F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, Komori-kun!\nLet's go to school together!");
+    Voice_PlayVoice("NS_91_000_01900", #1, "");
+    Message_Who(25);
+    Message_MsgDisp("Komori", "... Sunday.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Sunday?");
+    Voice_PlayVoice("NS_91_000_02000", #1, "");
+    Message_Who(25);
+    Message_MsgDisp("Komori", "There's an extra-curricular class\non.\nSensei called me.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Huh?\n｛Wakaouji＊＊｝ didn't say\nanything like that in class\nthough...)");
+    Voice_PlayVoice("NS_91_000_02100", #1, "");
+    Message_Who(25);
+    Message_MsgDisp("Komori", "Are you going?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Uhh...");
+    if (Parameter_GetPl1Param(20) < 180){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah, I am going.\nYou should come too, Komori-kun!");
+        Character_ChFace(0, 0, 9);
+        Voice_PlayVoice("NS_91_000_02200", #1, "");
+        Message_Who(25);
+        Message_MsgDisp("Komori", "I don't know.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Really...");
+        Character_Chara_GS2(25, "NON");
+        SoundEffect_PlayStream(3, "SEQ_SE_EV_145");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Hmm, but he didn't say \"I'm not\ngoing\", right?)");
+        System_GlobalWork(18, 0, 9);
+        }
+    else {
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Maybe I should pass then.");
+        Character_ChFace(0, 0, 8);
+        Character_BlinkStart(25, 2, (#1));
+        Voice_PlayVoice("NS_91_000_02300", #1, "");
+        Message_Who(25);
+        Message_MsgDisp("Komori", "You have to go.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh!?");
+        Voice_PlayVoice("NS_91_000_02400", #1, "");
+        Message_Who(25);
+        Message_MsgDisp("Komori", "Or it will be rude to Sensei.\nHe's such a good teacher, too.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Y-Yeah... But?");
+        Character_ChFace(0, 0, 9);
+        Voice_PlayVoice("NS_91_000_02500", #1, "");
+        Message_Who(25);
+        Message_MsgDisp("Komori", "Don't worry.\nI won't go anymore, then.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "... Eh?");
+        Character_Chara_GS2(25, "NON");
+        SoundEffect_PlayStream(3, "SEQ_SE_EV_145");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I didn't mean to...\nI have to consult with\n｛Wakaouji＊＊｝.)");
+        System_GlobalWork(18, 0, 10);
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

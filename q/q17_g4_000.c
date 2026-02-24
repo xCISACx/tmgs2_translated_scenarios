@@ -1,0 +1,35 @@
+section "q17_g4_000"{
+    Character_ChFace(0, 2, 4);
+    Character_BlinkStart(13, 3, (#1));
+    Character_ChFace(0, 3, 3);
+    Character_Chara_GS2(13, "G4_01F", 0);
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("Q0813000_M00000", #1, "");
+    Message_Who(13);
+    Message_MsgDisp("Mizushima", "Hah... Satisfaction.\nWas the weather okay while we went\nto different places to visit?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, I enjoyed the Kyoto feeling.");
+    Character_BlinkStart(13, 0, (#1));
+    Voice_PlayVoice("Q0813000_M00100", #1, "");
+    Message_Who(13);
+    Message_MsgDisp("Mizushima", "Hey, hey, are you free the day after\ntomorrow?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Of course!\nLet's go around visiting places\ntogether!");
+    Character_ChFace(0, 0, 10);
+    Character_BlinkStart(13, 2, (#1));
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("Q0813000_M00200", #1, "");
+    Message_Who(13);
+    Message_MsgDisp("Mizushima", "Okay～▼ *Giggles*");
+    Character_ChFace(0, 0, 10);
+    Character_BlinkStart(13, 3, (#1));
+    Voice_PlayVoice("Q0813000_M00300", #1, "");
+    Message_Who(13);
+    Message_MsgDisp("Mizushima", "Then we'll meet here the day after\ntomorrow.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Okay!");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

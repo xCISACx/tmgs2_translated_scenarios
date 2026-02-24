@@ -1,0 +1,36 @@
+section "g03_g3_000"{
+    Background_Bg_GS2("BG_SC202_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("G0312000_L00000", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "... Hey, ｛主人公｝.");
+    Character_ChFace(0, 0, 8);
+    Character_Chara_GS2(12, "G3_01F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Oh, ｛Nishimoto＊＊｝.....\nWhat's wrong?");
+    Voice_PlayVoice("G0312000_L00100", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Why can't you do it? ...\nYou're hiding something, aren't you?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh?");
+    Character_BlinkStart(12, 2, (#1));
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("G0312000_L00200", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "... I'm a fool.\nTrust what I'm about to say...");
+    Character_BlinkStart(12, 3, (#1));
+    Voice_PlayVoice("G0312000_L00300", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "You're so dumb! I will never...");
+    Character_BlinkStart(12, 0, (#1));
+    Voice_PlayVoice("G0312000_L00400", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "I won't care about you any more!\nJust do whatever you wish to do!\nGoodbye!");
+    Character_Chara_GS2(12, "NON");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(...............\n｛Nishimoto＊＊｝.....)");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(12, 86, 1);
+    }

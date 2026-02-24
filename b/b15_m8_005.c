@@ -1,0 +1,93 @@
+section "b15_m8_005"{
+    int var0;
+    Background_CarBGOpen2("BG_EX170_AU_2");
+    Background_CarBGScroll(0);
+    Background_CarBGScroll(#1);
+    Background_CarBgSpeedChange(#8, 8);
+    var0 = Parameter_GetSysParam(4);
+    switch (var0){
+        case 0:
+        Still_Event("EV_08_31", #1, 0, 1);
+        break ;
+        case 1:
+        Still_Event("EV_08_32", #1, 0, 1);
+        break ;
+        case 2:
+        Still_Event("EV_08_33", #1, 0, 1);
+        break ;
+        case 3:
+        Still_Event("EV_08_34", #1, 0, 1);
+        break ;
+        }
+    System_Wait(5);
+    Screen_WipeIn(3);
+    Still_StillFace(0, 0, 6);
+    Still_StillFace(0, 0, 2);
+    Still_StillFace(0, 6, 2);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H04200", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Anyway...\nI think I've gotten stronger.");
+    Voice_PlayVoice("XD_08_00_H04300", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Praise me for withstanding your\narbitrary attacks.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Arbitrary, I...");
+    Voice_PlayVoice("XD_08_00_H04400", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Masaki-senpai?");
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H04500", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "...\nWhen I think about how you feel when\nyou touch me...");
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 2);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H04600", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "I think that maybe...\nyou want to be with me.");
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H04700", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "But that doesn't give it the okay to\nkeep on going.");
+    Voice_PlayVoice("XD_08_00_H04800", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "It really seems like I won't be able\nto stop.");
+    Still_StillFace(0, 2, 6);
+    Still_StillFace(0, 3, 3);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H04900", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "...\nI think about many things, you know?");
+    Voice_PlayVoice("XD_08_00_H05000", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Probably more than what you think.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Masaki-senpai...");
+    Still_StillFace(0, 0, 4);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H05100", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "So think about it a little....\nNo, it would really help if you\nthought about it.");
+    Voice_PlayVoice("XD_08_00_H05200", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "How about it?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "... Okay.");
+    Still_StillFace(0, 0, 3);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H05300", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Alright, you get a silver star!\nI will keep driving then.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Masaki-senpai...)");
+    }

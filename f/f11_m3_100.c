@@ -1,0 +1,97 @@
+section "f11_m3_100"{
+    Character_BlinkStart(3, 1, (#1), 1);
+    Character_BlinkStart(3, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_SC230_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Character_ChFace(0, 0, 0);
+    if (Parameter_GetCh1Param(3, 328) == 0){
+        Parameter_AddCh1Param(3, 328, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Hikami＊＊｝.)");
+        Music_PlayBGM(0, "MN_C_03_000_D00", 127, 40);
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Character_ChFace(0, 0, 8);
+        Voice_PlayVoice("F1103100_C00000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Remove this at once!\nIf you continue on this way, I will\nhave no choice but to revoke your\nbusiness permit.");
+        Voice_PlayVoice("F1103100_W00100", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Male Student", "Eh～. Just overlook it.\nIt's the centerpiece of this\nrefreshment booth.");
+        Voice_PlayVoice("F1103100_C00200", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "I cannot allow anything\nunregistered.\nIf you ignore this warning, I will\nsuspend this store.\nI can't make exceptions.");
+        Voice_PlayVoice("F1103100_W00300", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Male Student", "Okay, I'll pack it away...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Is he patrolling?\n｛Hikami＊＊｝ is so strict\nabout rule violations, even during\nthe Culture Festival...)");
+        }
+    else if (Parameter_GetCh1Param(3, 328) == 1){
+        Parameter_AddCh1Param(3, 328, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Hikami＊＊｝.)");
+        Music_PlayBGM(0, "MN_C_03_000_D00", 127, 40);
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Voice_PlayVoice("F1103100_C00400", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "I see, I get it!\nI will provide you with assistance\nthen.\nJust ask our main office!");
+        Voice_PlayVoice("F1103100_W00500", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Male Student A", "Thanks! You're a real help, Hikami!");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("F1103100_C00600", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "What?\nYou would do the same in a time of\nneed.");
+        Voice_PlayVoice("F1103100_W00700", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Male Student B", "Hikami, there's trouble at the 1st\nyear's refreshment booth.\nPlease help!");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 5);
+        Voice_PlayVoice("F1103100_C00800", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "If it is not urgent, I will be there\nin 5 minutes.\nCan you hold out until then?");
+        Voice_PlayVoice("F1103100_W00900", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Male Student B", "Yeah, I'll try my best!");
+        Voice_PlayVoice("F1103100_C01000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Sorry, I must hurry.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Hikami＊＊｝ is extremely\nbusy...)");
+        }
+    else if (Parameter_GetCh1Param(3, 328) == 2){
+        Parameter_AddCh1Param(3, 328, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Hikami＊＊｝.)");
+        Music_PlayBGM(0, "MN_C_03_000_D00", 127, 40);
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Voice_PlayVoice("F1103100_C01100", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Everyone will be in charge in 1 hour\nslots.\nHowever, don't fool around.\nThe enemy is aware of our movements.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(E-Enemy...?)");
+        Character_BlinkStart(3, 3, (#1), 1);
+        Voice_PlayVoice("F1103100_C01200", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "While each of you enjoy the Culture\nFestival, look out for refreshment\nbooths and guerrilla events.\nThat is all.");
+        Voice_PlayVoice("F1103100_W01300", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Male Student", "Yes, Officer Hikami.");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(3, 0, (#1), 1);
+        Character_ChFace(0, 3, 1);
+        Voice_PlayVoice("F1103100_C01400", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "I am depending on you all.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(He's really into it this year, too.\nThe rule enforcing patrol...)");
+        }
+    Message_CloseMsg();
+    Music_StopBGM(0, 40);
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(3, 86, 1);
+    }

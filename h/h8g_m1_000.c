@@ -1,0 +1,38 @@
+section "h8g_m1_000"{
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "｛主人公｝.");
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(1, "M1_??F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Saeki＊＊｝.");
+    Character_ChFace(0, 0, 3);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H7G01000_A00000", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "I heard that you were recognized for\nyour work in the Student Council and\nchosen as an exemplary student.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, it seems like it.");
+    Character_ChFace(0, 2, 3);
+    Character_BlinkStart(1, 2, (#1));
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("H7G01000_A00100", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "You're different from me, you're a\nreal honors student.\nYou're amazing.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Haha, thanks.");
+    Character_ChFace(0, 0, 10);
+    Character_BlinkStart(1, 2, (#1));
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("H7G01000_A00200", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Saeki", "Congrats. Even I feel proud.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(...\nI'm glad I did my best in Student\nCouncil activities!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(1, 86, 1);
+    }

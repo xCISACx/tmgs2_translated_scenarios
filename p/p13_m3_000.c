@@ -1,0 +1,72 @@
+section "p13_m3_000"{
+    Background_Bg_GS2("BG_SC910_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_B_SC_910_000", 127, 40);
+    if (Parameter_GetCh1Param(3, 130) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Coffee and a sandwich, sorry I kept\nyou waiting.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Hah.\nIt's busy and I'm getting dizzy...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Voice_PlayVoice("", 3, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hikami＊＊｝, you came.");
+        Character_BlinkStart(3, 2, (#1));
+        Voice_PlayVoice("P0303000_C00000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Yes.\nI had some valuable free time so I\nmight as well rest at the coffee\nshop.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Valuable free time?\n｛Hikami＊＊｝ is busy, too.");
+        Character_ChFace(0, 2, 1);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P0303000_C00100", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Yes, the student council's executive\nis in charge of managing the culture\nfestival.\nTherefore, I am on patrol duty.");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("P0303000_C00200", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "I had to continue walking and now I\nam a little tired.\nI will have a tea with lemon and a\nsandwich.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Certainly!\nI'll go in and get your order.\nTea with lemon and a sandwich!");
+        }
+    else if (Parameter_GetCh1Param(3, 130) >= 4){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Coffee and a sandwich, sorry I kept\nyou waiting.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Hah.\nIt's busy and I'm getting dizzy...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Voice_PlayVoice("", 3, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Hikami＊＊｝! you came.");
+        Character_ChFace(0, 0, 10);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("P0303000_C00300", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Aah, well umm...\nI think you becoming the shop\nassistant will contribute to the\nsales.");
+        Character_ChFace(0, 4, 0);
+        Character_ChFace(0, 2, 5);
+        Character_BlinkStart(3, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P0303000_C00400", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "My first round of patrol duty as a\nstudent council executive is done,\nat last.\nI was finally able to come.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Good job, ｛Hikami＊＊｝....\nAre you going to make an order?");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("P0303000_C00500", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "It seems I will...\nI will have a tea with lemon and a\nsandwich.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Certainly.\nI'll go in and get your order!\nTea with lemon and a sandwich!");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    System_Call_GS2("P14", "M3", 0);
+    }

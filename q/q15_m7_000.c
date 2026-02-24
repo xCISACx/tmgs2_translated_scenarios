@@ -1,0 +1,35 @@
+section "q15_m7_000"{
+    Character_ChFace(0, 0, 10);
+    Character_Chara_GS2(7, "M7_17F", 0);
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 7, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Wakaouji＊＊｝.\nI haven't decided on my plans for my\nfree day, yet...");
+    Character_ChFace(0, 0, 9);
+    Voice_PlayVoice("FD_07_050_00100", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "*Sigh* Has everyone already\ndeparted?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Umm, yes...");
+    Character_ChFace(0, 0, 6);
+    Character_ChFace(0, 4, 0);
+    Voice_PlayVoice("FD_07_050_00200", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Go visit some famous places.\nI may join you. Is that okay?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yes, thank you!");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_GlobalWork(0, 2, 1);
+    System_GlobalWork(2, 2, 7);
+    System_Call_GS2("Q16", "M7", 0);
+    System_Call_GS2("Q17", "M7", 0);
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(7, 86, 1);
+    }

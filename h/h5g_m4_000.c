@@ -1,0 +1,30 @@
+section "h5g_m4_000"{
+    Character_ChFace(0, 0, 10);
+    Character_Chara_GS2(4, "M4_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Hariya＊＊｝.");
+    Voice_PlayVoice("H5G04000_D00000", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "Yo.\nI heard you won a prize at an art\ncontest?\nAmazing!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks!");
+    Character_BlinkStart(4, 2, (#1));
+    Voice_PlayVoice("H5G04000_D00100", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "The paintings you paint are really\ngood.\nLike they make me feel better...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "R-Really?");
+    Character_ChFace(0, 2, 1);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H5G04000_D00200", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "So keep painting good paintings!\nLet's aim for the world.\nYou with art and me with music!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm so happy!\nI'm glad that I did my best to\ncomplete the drawing.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

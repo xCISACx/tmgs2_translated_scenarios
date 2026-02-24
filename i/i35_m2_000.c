@@ -1,0 +1,96 @@
+section "i35_m2_000"{
+    Background_Bg_GS2("BG_AR300_?_0", 1, #1, 0);
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(2, "M2_??F", 0);
+    Screen_WipeIn(2);
+    if (Parameter_GetCh1Param(2, 130) <= 2){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome! Ah, ｛Shiba＊＊｝!");
+        Character_ChFace(0, 2, 4);
+        Character_BlinkStart(2, 2, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I3502000_B00000", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... You work here?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah. Are you out shopping today?");
+        Character_ChFace(0, 2, 5);
+        Character_BlinkStart(2, 0, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I3502000_B00100", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "......... No. Later.");
+        Character_Chara_GS2(2, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(He left...\nI wonder if he didn't really want\nanything from here...)");
+        }
+    else if (Parameter_GetCh1Param(2, 130) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome, ｛Shiba＊＊｝!");
+        Voice_PlayVoice("I3502000_B00200", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... What are the top 3 sellers?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh?\nAh, cream puffs, mille-feuille and\nmont blanc...\nperhaps.");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("I3502000_B00300", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "Gimme one of each.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Okay...\nUmm, can I ask you something?\nIs this a gift?");
+        Character_ChFace(0, 2, 3);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I3502000_B00400", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "No. I'm gonna eat it.... Why?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "N-Nothing!\nIt's kind of a little unexpected...\nUhh, how long will you be carrying\nit for?");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("I3502000_B00500", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... I'm gonna eat it right away.\nJust put it in a box for me.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(So he likes sweet food...)");
+        }
+    else {
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome, ｛Shiba＊＊｝.\nWhat are you ordering?");
+        Character_ChFace(0, 0, 11);
+        Character_BlinkStart(2, 2, (#1));
+        Voice_PlayVoice("I3502000_B00600", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "...\nI'm curious about the newest one.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, this? I recommend this! ...\nBut it's not that popular.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I think it tastes nice, too...");
+        Character_ChFace(0, 2, 4);
+        Character_BlinkStart(2, 2, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I3502000_B00700", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "... I'll have that then.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh. Are you sure? It's unpopular.");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(2, 2, (#1));
+        Voice_PlayVoice("I3502000_B00800", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "It doesn't matter.\nI just wanna try the cake that you\nthink tastes nice.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Shiba＊＊｝...");
+        Character_ChFace(0, 2, 3);
+        Character_BlinkStart(2, 3, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("I3502000_B00900", #1, "");
+        Message_Who(2);
+        Message_MsgDisp("Shiba", "Give me a strawberry shortcake and\nchocolate gateau, as well.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I'm glad that he's buying cakes,\nbut isn't it too much?)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(2, 86, 1);
+    }

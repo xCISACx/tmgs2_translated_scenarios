@@ -1,0 +1,34 @@
+section "q31_g1_000"{
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(｛Toudou＊＊｝ is late.)");
+    Character_ChFace(0, 0, 9);
+    Character_Chara_GS2(10, "G1_01F", 0);
+    Voice_PlayVoice("Q0910000_J00000", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "Morning... ｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Toudou＊＊｝! What's wrong?\nDid you oversleep?");
+    Character_BlinkStart(10, 3, (#1));
+    Voice_PlayVoice("Q0910000_J00100", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "Sorry... I'm not good at mornings.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, you look sleepy. Are you okay?");
+    Character_ChFace(0, 2, 1);
+    Character_BlinkStart(10, 3, (#1));
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("Q0910000_J00200", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "Yes.\nI hope you don't mind if I look a\nbit grumpy.............");
+    Character_ChFace(0, 2, 2);
+    Character_BlinkStart(10, 2, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("Q0910000_J00300", #1, "");
+    Message_Who(10);
+    Message_MsgDisp("Toudou", "Well... Let's go.\nMaybe my eyes will wake up once the\nsun hits them.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Okay, let's go!");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

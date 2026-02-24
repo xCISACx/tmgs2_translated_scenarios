@@ -1,0 +1,75 @@
+section "p23_m6_000"{
+    Background_Bg_GS2("BG_SC920_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_B_SC_920_000", 127, 40);
+    if (Parameter_GetCh1Param(6, 130) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome to the disco, \"Young\nPrince\"!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Gosh, surprisingly, people are\nshowing up.\nIt's getting so hectic that I'm\nfeeling faint...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(6, "M6_01F", 0);
+        Voice_PlayVoice("", 6, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Amachi＊＊｝! You came.");
+        Character_ChFace(0, 0, 11);
+        Character_BlinkStart(6, 2, (#1));
+        Voice_PlayVoice("P1306000_F00000", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Heh, it's great that visitors\ncame....\nShould I dance?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah. Well, you should.");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(6, 2, (#1));
+        Voice_PlayVoice("P1306000_F00100", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Is that so?\nWell then, I'll give it a try, I\nguess.\nAh, but first, give me something to\ndrink!");
+        Voice_PlayVoice("P1306000_F00200", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Eh... Really. Well then, this!\nA special deluxe soda!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Okaaay. Please wait a moment!");
+        }
+    else if (Parameter_GetCh1Param(6, 130) >= 4){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome to the disco, \"Young\nPrince\"!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Gosh, surprisingly, people are\nshowing up.\nIt's getting so hectic that I'm\nfeeling faint...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(6, "M6_01F", 0);
+        Voice_PlayVoice("", 6, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Amachi＊＊｝! You came.");
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P1306000_F00300", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Yeah!\nWere you out on the floor a little\nwhile ago, Senpai?\nI immediately knew you were.\nYou stood out.");
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(6, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P1306000_F00400", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "I wanted to dance with you...\nI was too late.\nNow, will you charge me for a drink?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yep, that's right.");
+        Character_ChFace(0, 2, 3);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("P1306000_F00500", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Well then, I will drink something.\nHmm... This! A special deluxe soda!");
+        Voice_PlayVoice("P1306000_F00600", #1, "");
+        Message_Who(6);
+        Message_MsgDisp("Amachi", "Ah!\nSurely Senpai will treat me for\nbeing a cute junior?\n... Thank you, Senpai!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "*Giggles* One drink, free of charge.\nPlease wait a moment!");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    System_Call_GS2("P24", "M6", 0);
+    }

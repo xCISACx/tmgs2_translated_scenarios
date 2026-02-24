@@ -1,0 +1,110 @@
+section "a01_pl_000"{
+    Background_Bg_GS2("BG_PR000_LI_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("A0100000_A00000", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Little Boy", "Why are you crying?");
+    Voice_PlayVoice("A0100000_A00100", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Little Boy", "Hey, are you a mermaid?");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Message_Who(0);
+    Message_MsgDisp("　　　", "　　　　　　・\n　　　　　　・\n　　　　　　・");
+    Message_CloseMsg();
+    Environment_StopME(1, 40);
+    Background_Bg_GS2("BG_PR010_LI_1", #1, #1, 1);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_X_03_A00_D00", 127, 40);
+    Voice_PlayVoice("A0100000_P00200", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Grandfather", "And so the young man and the\nbeautiful young girl, who met at the\nshore, fell in love.");
+    Voice_PlayVoice("A0100000_P00300", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Grandfather", "Her eyes, which were like the calm\nocean, spoke more than words.");
+    Voice_PlayVoice("A0100000_A00400", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Little Boy", "The young girl is a mermaid.\nWhen she's in her human form, she\ncan't talk.");
+    Voice_PlayVoice("A0100000_P00500", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Grandfather", "Hey, don't give away the story.");
+    Voice_PlayVoice("A0100000_A00600", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Little Boy", "Sorry.");
+    Message_CloseMsg();
+    Background_Check_BGScroll();
+    Screen_WipeOut(2);
+    Background_Bg_GS2("BG_PR020_LI_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("A0100000_P00700", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Grandfather", "The heartless villagers had learned\nof this, so the mermaid had to\nreturn to the ocean.");
+    Voice_PlayVoice("A0100000_P00800", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Grandfather", "Instead of saying goodbye, the two\nkissed.\nThey believed that they would meet\nat the shore again, one day.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Background_Bg_GS2("BG_PR030_LI_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("A0100000_P00900", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Grandfather", "Ever since parting with the mermaid,\nthe young man spent every day gazing\nout at the ocean.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Background_Bg_GS2("BG_PR040_LI_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("A0100000_P01000", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Grandfather", "Then at last, on a moonlit night,\nthe young man sailed out into the\nocean, full of determination.");
+    Voice_PlayVoice("A0100000_P01100", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Grandfather", "The young man never returned.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Environment_StopME(1, 40);
+    System_Wait(60);
+    Message_Who(0);
+    Message_MsgDisp("　　　", "　　　　　　・\n　　　　　　・\n　　　　　　・");
+    Background_Bg_GS2("BG_ED000_SP_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("A0100000_A01200", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Little Boy", "But I'd surely find her.");
+    Voice_PlayVoice("A0100000_A01300", #1, "");
+    Message_Who(0);
+    Message_MsgDisp("Little Boy", "So lift your head up.");
+    Message_CloseMsg();
+    Screen_WipeOut(3);
+    System_Wait(120);
+    Still_Event("EV_01_30", #1, 0, 0);
+    Screen_WipeIn(3);
+    Message_Who(1);
+    Voice_PlayVoice("A0100000_A01400", #1, "");
+    Message_Who(1);
+    Message_MsgDisp("Little Boy", "So that we can meet at this beach,\nagain.");
+    Message_CloseMsg();
+    Environment_FadeME(0, 127, 127);
+    Screen_WipeOut(3);
+    Music_StopBGM(0, 40);
+    Environment_StopME(0, 40);
+    System_Wait(60);
+    Screen_ClearScreen();
+    System_Call_GS2("A02", "M1", 0);
+    System_Call_GS2("A02", "M1", 1);
+    System_Call_GS2("A03", "PL", 0);
+    if (Parameter_GetPl1Param(257) == 10){
+        System_Call_GS2("A02", "G1", 400);
+        }
+    else if (Parameter_GetPl1Param(257) == 11){
+        System_Call_GS2("A02", "G2", 400);
+        }
+    else if (Parameter_GetPl1Param(257) == 12){
+        System_Call_GS2("A02", "G3", 400);
+        }
+    else if (Parameter_GetPl1Param(257) == 13){
+        System_Call_GS2("A02", "G4", 400);
+        }
+    System_Call_GS2("A02", "M7", 0);
+    System_Call_GS2("A04", "PL", 0);
+    System_Call_GS2("A02", "S1", 0);
+    }

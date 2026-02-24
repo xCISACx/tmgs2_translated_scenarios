@@ -1,0 +1,34 @@
+section "h5g_m7_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(7, "M7_17F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 7, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Wakaouji＊＊｝.\nWhat is the matter?");
+    Voice_PlayVoice("H5G07000_G00000", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "I came here to have a word with you.\nPlease be prepared.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ehh!?");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("H5G07000_G00100", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Sorry, it was a joke.\nI heard that you won a prize in an\nart contest.\nCongratulations.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "That's right! Thank you very much!");
+    Voice_PlayVoice("H5G07000_G00200", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "...\nI was always watching you paint\npaintings in school.");
+    Voice_PlayVoice("H5G07000_G00300", 7, "H5G07000_G00301");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "All of those experiences have become\na part of your skills.\nYou did well, ｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad that I did my best to\ncomplete the drawing.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(7, 86, 1);
+    }

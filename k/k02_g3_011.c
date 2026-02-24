@@ -1,0 +1,30 @@
+section "k02_g3_011"{
+    Character_BlinkStart(12, 1, (#1), 1);
+    Character_BlinkStart(12, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Character_ChFace(0, 0, 3);
+    Voice_PlayVoice("K0212000_L02900", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Ah, right! I almost forgot.\nHere, it's a present!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Wow, I'm so happy!");
+    Character_ChFace(0, 0, 10);
+    Character_BlinkStart(12, 3, (#1));
+    Voice_PlayVoice("K0212000_L03000", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Happy birthday,\n｛主人公｝!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks, ｛Nishimoto＊＊｝!\nYou remembered.");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("K0212000_L03100", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Isn't that obvious!\nYou're my friend!");
+    Character_Chara_GS2(12, "NON");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad...\nI received a present from\n｛Nishimoto＊＊｝!)");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_Call_GS2("K02", "G3", 20);
+    }

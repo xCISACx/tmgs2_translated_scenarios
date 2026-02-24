@@ -1,0 +1,217 @@
+section "p64_m4_000"{
+    if (Parameter_GetPl1Param(322) == 0){
+        if (Parameter_bunka_jyu(0) == 1){
+            System_Wait(60);
+            Background_Bg_GS2("BG_SC930_LI_0", #1, #1, 0);
+            Screen_WipeIn(2);
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Thank goodness... It went well!)");
+            Character_ChFace(0, 3, 3);
+            Character_Chara_GS2(4, "M4_17F", 0);
+            Voice_PlayVoice("", 4, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "｛主人公｝.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "｛Hariya＊＊｝! Umm...\nhow was it?");
+            Character_ChFace(0, 0, 11);
+            Character_BlinkStart(4, 2, (#1));
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("P6404000_D00000", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "Oh, it was perfect!");
+            Character_ChFace(0, 0, 10);
+            Character_BlinkStart(4, 3, (#1));
+            Voice_PlayVoice("P6404000_D00100", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "As expected, music is amazing, no\nmatter what genre it is.\nYou've worked hard!");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Yay!\nI was complimented by\n｛Hariya＊＊｝!)");
+            }
+        else {
+            System_Wait(60);
+            Background_Bg_GS2("BG_SC930_LI_0", #1, #1, 0);
+            Screen_WipeIn(2);
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(It seems like it was completely\nawful...)");
+            Character_ChFace(0, 2, 1);
+            Character_BlinkStart(4, 2, (#1));
+            Character_ChFace(0, 3, 2);
+            Character_Chara_GS2(4, "M4_17F", 0);
+            Voice_PlayVoice("P6404000_D00200", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "Hey.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "｛Hariya＊＊｝! Umm...\nhow was it?");
+            Character_BlinkStart(4, 3, (#1));
+            Character_ChFace(0, 3, 0);
+            Voice_PlayVoice("P6404000_D00300", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "...\nAs a person like you, aiming to do\nmusic...\nDon't even ask.\nYou made too many mistakes.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Ugh...\nI should have tried harder...)");
+            }
+        }
+    else if (Parameter_GetPl1Param(322) == 1){
+        if (Parameter_bunka_jyu(0) == 1){
+            System_Wait(60);
+            Background_Bg_GS2("BG_SC930_LI_0", #1, #1, 0);
+            Screen_WipeIn(2);
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Yes, it went well!)");
+            Character_ChFace(0, 0, 10);
+            Character_Chara_GS2(4, "M4_01F", 0);
+            Voice_PlayVoice("P6404000_D00400", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "You've worked hard.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "｛Hariya＊＊｝! How was it?");
+            Character_ChFace(0, 2, 3);
+            Character_ChFace(0, 3, 5);
+            Voice_PlayVoice("P6404000_D00500", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "You were enjoying it a lot, weren't\nyou?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Ehehe, you could tell?");
+            Character_ChFace(0, 2, 4);
+            Character_BlinkStart(4, 3, (#1));
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("P6404000_D00600", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "Yeah!\nI liked that and it looked like\nthere was a bright light around\nyou...");
+            Character_ChFace(0, 0, 9);
+            Character_BlinkStart(4, 2, (#1));
+            Character_ChFace(0, 3, 5);
+            Character_ChFace(0, 4, 1);
+            Voice_PlayVoice("P6404000_D00700", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "... I'm kinda praising you too much.\nIgnore what I said.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Yay!\nI was complimented by\n｛Hariya＊＊｝!)");
+            }
+        else {
+            System_Wait(60);
+            Background_Bg_GS2("BG_SC930_LI_0", #1, #1, 0);
+            Screen_WipeIn(2);
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Argh, that was a huge failure...)");
+            Character_ChFace(0, 2, 1);
+            Character_BlinkStart(4, 2, (#1));
+            Character_ChFace(0, 3, 0);
+            Character_Chara_GS2(4, "M4_01F", 0);
+            Message_Who(0);
+            Message_MsgDisp("主人公", "｛Hariya＊＊｝. Umm...\nhow was it?");
+            Character_ChFace(0, 0, 8);
+            Character_BlinkStart(4, 2, (#1));
+            Voice_PlayVoice("P6404000_D00800", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "How was it?\nWas that a performance that you can\nspeak so lightly about?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Ugh... as I thought.");
+            Character_ChFace(0, 0, 8);
+            Voice_PlayVoice("P6404000_D00900", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "Be more serious! You got it?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(I have to try harder from now\non...!)");
+            }
+        }
+    else {
+        if (Parameter_bunka_jyu(0) == 1){
+            System_Wait(60);
+            Background_Bg_GS2("BG_SC930_LI_0", #1, #1, 0);
+            Screen_WipeIn(2);
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Yay, it went well!)");
+            Character_ChFace(0, 2, 4);
+            Character_ChFace(0, 3, 1);
+            Character_Chara_GS2(4, "M4_01F", 0);
+            Message_Who(0);
+            Message_MsgDisp("主人公", "｛Hariya＊＊｝!\nHow was that performance?");
+            Voice_PlayVoice("P6404000_D01000", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", ".........");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "What's the matter? You're silent.");
+            Character_ChFace(0, 3, 2);
+            Character_ChFace(0, 7, 0);
+            Voice_PlayVoice("P6404000_D01100", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "How should I say it...\nIt feels like you've shown me\neverything that you've poured into\nmusic over these three years.");
+            Character_ChFace(0, 3, 0);
+            Voice_PlayVoice("P6404000_D01200", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "I was really touched...\nIt knocked the wind outta me.\nI can't even put it into words.");
+            Character_ChFace(0, 2, 3);
+            Character_BlinkStart(4, 2, (#1));
+            Character_ChFace(0, 3, 5);
+            Character_ChFace(0, 4, 1);
+            Voice_PlayVoice("P6404000_D01300", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "... Thanks.\nLet me hear you playing, again.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Sure, of course!\nThanks, ｛Hariya＊＊｝.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(I never thought\n｛Hariya＊＊｝ would ever say\nsuch things to me...)");
+            }
+        else {
+            System_Wait(60);
+            Background_Bg_GS2("BG_SC930_LI_0", #1, #1, 0);
+            Screen_WipeIn(2);
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Ugh, I think I messed up...)");
+            Character_ChFace(0, 0, 9);
+            Character_Chara_GS2(4, "M4_01F", 0);
+            Voice_PlayVoice("", 4, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "｛主人公｝.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "｛Hariya＊＊｝! ...\nHow was the performance?");
+            Character_ChFace(0, 0, 10);
+            Voice_PlayVoice("P6404000_D01400", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "It was good!");
+            Character_ChFace(0, 2, 2);
+            Character_BlinkStart(4, 2, (#1));
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("P6404000_D01500", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "I can't say that about your\nperformance, even if I'm trying to\nflatter you...");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "What?");
+            Character_ChFace(0, 0, 9);
+            Character_ChFace(0, 3, 5);
+            Voice_PlayVoice("P6404000_D01600", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "Even so, you worked really hard,\nincluding the time you spent\npreparing for this.");
+            Character_ChFace(0, 0, 10);
+            Character_BlinkStart(4, 2, (#1));
+            Voice_PlayVoice("P6404000_D01700", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "Therefore!\nTo Harry's standards, today's\nperformance was worth something.\nYou got it?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "｛Hariya＊＊｝...");
+            Character_ChFace(0, 2, 2);
+            Character_BlinkStart(4, 2, (#1));
+            Character_ChFace(0, 3, 0);
+            Voice_PlayVoice("P6404000_D01800", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "Well...\nI really do understand the feeling\nof annoyance.");
+            Character_ChFace(0, 2, 2);
+            Character_BlinkStart(4, 3, (#1));
+            Character_ChFace(0, 3, 5);
+            Voice_PlayVoice("P6404000_D01900", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "It means that the only thing that\ncan let you get over that, is your\nown effort.");
+            Character_ChFace(0, 0, 10);
+            Voice_PlayVoice("P6404000_D02000", #1, "");
+            Message_Who(4);
+            Message_MsgDisp("Hariya", "So, chin up, and let's both do our\nbest!\nOkay?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Yeah.\nThanks, ｛Hariya＊＊｝...)");
+            }
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

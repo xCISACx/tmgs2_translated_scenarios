@@ -1,0 +1,71 @@
+section "p23_m4_000"{
+    Background_Bg_GS2("BG_SC920_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_B_SC_920_000", 127, 40);
+    if (Parameter_GetCh1Param(4, 130) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome to the disco, \"Young\nPrince\"!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I'm cold, and surprisingly, people\nare showing up.\nIt's getting so hectic that I'm\nfeeling faint...)");
+        Voice_PlayVoice("P1304000_D00000", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("？？？", "Oi, this gives some good vibes.");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(4, "M4_01F", 0);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Hariya＊＊｝!\nAre you going to dance?");
+        Voice_PlayVoice("P1304000_D00100", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Dance... Aaah, the disco!");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(4, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P1304000_D00200", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "I'll show you my mad steps.\nLead the way.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "*Giggles* This way please!");
+        }
+    else if (Parameter_GetCh1Param(4, 130) >= 4){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome to the disco, \"Young\nPrince\"!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I'm cold, and surprisingly, people\nare showing up.\nIt's getting so hectic that I'm\nfeeling faint...)");
+        Voice_PlayVoice("", 4, "");
+        Message_Who(4);
+        Message_MsgDisp("？？？", "｛主人公｝.");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(4, "M4_01F", 0);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Oh, ｛Hariya＊＊｝!");
+        Character_ChFace(0, 0, 8);
+        Character_ChFace(0, 3, 0);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("P1304000_D00300", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Howdy....\nOi, I guess this is where those\nweird guys were coming?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Weird guys?");
+        Character_ChFace(0, 0, 3);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P1304000_D00400", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "...\nIf not, it's a relief that those\ntouched-in-the-head fools aren't\nhere.\nThey're usually trouble.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "???");
+        Character_ChFace(0, 0, 8);
+        Character_BlinkStart(4, 3, (#1));
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("P1304000_D00500", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Anyway! Hurry and lead the way.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, I'm sorry.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Well then, allow me to guide you!");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    System_Call_GS2("P24", "M4", 0);
+    }

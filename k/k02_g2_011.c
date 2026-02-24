@@ -1,0 +1,32 @@
+section "k02_g2_011"{
+    Character_BlinkStart(11, 1, (#1), 1);
+    Character_BlinkStart(11, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Character_ChFace(0, 0, 3);
+    Voice_PlayVoice("K0211000_K02200", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "Ah, I almost forgot. Here.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh, what is this?");
+    Character_ChFace(0, 2, 4);
+    Character_BlinkStart(11, 2, (#1));
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("K0211000_K02300", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "It's your birthday today, isn't it?\nDid you forget?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh... No. So you remembered.\nI was a little surpised. Thanks!");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("K0211000_K02400", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "Yes, I remembered,\n｛主人公｝.");
+    Character_Chara_GS2(11, "NON");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I received a present from\n｛Onoda＊＊｝!)");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_Call_GS2("K02", "G2", 20);
+    }

@@ -1,0 +1,30 @@
+section "h41_m6_001"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(6, "M6_15F", 0);
+    Background_Bg_GS2("BG_SC420_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh, ｛Amachi＊＊｝?");
+    Voice_PlayVoice("", 6, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "｛主人公｝.");
+    Voice_PlayVoice("H4106001_F00000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "...\nAh, are you perhaps in the\nCheerleading Club, Senpai?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, I am.\nAre you perhaps joining the Cheer\nSquad, ｛Amachi＊＊｝?");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H4106001_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Yes, I had decided that when I\nentered high school, I would join\nthe Cheer Squad.");
+    Voice_PlayVoice("H4106001_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I look forward to working with you\nfrom now on!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, me too!");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(6, 86, 1);
+    }

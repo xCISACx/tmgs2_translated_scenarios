@@ -1,0 +1,35 @@
+section "h8g_m2_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(2, "M2_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 2, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Shiba＊＊｝! What's up?");
+    Character_ChFace(0, 0, 11);
+    Character_BlinkStart(2, 2, (#1));
+    Voice_PlayVoice("H7G02000_B00000", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "I heard you got an award for your\nStudent Council activities.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah.\nI feel like I'm receiving the award\nas a representative of the Student\nCouncil.");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("H7G02000_B00100", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "But it just means that you worked\nthe hardest.");
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H7G02000_B00200", 2, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "I think it's amazing.\nIsn't it fine if you act proud?\nCongrats, ｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Thanks, ｛Shiba＊＊｝...!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(｛Shiba＊＊｝ came here\njust to say that...\nI'm glad that I'm in the Student\nCouncil!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(2, 86, 1);
+    }

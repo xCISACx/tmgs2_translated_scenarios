@@ -1,0 +1,114 @@
+section "w12_g3_000"{
+    if (System_GlobalWork(4, 1) == 15){
+        Character_ChFace(0, 2, 1);
+        Character_BlinkStart(12, 3, (#1), 1);
+        Character_Chara_GS2(12, "G3_04F", 0);
+        Voice_PlayVoice("", #1, "W1212000_L00000");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "｛主人公｝...\nSeems like you had fun.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh? Yeah...");
+        Character_ChFace(0, 2, 1);
+        Character_BlinkStart(12, 2, (#1));
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("W1212000_L00100", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Must have...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Excuse me?");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("W1212000_L00200", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "I'm envious...");
+        Character_Chara_GS2(12, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I wonder if ｛Nishimoto＊＊｝\ngot bored...)");
+        Parameter_AddCh1Param(12, 60, #2);
+        }
+    else if (System_GlobalWork(4, 1) == 3){
+        Character_ChFace(0, 0, 10);
+        Character_ChFace(0, 4, 1);
+        Character_Chara_GS2(12, "G3_04F", 0);
+        Voice_PlayVoice("W1212000_L00300", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Yeah, today was so like a dream come\ntrue...!\nHow about you?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah! I had fun too!");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(12, 3, (#1));
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("W1212000_L00400", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "I see. Great!\nLet's come together again next time,\nokay?\nThanks for today!");
+        Character_Chara_GS2(12, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Nishimoto＊＊｝ seems very\nhappy...!\nI'm satisfied.)");
+        Parameter_AddCh1Param(12, 60, 2);
+        }
+    else if (System_GlobalWork(4, 1) == 30){
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(12, 3, (#1), 1);
+        Character_ChFace(0, 3, 0);
+        Character_Chara_GS2(12, "G3_04F", 0);
+        Voice_PlayVoice("W1212000_L00500", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Hey, ｛主人公｝.");
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(12, 2, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("W1212000_L00600", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Everyone clinging to me was just...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh?");
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(12, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("W1212000_L00700", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "C'mon, I think it'd be better and\nmore fun if you tried riding with\nother people...\nAh!");
+        Character_ChFace(0, 2, 4);
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("W1212000_L00800", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Hey...\nmaybe you were aiming for me right\nfrom the start...!?");
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(12, 3, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("W1212000_L00900", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "Did you enjoy riding with me?\nIt's fun but, that's not good!");
+        Voice_PlayVoice("W1212000_L01000", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "It's no good～!");
+        Character_Chara_GS2(12, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(She left... Did I hurt her...?)");
+        Parameter_AddCh1Param(12, 60, #1);
+        }
+    else {
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(12, 2, (#1), 1);
+        Character_ChFace(0, 3, 3);
+        Character_Chara_GS2(12, "G3_04F", 0);
+        Voice_PlayVoice("W1212000_L01100", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "How was today?\nI was wondering if you had a good\ntime.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah, I enjoyed it!\nThank you for inviting me.");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(12, 3, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("W1212000_L01200", #1, "");
+        Message_Who(12);
+        Message_MsgDisp("Nishimoto", "I see. Great!\nI hope everyone can come again!\nWell, let's go home.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Well, that's that.)");
+        Parameter_AddCh1Param(12, 60, 1);
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(12, 86, 1);
+    }

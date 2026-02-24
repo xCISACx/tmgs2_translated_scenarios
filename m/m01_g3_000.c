@@ -1,0 +1,97 @@
+section "m01_g3_000"{
+    int var0 = Parameter_GetPl1Param(12);
+    switch (var0){
+        case 0:
+        Background_Bg_GS2("BG_HO200_?_1", 1, #1, 0);
+        break ;
+        case 1:
+        Background_Bg_GS2("BG_HO210_?_1", 1, #1, 0);
+        break ;
+        case 2:
+        Background_Bg_GS2("BG_HO220_?_1", 1, #1, 0);
+        break ;
+        case 3:
+        Background_Bg_GS2("BG_HO230_?_1", 1, #1, 0);
+        break ;
+        }
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Argh～, I'm bored...\nI'm bored of just sleeping...)");
+    SoundEffect_PlaySE(19);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Ah, my phone is ringing...\nI wonder who it is?)");
+    SoundEffect_StopSE(19, 0);
+    SoundEffect_PlaySE(20);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Hello.");
+    Voice_PlayVoice("M0212000_L00000", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "......");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Hello?");
+    Voice_PlayVoice("M0212000_L00100", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "...\nThis isn't the time or place for you\nto be answering the phone!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah... ｛Nishimoto＊＊｝?");
+    Voice_PlayVoice("M0212000_L00200", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "What's with your boneheaded voice...");
+    Voice_PlayVoice("M0212000_L00300", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "I was so worried when I came to\nschool and you weren't there!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "I'm not feeling that bad anymore\nright now, so...");
+    Voice_PlayVoice("M0212000_L00400", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "That's no good!\nYou can't come to school until\nyou're 100% better, for real.");
+    Voice_PlayVoice("M0212000_L00500", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Even though it's real sad that I\ndon't have anyone to talk to...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Nishimoto＊＊｝...");
+    Voice_PlayVoice("M0212000_L00600", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "... But I'm a little jealous.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh? Why?");
+    Voice_PlayVoice("M0212000_L00700", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "I've never been sick to the point\nwhere I have to take a day off\nschool.");
+    Voice_PlayVoice("M0212000_L00800", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "In elementary school, middle school,\nand even in kindergarten, I got\nawards for perfect attendance.\nI brag about it a lot.");
+    Voice_PlayVoice("M0212000_L00900", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "So... Ah～. I withdraw my jealousy!");
+    Voice_PlayVoice("M0212000_L01000", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "I'm gonna aim for a perfect\nattendance in high school, too!\nI'll get an honorable certificate\nfrom Hanegasaki Academy!");
+    Voice_PlayVoice("M0212000_L01100", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Ah... Sorry......");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Nishimoto＊＊｝?");
+    Voice_PlayVoice("M0212000_L01200", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "I unintentionally started babbling\noff like I always do...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "No, it's fine.\nI was glad to hear your voice.");
+    Voice_PlayVoice("M0212000_L01300", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "... There's no use complimenting me.\nAnyway, it's about time I hang up.");
+    Voice_PlayVoice("M0212000_L01400", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "When you get better, let's go and\neat parfait to celebrate your\nrecover!\nI'll treat you!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, I look forward to it!\nThanks for calling.");
+    Voice_PlayVoice("M0212000_L01500", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Don't worry about it. Later!");
+    SoundEffect_PlaySE(20, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I made her worry...\nI have to hurry and fully recover so\nI can go to school!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

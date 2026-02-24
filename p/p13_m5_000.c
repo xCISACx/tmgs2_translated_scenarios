@@ -1,0 +1,76 @@
+section "p13_m5_000"{
+    Background_Bg_GS2("BG_SC910_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_B_SC_910_000", 127, 40);
+    if (Parameter_GetCh1Param(5, 130) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Sorry to keep you waiting, here is\nyour coffee and sandwich.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(*Sigh* It's so busy that I feel\nfaint...)");
+        Voice_PlayVoice("P0305000_E00000", #1, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "Hello.\nPlease bring me a latte and a\nsandwich.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Okay, we've got an order!\nA latte and a sandwich! ... Hmm?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Huh, ｛Chris＊＊｝. Welcome.\nSo you came.");
+        Character_ChFace(0, 0, 10);
+        Character_Chara_GS2(5, "M5_01F", 0);
+        Voice_PlayVoice("P0305000_E00100", #1, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "It'd be my loss if I didn't get to\nsee you in an apron▼");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I'm not that different than usual,\nam I?");
+        Character_ChFace(0, 0, 8);
+        Character_BlinkStart(5, 2, (#1));
+        Voice_PlayVoice("P0305000_E00200", #1, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "You're completely different～.\nThe apron has magical powers.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Magical powers!?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("P0305000_E00300", #1, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "Yeah. It's...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, welcome～!\nPlease wait a minute,\n｛Chris＊＊｝.");
+        Character_ChFace(0, 0, 9);
+        Character_BlinkStart(5, 3, (#1));
+        Voice_PlayVoice("P0305000_E00400", #1, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "Okay...");
+        }
+    else if (Parameter_GetCh1Param(5, 130) >= 4){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Sorry to keep you waiting, here is\nyour coffee and sandwich.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(*Sigh* It's so busy that I feel\nfaint...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(5, "M5_01F", 0);
+        Voice_PlayVoice("", 5, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Chris＊＊｝!\nSo you came.");
+        Voice_PlayVoice("P0305000_E00500", #1, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "You seem busy...\nCan I make you even more busy?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Haha, of course.\nWhat will you order?\nI recommend the sandwich.");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("P0305000_E00600", #1, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "Then I will get a sandwich...\nand a latte.\nWith lots of love▼");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "We have an order, a sandwich and a\nlatte!");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("P0305000_E00700", #1, "");
+        Message_Who(5);
+        Message_MsgDisp("Chris", "What about the love...?");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    System_Call_GS2("P14", "M5", 0);
+    }

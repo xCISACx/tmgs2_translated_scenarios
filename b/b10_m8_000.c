@@ -1,0 +1,38 @@
+section "b10_m8_000"{
+    Background_Bg_GS2("BG_EX100_?_2", 1, #1, 0);
+    Screen_WipeIn(2);
+    SoundEffect_PlaySE(19, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh... My phone is ringing.\nWho's calling me?");
+    SoundEffect_StopSE(19, 0);
+    SoundEffect_PlaySE(20, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Hello.");
+    Voice_PlayVoice("B1008000_H00000", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Ah, it's Masaki.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Masaki-senpai? What is the matter?");
+    Voice_PlayVoice("B1008000_H00100", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Well...\nI don't need anything from you.");
+    Voice_PlayVoice("B1008000_H00200", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "... Sorry about today.\nI got caught up in the moment and\nsaid it real harshly.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "No, you didn't...");
+    Voice_PlayVoice("B1008000_H00300", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Ah...\nIt's hard to say it when the other\nperson is your senior, right?\nI'm still inexperienced.");
+    Voice_PlayVoice("B1008000_H00400", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Anyway, don't worry about a thing.\nI won't worry either.... Later.");
+    SoundEffect_PlaySE(23, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Masaki-senpai...\nHe called just to check up on me.\nHow nice of him...)");
+    SoundEffect_StopSE(23, 0);
+    SoundEffect_PlaySE(20, 127);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

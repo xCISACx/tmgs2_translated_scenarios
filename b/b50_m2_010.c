@@ -1,0 +1,33 @@
+section "b50_m2_010"{
+    Background_Bg_GS2("BG_EX150_CO_1", #1, #1, 0);
+    Character_Chara_GS2(2, "M2_??F", 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Shiba＊＊｝. Umm, I...");
+    Message_Who(0);
+    Message_MsgDisp("　　　", "　　　　　　・\n　　　　　　・\n　　　　　　・");
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(0, 6, 1);
+    Voice_PlayVoice("FD_02_010_00000", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "... Okay.");
+    Character_ChFace(0, 0, 0);
+    Voice_PlayVoice("FD_02_010_00100", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "I get it....\nI don't know for how long I can do\nthis, though.");
+    Character_ChFace(0, 0, 6);
+    Character_ChFace(0, 4, 0);
+    Voice_PlayVoice("FD_02_010_00200", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "So don't make that face.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Shiba＊＊｝.");
+    Character_ChFace(0, 0, 6);
+    Character_ChFace(0, 6, 1);
+    Character_ChFace(0, 4, 0);
+    Voice_PlayVoice("FD_02_010_00300", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "It's fine, as long as I can see your\nsmile.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Shiba＊＊｝...");
+    }

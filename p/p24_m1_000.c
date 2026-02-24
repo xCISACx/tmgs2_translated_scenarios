@@ -1,0 +1,73 @@
+section "p24_m1_000"{
+    if (Parameter_bunka_jyu(0) == 1){
+        Character_ChFace(0, 2, 1);
+        Character_ChFace(0, 3, 4);
+        Character_Chara_GS2(1, "M1_01F", 0);
+        Background_Bg_GS2("BG_SC920_LI_0", #1, #1, 0);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("P1401000_A00000", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "Ah!\nIt's so noisy, and confined and hot\nand stuffy...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Oh, ｛Saeki＊＊｝, are you\nleaving?");
+        Character_ChFace(0, 2, 1);
+        Character_BlinkStart(1, 3, (#1));
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("P1401000_A00100", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "I'm going home.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "... Was it boring?");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(1, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P1401000_A00200", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "Well, maybe it was okay?\nWakaouji-sensei getting the disco\nfever was interesting.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "R-Really?");
+        Character_ChFace(0, 2, 5);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P1401000_A00300", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "Yeah. Well, do your best.\nI'm going home.");
+        Character_Chara_GS2(1, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I did it!\nI was praised by\n｛Saeki＊＊｝!)");
+        }
+    else {
+        Character_ChFace(0, 2, 1);
+        Character_ChFace(0, 3, 4);
+        Character_Chara_GS2(1, "M1_01F", 0);
+        Background_Bg_GS2("BG_SC920_LI_0", #1, #1, 0);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("P1401000_A00400", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "Hey!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Oh, ｛Saeki＊＊｝, are you\nleaving?");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(1, 3, (#1));
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("P1401000_A00500", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "Things are getting out of hand\ninside, you know?\nGirls are mobbing Wakaouji...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "W-What!?");
+        Character_ChFace(0, 2, 0);
+        Character_BlinkStart(1, 0, (#1));
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("P1401000_A00600", #1, "");
+        Message_Who(1);
+        Message_MsgDisp("Saeki", "You better stop it soon!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "O-Okay!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ugh... I failed...)");
+        }
+    Message_CloseMsg();
+    Music_StopBGM(0, 40);
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(1, 86, 1);
+    }

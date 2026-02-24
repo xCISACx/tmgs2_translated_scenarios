@@ -1,0 +1,12 @@
+section "y01_m7_016"{
+    Still_Event("EV_07_17", #1, 1, 60);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("FD_07_220_02000", #1, "");
+    System_ButtonWait();
+    Voice_StopVoice_GS2();
+    Still_Event("EV_07_17", #1, 0, 60, 0, 1);
+    System_ButtonWait();
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

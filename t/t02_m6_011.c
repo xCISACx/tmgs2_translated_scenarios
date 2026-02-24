@@ -1,0 +1,174 @@
+section "t02_m6_011"{
+    Background_Bg_GS2("BG_BK000_CO_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Screen_WipeOut(3);
+    Screen_ClearScreen();
+    System_GlobalWork(3, 0, 0);
+    System_Wait(90);
+    Message_CloseMsg();
+    Message_MessageWindow(1);
+    Message_Text_Color(16);
+    Background_Bg_GS2("BG_EX110_SP_1", #1, #1, 0);
+    Screen_WipeIn(3);
+    Message_TextSpeed(8);
+    Message_DispMsg(1);
+    if (System_GlobalWork(2, 1) == 1){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Saeki＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 2){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Shiba＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Hikami＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 4){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Hariya＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 5){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Chris＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 7){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Wakaouji＊＊｝...)");
+        }
+    else if (System_GlobalWork(2, 1) == 8){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Sorry, ｛Masaki＊＊｝...)");
+        }
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(But as expected, I...)");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 0);
+    Character_ChFace(0, 4, 0);
+    Character_Chara_GS2(6, "M6_01F", 0);
+    Music_PlayBGM(0, "MN_C_06_090_D00", 127, 40);
+    Voice_PlayVoice("", 6, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Amachi＊＊｝. What's up?");
+    Character_ChFace(0, 2, 2);
+    Character_BlinkStart(6, 3, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("T0206010_F00000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "... You're cold.\nYou're using that tone with me, even\nthough I came here to congratulate\nyou.");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(6, 0, (#1));
+    Voice_PlayVoice("T0206010_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "... Kidding.\nI didn't come here to say that.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh?");
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 1);
+    Voice_PlayVoice("T0206010_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "You know...\nYou don't know the reason why I\nenrolled into Hanegasaki Academy, do\nyou?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "... I don't.");
+    Character_BlinkStart(6, 2, (#1));
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("T0206010_F00300", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "When I was in my 3rd year in junior\nhigh school...");
+    Character_BlinkStart(6, 3, (#1));
+    Character_ChFace(0, 3, 1);
+    Voice_PlayVoice("T0206010_F00400", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "There was a person who returned a\nbook that I had dropped to me.\nA book that wouldn't cost much to\nreplace--");
+    Character_ChFace(0, 2, 3);
+    Character_BlinkStart(6, 2, (#1));
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("T0206010_F00500", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "The uniform the girl was wearing was\na Hanegasaki Academy uniform.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "That's...");
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("T0206010_F00600", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "That's why I was extremely glad that\nI could see you again.\nMy heart was racing.");
+    Character_ChFace(0, 3, 1);
+    Character_BlinkStart(6, 0, (#1));
+    Voice_PlayVoice("T0206010_F00700", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Then...\nas I was spending time with you, I\nthought \"It's this person\".");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(6, 2, (#1));
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("T0206010_F00800", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I only think about you.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Amachi＊＊｝...");
+    Character_ChFace(0, 0, 6);
+    Voice_PlayVoice("T0206010_F00900", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "... I like you.");
+    Character_ChFace(0, 2, 3);
+    Voice_PlayVoice("T0206010_F01000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "From now on, not as senior and\njunior, but as a boyfriend and\ngirlfriend.");
+    Character_BlinkStart(6, 3, (#1));
+    Character_ChFace(0, 3, 1);
+    Voice_PlayVoice("T0206010_F01100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Please go out with me!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "I'd love to, if you're okay with me!");
+    Character_ChFace(0, 0, 9);
+    Character_ChFace(0, 3, 5);
+    Voice_PlayVoice("T0206010_F01200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "...... Really...?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah.");
+    Character_ChFace(0, 2, 2);
+    Character_BlinkStart(6, 2, (#1));
+    Character_ChFace(0, 3, 3);
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("T0206010_F01300", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "It's like a lie....\nIf you say it's a lie, I'm going to\nhate you.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "I wonder.");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(6, 2, (#1));
+    Character_ChFace(0, 3, 3);
+    Character_ChFace(0, 4, 0);
+    Voice_PlayVoice("T0206010_F01400", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "...\nThis will be the last day that the\nwind will blow on you.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh...?");
+    Character_ChFace(0, 0, 10);
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("T0206010_F01500", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I like you....\nPlease continue to treat me well.");
+    Music_StopBGM(0, 40);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Still_Event("EV_06_20", #1, 1, 60);
+    Screen_WipeIn(2);
+    System_Wait(120);
+    Still_Event("EV_06_20", #1, 0, 60, 0, 1);
+    System_Wait(10);
+    System_Wait(120);
+    Screen_WipeOut(3);
+    Character_Chara_GS2(6, "NON");
+    System_GlobalWork(3, 0, 60);
+    Screen_ClearScreen();
+    Message_TextSpeed(#1);
+    Background_Bg_GS2("BG_BK000_CO_0", #1, #1, 0);
+    Screen_WipeIn(3);
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

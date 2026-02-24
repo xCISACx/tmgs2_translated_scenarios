@@ -1,0 +1,37 @@
+section "k02_g4_010"{
+    Character_BlinkStart(13, 1, (#1), 1);
+    Character_BlinkStart(13, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_HO100_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yes.");
+    SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+    System_Wait(80);
+    Character_Chara_GS2(13, "G4_04F", 0);
+    Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Mizushima＊＊｝.");
+    Character_ChFace(0, 0, 3);
+    Character_BlinkStart(13, 2, (#1));
+    Voice_PlayVoice("", #1, "K0213000_M01600");
+    Message_Who(13);
+    Message_MsgDisp("Mizushima", "｛主人公｝, I'm sorry for\ncoming over without warning.\nHappy New Year.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Happy New Year! What's happening?");
+    Character_ChFace(0, 2, 2);
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("K0213000_M01700", #1, "");
+    Message_Who(13);
+    Message_MsgDisp("Mizushima", "Gee... It's your birthday, right?\nSo here.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Wow, a present! Thanks!");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("K0213000_M01800", #1, "");
+    Message_Who(13);
+    Message_MsgDisp("Mizushima", "I'm glad that you're happy.\nWhy don't you open it?");
+    Character_Chara_GS2(13, "NON");
+    Music_StopBGM(0, 40);
+    }

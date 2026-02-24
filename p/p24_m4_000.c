@@ -1,0 +1,77 @@
+section "p24_m4_000"{
+    if (Parameter_bunka_jyu(0) == 1){
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(4, "M4_01F", 0);
+        Background_Bg_GS2("BG_SC920_LI_0", #1, #1, 0);
+        Screen_WipeIn(2);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "This way, please!");
+        Character_ChFace(0, 0, 11);
+        Voice_PlayVoice("P1404000_D00000", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "... Oh.\nI thought things would be outta\nhand, but it's not.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "It's dangerous if you trip while\ndancing, so I instructed them to\nmake sure there's nothing on the\nfloor.");
+        Character_ChFace(0, 2, 3);
+        Character_BlinkStart(4, 3, (#1));
+        Character_ChFace(0, 3, 5);
+        Voice_PlayVoice("P1404000_D00100", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "You guys have really thought about\nthis...");
+        Character_ChFace(0, 0, 11);
+        Voice_PlayVoice("P1404000_D00200", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Huh?\n\"Instructed\", meaning that you're in\ncharge of this place?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah.");
+        Character_ChFace(0, 2, 4);
+        Character_BlinkStart(4, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("P1404000_D00300", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Heh, terrific～. That's a good thing!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Thank gosh.\nIt seems like ｛Hariya＊＊｝\nlikes this place.)");
+        }
+    else {
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(4, "M4_01F", 0);
+        Background_Bg_GS2("BG_SC920_LI_0", #1, #1, 0);
+        Screen_WipeIn(2);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "This way, please!");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 1);
+        Voice_PlayVoice("P1404000_D00400", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Wow.\nWhy is everything all over the\nplace?!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "They were supposed to leave their\nthings in another room, but they're\nnot listening to me...");
+        Character_ChFace(0, 0, 8);
+        Voice_PlayVoice("P1404000_D00500", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "Anyway, this isn't good, right?\nThere's trash all over the place,\ntoo.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ugh...");
+        Character_BlinkStart(4, 3, (#1));
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("P1404000_D00600", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "... Go get a broom and a dustpan.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "What?!");
+        Character_ChFace(0, 0, 8);
+        Voice_PlayVoice("P1404000_D00700", #1, "");
+        Message_Who(4);
+        Message_MsgDisp("Hariya", "I'm saying that this place is awful!\nJust go get them!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "O-Okay! I'll be back～!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ugh... I screwed up...)");
+        }
+    Message_CloseMsg();
+    Music_StopBGM(0, 40);
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

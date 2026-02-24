@@ -1,0 +1,193 @@
+section "q17_m7_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(7, "M7_17F", 0);
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    if (System_GlobalWork(0, 1) == 1){
+        if (System_GlobalWork(23, 1) == 7){
+            Message_Who(0);
+            Message_MsgDisp("主人公", "I'm sorry, ｛Wakaouji＊＊｝.\nI made you come along with me to\nplaces during the field trip...");
+            Character_ChFace(0, 0, 6);
+            Character_ChFace(0, 4, 0);
+            Voice_PlayVoice("FD_07_060_00000", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Sensei has no honor....\nIn the end, he couldn't get closer.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "........");
+            Character_ChFace(0, 0, 10);
+            Voice_PlayVoice("FD_07_060_00100", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Oh, but hey!\nSensei was lucky to go on something\nlike a date, right?\nIt will be a good memory.");
+            Character_BlinkStart(7, 2, (#1));
+            Voice_PlayVoice("FD_07_060_00200", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Don't make that sort of face.\nAnd keep at it, okay?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Okay.");
+            }
+        else if (Parameter_GetCh1Param(7, 130) == 3){
+            Voice_PlayVoice("Q0807000_G00000", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "This ends the day.\nGood job, everyone.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Thank you, Sensei.");
+            Voice_PlayVoice("Q0807000_W00100", #1, "");
+            Message_Who(0);
+            Message_MsgDisp("Students", "Thank you!");
+            Character_ChFace(0, 2, 4);
+            Character_BlinkStart(7, 2, (#1));
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G00200", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "You're welcome.\nSensei is also happy that he was\nable to go sightseeing.");
+            Voice_PlayVoice("Q0807000_G00300", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "...\nBy the way, there is a free activity\nday, day after tomorrow.\nHas everyone turned in their\nschedules?");
+            SoundEffect_PlayStream(2, "SS_T_00_283_S00");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Ah... Oops, no!");
+            Character_ChFace(0, 2, 5);
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G00400", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "*Sigh* In that case, you'll be going\naround with me day after tomorrow,\nthen?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Yes, by all means!");
+            Voice_PlayVoice("Q0807000_G00500", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Well then, the people without a plan\nwill gather here day after\ntomorrow....\nOkay, now break up!");
+            }
+        else if (Parameter_GetCh1Param(7, 130) >= 4){
+            Voice_PlayVoice("Q0807000_G00600", 7, "Q0807000_G00601");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "This ends the day.\nThank you, ｛主人公｝.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "No, don't say that...\nThank you, ｛Wakaouji＊＊｝.");
+            Voice_PlayVoice("Q0807000_G00700", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "It is I who should say that....\nBy the way, have you submitted your\nschedule for day after tomorrow?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "... Umm...");
+            Character_ChFace(0, 2, 5);
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G00800", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Good.\nI figured you didn't turn it in.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Huh...?");
+            Character_ChFace(0, 2, 4);
+            Character_BlinkStart(7, 2, (#1));
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G00900", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Let's visit places the day after\ntomorrow.\nHow about it?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Yes, certainly!");
+            Character_ChFace(0, 2, 0);
+            Character_ChFace(0, 3, 3);
+            Character_ChFace(0, 4, 1);
+            Voice_PlayVoice("Q0807000_G01000", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Yes, I am looking forward to it.\nWell then, the morning of the day\nafter tomorrow, wait here.");
+            }
+        }
+    else if (System_GlobalWork(0, 1) == 2){
+        if (Parameter_GetCh1Param(7, 130) <= 2){
+            Voice_PlayVoice("Q0807000_G01100", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "This ends the day.\nThank you, everyone.");
+            Voice_PlayVoice("Q0807000_W01200", #1, "");
+            Message_Who(0);
+            Message_MsgDisp("Students", "Thank you～!");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Thank you!");
+            Character_ChFace(0, 2, 3);
+            Character_ChFace(0, 3, 4);
+            Voice_PlayVoice("Q0807000_G01300", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "You're welcome.\nBy the way, there is a free day the\nday after tomorrow.\nHas everyone made their schedules?");
+            SoundEffect_PlayStream(2, "SS_T_00_283_S00");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Umm... Oops, no!");
+            Character_ChFace(0, 2, 0);
+            Character_BlinkStart(7, 2, (#1));
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G01400", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "As I thought.\nWell then, you'll be with me the day\nafter tomorrow.\nLet's gather here in the morning.");
+            Voice_PlayVoice("Q0807000_W01500", #1, "");
+            Message_Who(0);
+            Message_MsgDisp("Students", "Oookaaay!");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "(Okay, the day after tomorrow I'll\nbe with ｛Wakaouji＊＊｝!)");
+            }
+        else if (Parameter_GetCh1Param(7, 130) == 3){
+            Voice_PlayVoice("Q0807000_G01600", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "This ends the day.\nThank you, everyone.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Thank you, Sensei!");
+            Voice_PlayVoice("Q0807000_W01700", #1, "");
+            Message_Who(0);
+            Message_MsgDisp("Students", "Thank you～!");
+            Character_ChFace(0, 2, 0);
+            Character_BlinkStart(7, 2, (#1));
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G01800", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "You're welcome.\nSensei enjoyed going places with you\nall.");
+            Voice_PlayVoice("Q0807000_G01900", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "...\nBy the way, there is a free activity\nday, the day after tomorrow.\nHas everyone turned in their\nschedules?");
+            SoundEffect_PlayStream(2, "SS_T_00_283_S00");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Umm... Oops, no!");
+            Character_ChFace(0, 2, 0);
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G02000", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "*Sigh* In that case, you will be\nwith Sensei the day after tomorrow.\nDon't complain.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "No, I certainly hope so.");
+            Voice_PlayVoice("Q0807000_G02100", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "I suppose it's okay.\nWell then, the morning of the day\nafter tomorrow, wait here....\nOkay, break up!");
+            }
+        else {
+            Voice_PlayVoice("Q0807000_G02200", 7, "Q0807000_G02201");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "This ends the day.\nThank you, ｛主人公｝.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "No, don't say that...\nThank you, ｛Wakaouji＊＊｝.");
+            Voice_PlayVoice("Q0807000_G02300", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "It is I who should say that....\nBy the way, you haven't submitted\nyour schedule for the day after\ntomorrow.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "... Oh.");
+            Character_ChFace(0, 2, 0);
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G02400", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "However, don't submit it.");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Huh...?");
+            Character_ChFace(0, 2, 5);
+            Character_ChFace(0, 3, 3);
+            Voice_PlayVoice("Q0807000_G02500", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Let's go visit places the day after\ntomorrow.\nIs that okay?");
+            Message_Who(0);
+            Message_MsgDisp("主人公", "Yes, by all means!");
+            Character_ChFace(0, 2, 4);
+            Character_BlinkStart(7, 2, (#1));
+            Character_ChFace(0, 3, 3);
+            Character_ChFace(0, 4, 1);
+            Voice_PlayVoice("Q0807000_G02600", #1, "");
+            Message_Who(7);
+            Message_MsgDisp("Wakaouji", "Good answer.\nWell then, the morning of the day\nafter tomorrow, wait here.");
+            }
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

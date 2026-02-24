@@ -1,0 +1,150 @@
+section "k02_g4_000"{
+    Character_BlinkStart(13, 1, (#1), 1);
+    Character_BlinkStart(13, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    if (Parameter_ChkPlayer(6) == 0){
+        Background_Bg_GS2("BG_SC302_?_0", 1, #1, 0);
+        Character_Chara_GS2(13, "G4_01F", 0);
+        Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Mizushima＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(13, 3, (#1));
+        Voice_PlayVoice("K0213000_M00000", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Happy Birthday～!\nHere, it's a present.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, thanks!");
+        Character_BlinkStart(13, 0, (#1));
+        Voice_PlayVoice("K0213000_M00100", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "I'm glad that you're happy.\nIt would be nice if you liked it.");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(13, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 1){
+        Background_Bg_GS2("BG_HO100_?_2", 1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes～.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+        Character_Chara_GS2(13, "G4_04F", 0);
+        Voice_PlayVoice("K0213000_M00200", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Hello, I'm sorry for coming over all\nof a sudden.\nDo you have some time?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Mizushima＊＊｝. What's up?");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(13, 3, (#1));
+        Voice_PlayVoice("K0213000_M00300", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Happy Birthday! Here.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "A present? Wow, thanks!");
+        Character_BlinkStart(13, 2, (#1));
+        Voice_PlayVoice("K0213000_M00400", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Haha. I'm glad you're happy.\nI will see you later.");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(13, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 2){
+        Background_Bg_GS2("BG_SC302_?_0", 1, #1, 0);
+        Character_Chara_GS2(13, "G4_01F", 0);
+        Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+        Screen_WipeIn(2);
+        Voice_PlayVoice("", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Mizushima＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("K0213000_M00500", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Here, it's a birthday present.\nI'm sorry that it's late.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "You remembered. Thanks!");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0213000_M00600", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "I'm glad that you're happy.\nWhy don't you open it?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Okay, thanks!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(13, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 3){
+        Background_Bg_GS2("BG_HO100_?_2", 1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+        Character_Chara_GS2(13, "G4_04F", 0);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Mizushima＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 0);
+        Character_BlinkStart(13, 2, (#1));
+        Voice_PlayVoice("K0213000_M00700", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Here, it's a birthday present.\nI'm sorry that it's late.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, you remembered!");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0213000_M00800", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "I'm glad that you're happy.\nWhy don't you open it?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Okay, thanks!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(13, "NON");
+        }
+    else if (Parameter_ChkPlayer(6) == 8){
+        System_Call_GS2("K02", "G4", 10);
+        }
+    else if (Parameter_ChkPlayer(6) == 5){
+        Background_Bg_GS2("BG_HO100_?_2", 1, #1, 0);
+        Screen_WipeIn(2);
+        SoundEffect_PlayStream(3, "SS_T_00_038_M00");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes.");
+        SoundEffect_PlayStream(3, "SS_T_00_039_M00");
+        Music_PlayBGM(0, "MN_C_13_000_D00", 127, 40);
+        Character_Chara_GS2(13, "G4_04F", 0);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, ｛Mizushima＊＊｝.\nWhat's up?");
+        Character_ChFace(0, 0, 0);
+        Character_BlinkStart(13, 2, (#1));
+        Voice_PlayVoice("K0213000_M00700", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "Here, it's a birthday present.\nI'm sorry that it's late.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Wow, you remembered!");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("K0213000_M00800", #1, "");
+        Message_Who(13);
+        Message_MsgDisp("Mizushima", "I'm glad that you're happy.\nWhy don't you open it?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Okay, thanks!");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(13, "NON");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(13, 86, 1);
+    System_Call_GS2("K02", "G4", 20);
+    Parameter_InPl1Param(339, #1);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

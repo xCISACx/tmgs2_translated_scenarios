@@ -1,0 +1,34 @@
+section "q23_m3_000"{
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Hey, what are you guys up to?");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("Q2403000_C00000", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "... As you can clearly see.");
+    Character_ChFace(0, 2, 1);
+    Character_BlinkStart(3, 3, (#1));
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("Q2403000_C00100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Honestly, I never thought high\nschool students would still do\npillow fights.\nYou better be careful as well...");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    SoundEffect_PlayStream(3, "SS_T_00_115_M00");
+    Voice_PlayVoice("Q2403000_C00200", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Ack...!!");
+    Character_ChFace(0, 0, 8);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Are you alright,\n｛Hikami＊＊｝?");
+    Character_ChFace(0, 2, 1);
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("Q2403000_C00300", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "... Who did that?\nWho threw a pillow at me!?\nThey are going to get it!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Woah, ｛Hikami＊＊｝ looks\nfurious now.)");
+    Character_Chara_GS2(3, "NON");
+    Message_CloseMsg();
+    }

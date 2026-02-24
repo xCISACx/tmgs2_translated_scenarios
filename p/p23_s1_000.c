@@ -1,0 +1,38 @@
+section "p23_s1_000"{
+    Background_Bg_GS2("BG_SC920_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_B_SC_920_000", 127, 40);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Welcome to the disco, \"Young\nPrince\"!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm cold and surprisingly, people\nare showing up.\nIt's getting so hectic that I'm\nfeeling faint...)");
+    Character_ChFace(0, 0, 10);
+    Character_Chara_GS2(14, "S1_04F", 0);
+    Voice_PlayVoice("P1314000_N00000", #1, "");
+    Message_Who(14);
+    Message_MsgDisp("Yuu", "Sis!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, Yuu-kun! You came.");
+    Voice_PlayVoice("P1314000_N00100", #1, "");
+    Message_Who(14);
+    Message_MsgDisp("Yuu", "Yeah!\nI had nothing interesting to do so I\ncame here to look for you.");
+    Character_ChFace(0, 2, 4);
+    Character_BlinkStart(14, 2, (#1));
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("P1314000_N00200", #1, "");
+    Message_Who(14);
+    Message_MsgDisp("Yuu", "... Umm...\nIs this the latest Haunted House?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh?");
+    Character_ChFace(0, 2, 3);
+    Character_ChFace(0, 3, 2);
+    Voice_PlayVoice("P1314000_N00300", #1, "");
+    Message_Who(14);
+    Message_MsgDisp("Yuu", "It's dark...\nWhy isn't everyone going, \"Kyaa,\nkyaa\"....\nHuh? It's different than that?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "*Giggles* I guess so?\nWell then, let me lead you around!");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    System_Call_GS2("P24", "S1", 0);
+    }

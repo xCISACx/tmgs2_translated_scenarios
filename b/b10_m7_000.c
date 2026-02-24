@@ -1,0 +1,36 @@
+section "b10_m7_000"{
+    Background_Bg_GS2("BG_EX100_?_2", 1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(*Sigh*. Now why did I say that?)");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Ugh, I hate myself...)");
+    SoundEffect_PlaySE(19, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh? I wonder who it is.");
+    SoundEffect_StopSE(19, 0);
+    SoundEffect_PlaySE(20, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Hello.");
+    Voice_PlayVoice("B1007000_G00000", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "It's Wakaouji.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh? ｛Wakaouji＊＊｝!?");
+    Voice_PlayVoice("B1007000_G00100", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "I think it's natural to have a\ndifferent opinion...\nIn other words, what I wanted to say\nwas...");
+    Voice_PlayVoice("B1007000_G00200", #1, "");
+    Message_Who(7);
+    Message_MsgDisp("Wakaouji", "Even knowing the way you are, I want\nto go out with you again.\nWell then...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Wakaouji＊＊｝...");
+    SoundEffect_PlaySE(23, 127);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I need to pay more attention to\n｛Wakaouji＊＊｝...)");
+    SoundEffect_StopSE(23, 0);
+    SoundEffect_PlaySE(20, 127);
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    }

@@ -1,0 +1,97 @@
+section "f10_m3_100"{
+    Character_BlinkStart(3, 1, (#1), 1);
+    Character_BlinkStart(3, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_SC100_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Character_ChFace(0, 0, 0);
+    if (Parameter_GetCh1Param(3, 326) == 0){
+        Parameter_AddCh1Param(3, 326, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Hikami＊＊｝.)");
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Character_BlinkStart(3, 2, (#1), 1);
+        Character_ChFace(0, 3, 1);
+        Voice_PlayVoice("F1003100_C00000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Even though you are my senior, a\nviolation is a violation.\nPlease give me your notebook.\nI will check your class and name.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(He even warns his upperclassmen.\n｛Hikami＊＊｝ is quite\ncourageous...)");
+        }
+    else if (Parameter_GetCh1Param(3, 326) == 1){
+        Parameter_AddCh1Param(3, 326, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Hikami＊＊｝.)");
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Character_ChFace(0, 2, 3);
+        Character_BlinkStart(3, 2, (#1), 1);
+        Character_ChFace(0, 3, 4);
+        Voice_PlayVoice("F1003100_C00100", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Good morning! Good morning!");
+        Voice_PlayVoice("F1003100_W00200", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Male Student", "... What the hell is that?");
+        Voice_PlayVoice("F1003100_W00300", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Female Student", "Haha, how idiotic...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hikami＊＊｝, what are you\ndoing?");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("", 3, "F1003100_C00400");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "｛主人公｝. Good morning!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "G-Good morning...");
+        Character_BlinkStart(3, 2, (#1), 1);
+        Voice_PlayVoice("F1003100_C00500", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Good.\nI am diligently doing the greeting\nexercises.\nYou should make an effort, too.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I see.\nSo that's what you're doing...");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Hmm...\nWill it get through to everyone?)");
+        }
+    else if (Parameter_GetCh1Param(3, 326) == 2){
+        Parameter_AddCh1Param(3, 326, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ah, it's ｛Hikami＊＊｝.)");
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Character_ChFace(0, 2, 4);
+        Character_BlinkStart(3, 2, (#1), 1);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("F1003100_C00600", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Good morning! Good morning!");
+        Voice_PlayVoice("F1003100_W00700", #1, "");
+        Message_Who(0);
+        Message_MsgDisp("Students", "Good morning.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hikami＊＊｝, good morning.");
+        Character_ChFace(0, 0, 11);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("F1003100_C00800", 3, "F1003100_C00801");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Hey, ｛主人公｝.\nGood morning.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "It looks like everyone is doing the\ngreeting exercises.");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(3, 2, (#1), 1);
+        Voice_PlayVoice("F1003100_C00900", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Yes!\nIt is great that everyone is making\nthe effort.\nGreetings are the basis of human\nrelations.");
+        Character_ChFace(0, 0, 10);
+        Voice_PlayVoice("F1003100_C01000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Don't you think since starting the\nexercises, the core of the school\nhas gotten brighter?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yeah, perhaps.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Hikami＊＊｝ is quite\ninfluential...)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(3, 86, 1);
+    }

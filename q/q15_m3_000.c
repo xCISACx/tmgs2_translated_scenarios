@@ -1,0 +1,31 @@
+section "q15_m3_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(3, "M3_01F", 0);
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 3, "FD_03_050_00000");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "｛主人公｝.\nWhat are you doing?\nEveryone left a long time ago...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Hikami＊＊｝...\nI'm thinking of various places to\nvisit...\nWhat about you?");
+    Voice_PlayVoice("FD_03_050_00100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Aah.\nWell, my schedule is really tight.\nHowever, I do not want you going\nplaces alone...\nWould you like to come with me?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yes!");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("FD_03_050_00200", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Very well, that is what we will do.\nCome along while it is still steady.\nWell, let's go!");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_GlobalWork(0, 2, 1);
+    System_GlobalWork(2, 2, 3);
+    System_Call_GS2("Q16", "M3", 0);
+    System_Call_GS2("Q17", "M3", 0);
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(3, 86, 1);
+    }

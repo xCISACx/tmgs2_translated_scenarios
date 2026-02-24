@@ -1,0 +1,70 @@
+section "l04_m8_001"{
+    int var0;
+    int var1;
+    if ((Parameter_GetCh1Param(8, 130) == 2) || (Parameter_GetCh1Param(8, 130) == 3)){
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("L0408000_H05700", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "Oh, thanks... Ah...");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("L0408000_H05800", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "... Sorry, I won't take it.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh?");
+        Voice_PlayVoice("L0408000_H05900", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "Before you give me chocolate,\nthere's stuff you gotta reflect on.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh...?");
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(8, 3, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("L0408000_H06000", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "...\nYou know that you did something\nwrong, right?");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Yes...");
+        Voice_PlayVoice("L0408000_H06100", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "Well, this is also a part of\nlearning.\nMake a fresh start and try again.");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(8, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ugh...\nI wonder what he didn't like about\nit...)");
+        }
+    else {
+        Character_ChFace(0, 4, 0);
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 1);
+        Voice_PlayVoice("L0408000_H06200", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "... Hmm.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "... ｛Masaki＊＊｝?");
+        Voice_PlayVoice("L0408000_H06300", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "I'm glad you thought to give me\nchocolate, and I really wanna take\nit.");
+        Voice_PlayVoice("L0408000_H06400", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "But I won't.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Eh? Why...");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("L0408000_H06500", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "Because...\nHmm, this is something I just gotta\nteach you...");
+        Character_ChFace(0, 2, 2);
+        Character_BlinkStart(8, 2, (#1));
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("L0408000_H06600", #1, "");
+        Message_Who(8);
+        Message_MsgDisp("Masaki", "Well, when you find out, come give\nit to me again....\nI'll be waiting. Okay?");
+        Music_StopBGM(0, 40);
+        Character_Chara_GS2(8, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Ugh...\nI wonder what he didn't like about\nit...)");
+        }
+    }

@@ -1,0 +1,36 @@
+section "q33_g2_000"{
+    Character_ChFace(0, 2, 2);
+    Character_BlinkStart(11, 3, (#1));
+    Character_ChFace(0, 3, 4);
+    Character_Chara_GS2(11, "G2_01F", 0);
+    Background_Bg_GS2("BG_SCB80_LI_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("Q1111000_K00000", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "I am sorry. Thank you for waiting.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "No, I finished early.\nWhat did you buy?");
+    Character_ChFace(0, 0, 0);
+    Voice_PlayVoice("Q1111000_K00100", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "An indigo handkerchief for my\nparents.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Waaah, what a pretty color!\nAnything for yourself?");
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("Q1111000_K00200", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "Yes, this. An indigo-colored ribbon.\nI can even wear this color in\nschool.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, it's cute.... Huh?\nIs that more in your bag?");
+    Character_ChFace(0, 0, 10);
+    Character_BlinkStart(11, 2, (#1));
+    Voice_PlayVoice("Q1111000_K00300", #1, "");
+    Message_Who(11);
+    Message_MsgDisp("Onoda", "This one is a plant- dyed ribbon.\nThis one is an embroidery- colored\nribbon.\nThis one is a batik ribbon...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(She really likes ribbons...)");
+    Music_StopBGM(0, 40);
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

@@ -1,0 +1,37 @@
+section "q15_m5_000"{
+    Character_ChFace(0, 2, 3);
+    Character_ChFace(0, 3, 4);
+    Character_Chara_GS2(5, "M5_01F", 0);
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Chris＊＊｝!");
+    Voice_PlayVoice("FD_05_050_00000", #1, "");
+    Message_Who(5);
+    Message_MsgDisp("Chris", "Hm? What's up? Are you alone?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah.\nDo you want to go sightseeing with\nme?");
+    Character_ChFace(0, 2, 2);
+    Character_ChFace(0, 3, 4);
+    Voice_PlayVoice("FD_05_050_00100", #1, "");
+    Message_Who(5);
+    Message_MsgDisp("Chris", "I'm more than happy to...\nBut are you okay with me?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Of course.");
+    Character_ChFace(0, 2, 5);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("FD_05_050_00200", #1, "");
+    Message_Who(5);
+    Message_MsgDisp("Chris", "Then let's go.\nTake lots of pictures and give them\nto him!");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_GlobalWork(0, 2, 1);
+    System_GlobalWork(2, 2, 5);
+    System_Call_GS2("Q16", "M5", 0);
+    System_Call_GS2("Q17", "M5", 0);
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(5, 86, 1);
+    }

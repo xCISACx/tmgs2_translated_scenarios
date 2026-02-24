@@ -1,0 +1,37 @@
+section "k02_m6_010"{
+    Character_BlinkStart(6, 1, (#1), 1);
+    Character_BlinkStart(6, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Message_Who(0);
+    Message_MsgDisp("　　　", "　　　　　　・\n　　　　　　・\n　　　　　　・");
+    Character_Chara_GS2(6, "M6_??F", 0);
+    Background_Bg_GS2("BG_HO000_WI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("K0206010_F00000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "... Ah, right!\nThere is something that I actually\nwant to give to you.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Something you want to give to me?");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("K0206010_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Surprise!\nHere, it's a birthday present!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "So you remembered!");
+    Voice_PlayVoice("K0206010_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Since I gave you a present, treasure\nit.");
+    Voice_PlayVoice("K0206010_F00300", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I am going home now.\nPlease treat me well this year too,\nSenpai!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah, same here!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(This is how my new year started.)");
+    Character_Chara_GS2(6, "NON");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(6, 86, 1);
+    }

@@ -1,0 +1,35 @@
+section "q25_g3_000"{
+    System_Wait(60);
+    SoundEffect_PlayStream(3, "SS_DSE_223_000");
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(12, "G3_08F", 0);
+    Background_Bg_GS2("BG_SCB31_LI_2", #1, #1, 0);
+    Screen_WipeIn(2);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Nishimoto＊＊｝!");
+    Character_ChFace(0, 0, 8);
+    Character_BlinkStart(12, 2, (#1));
+    Voice_PlayVoice("", #1, "Q2612000_L00100");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "｛主人公｝!\nLet's dash back!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Huh?");
+    Character_BlinkStart(12, 0, (#1));
+    Voice_PlayVoice("Q2612000_L00200", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "We could hurry towards our room\nbefore the patrol arrives while it's\nstill like this!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "O-Okay. Maybe.");
+    Character_ChFace(0, 0, 10);
+    Voice_PlayVoice("Q2612000_L00300", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "C'mon, let's go!");
+    Character_Chara_GS2(12, "NON");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, wait!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(｛Nishimoto＊＊｝'s fast～!)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

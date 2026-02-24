@@ -1,0 +1,93 @@
+section "b15_m8_002"{
+    int var0;
+    Background_CarBGOpen2("BG_EX170_AU_2");
+    Background_CarBGScroll(0);
+    Background_CarBGScroll(#1);
+    Background_CarBgSpeedChange(#8, 8);
+    var0 = Parameter_GetSysParam(4);
+    switch (var0){
+        case 0:
+        Still_Event("EV_08_31", #1, 0, 1);
+        break ;
+        case 1:
+        Still_Event("EV_08_32", #1, 0, 1);
+        break ;
+        case 2:
+        Still_Event("EV_08_33", #1, 0, 1);
+        break ;
+        case 3:
+        Still_Event("EV_08_34", #1, 0, 1);
+        break ;
+        }
+    System_Wait(5);
+    Screen_WipeIn(3);
+    Still_StillFace(0, 0, 2);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H01500", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "...\nMaybe I should stop coming by car\nwhen I'm meeting you.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh! Why?");
+    Still_StillFace(0, 2, 1);
+    Still_StillFace(0, 3, 3);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H01600", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "I can't focus on driving.\nThanks to someone.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ugh...");
+    Still_StillFace(0, 2, 2);
+    Still_StillFace(0, 3, 3);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H01700", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Just like I said before, I don't\nhate being looked at or touched.");
+    Still_StillFace(0, 0, 2);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H01800", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "I just want you to think a little\nmore about what kind of things guys\nare...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "......");
+    Still_StillFace(0, 2, 6);
+    Still_StillFace(0, 3, 2);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H01900", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Ah!\nDon't ask the guys at school, okay!?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "I'm not going to ask about t-that!");
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 1);
+    Voice_PlayVoice("XD_08_00_H02000", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "... I take that back.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Eh?");
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H02100", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "It'd be worse if others guys had a\nchance.");
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 2);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H02200", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "Anyway, I can't concentrate\nanywhere....\nThinking about it, that's not bad.");
+    Still_StillFace(0, 0, 1);
+    Still_StillFace(0, 6, 0);
+    Still_StillFace(0, 4, 0);
+    Voice_PlayVoice("XD_08_00_H02300", #1, "");
+    Message_Who(8);
+    Message_MsgDisp("Masaki", "... Be strong, Masaki Motoharu!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(Masaki-senpai is focused...\nHow surprising.)");
+    }

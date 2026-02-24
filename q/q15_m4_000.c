@@ -1,0 +1,37 @@
+section "q15_m4_000"{
+    Character_ChFace(0, 2, 4);
+    Character_ChFace(0, 3, 0);
+    Character_Chara_GS2(4, "M4_01F", 0);
+    Background_Bg_GS2("BG_SCB20_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("FD_04_050_00000", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "... Hey.\nWhat are you doing all by yourself?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Hariya＊＊｝!");
+    Character_ChFace(0, 2, 3);
+    Character_ChFace(0, 3, 4);
+    Voice_PlayVoice("FD_04_050_00100", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "Surely you...");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ehehehe...");
+    Character_ChFace(0, 2, 1);
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("FD_04_050_00200", #1, "");
+    Message_Who(4);
+    Message_MsgDisp("Hariya", "... Don't give me that, \"Ehehehe\"!\nAaah, you're making a scene!\nCome on, let's go!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, wait up!");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_GlobalWork(0, 2, 1);
+    System_GlobalWork(2, 2, 4);
+    System_Call_GS2("Q16", "M4", 0);
+    System_Call_GS2("Q17", "M4", 0);
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(4, 86, 1);
+    }

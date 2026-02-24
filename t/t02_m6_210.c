@@ -1,0 +1,32 @@
+section "t02_m6_210"{
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 6, "");
+    Message_Who(6);
+    Message_MsgDisp("？？？", "｛主人公｝.");
+    Character_Chara_GS2(6, "M6_01F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Amachi＊＊｝!\nWhat are you doing here...?");
+    Character_ChFace(0, 2, 2);
+    Character_BlinkStart(6, 0, (#1), 1);
+    Character_ChFace(0, 3, 0);
+    Voice_PlayVoice("FD_06_210_00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I followed you.");
+    Voice_PlayVoice("FD_06_210_00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "Hey, do you wanna talk for a bit?");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "... Okay. Sure.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Background_Bg_GS2("BG_EX150_CO_1", #1, #1, 0);
+    Screen_WipeIn(2);
+    System_Wait(40);
+    Environment_StopME(0, 40);
+    Message_CloseMsg();
+    Message_MessageWindow(1);
+    Message_Text_Color(16);
+    Still_Pair_Event("EV_06_15", "EV_99_00", 0, 0);
+    Still_Pair_Event("EV_06_15", "EV_99_00", 1, 1);
+    }

@@ -1,0 +1,31 @@
+section "q31_g3_000"{
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(12, "G3_01F", 0);
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "｛主人公｝!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Oh, ｛Nishimoto＊＊｝! Morning.");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(12, 3, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("Q0912000_L00000", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "Well, shall we go?\nIn regards to the title of the\ntour...");
+    Character_ChFace(0, 0, 8);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("Q0912000_L00100", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "It's \"The Journey of Two Women\nindulging the Taste of Kyoto's\nGourmet Tour!\"");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Whaaaaat?!");
+    Character_ChFace(0, 0, 10);
+    Character_BlinkStart(12, 3, (#1));
+    Voice_PlayVoice("Q0912000_L00200", #1, "");
+    Message_Who(12);
+    Message_MsgDisp("Nishimoto", "I'll decide which perfectly\ndelectable shop to go.\nLeave that to me!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I wonder if this will be a nice\nmystery?)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    }

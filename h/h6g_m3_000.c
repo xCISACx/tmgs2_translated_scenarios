@@ -1,0 +1,37 @@
+section "h6g_m3_000"{
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 3, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "｛主人公｝.");
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(3, "M3_??F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Hikami＊＊｝.");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H6G03000_C00000", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "Congratulations on winning the\ncontest.\nI heard you playing.\nIt was very good.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Really? Thanks!");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(3, 2, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H6G03000_C00100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "I think that there are few songs\nthat can rival the sound of nature,\nbut I can't say that it's always\ntrue now.");
+    Character_ChFace(0, 2, 5);
+    Character_BlinkStart(3, 2, (#1));
+    Character_ChFace(0, 3, 3);
+    Character_ChFace(0, 4, 1);
+    Voice_PlayVoice("H6G03000_C00200", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "If it's you playing...\nI'd like to hear it again.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad that the Brass Band did\ntheir best.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(3, 86, 1);
+    }

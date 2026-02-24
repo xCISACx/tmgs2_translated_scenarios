@@ -1,0 +1,31 @@
+section "h5g_m6_000"{
+    Character_ChFace(0, 0, 10);
+    Character_Chara_GS2(6, "M6_??F", 0);
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 6, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "｛主人公｝.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "｛Amachi＊＊｝!");
+    Voice_PlayVoice("H5G06000_F00000", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I heard that you won a prize at some\nkind of art contest?\nCongratulations!!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Y-Yeah.");
+    Voice_PlayVoice("H5G06000_F00100", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I actually don't know much about\nart...\nbut I like the paintings you paint!\nPaint me something next time!");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(6, 3, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H5G06000_F00200", #1, "");
+    Message_Who(6);
+    Message_MsgDisp("Amachi", "I'll hang it up in the best spot in\nmy room!\nSo it's a promise!");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad that I did my best to\ncomplete the drawing.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(6, 86, 1);
+    }

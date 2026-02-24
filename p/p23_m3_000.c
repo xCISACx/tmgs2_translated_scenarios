@@ -1,0 +1,76 @@
+section "p23_m3_000"{
+    Background_Bg_GS2("BG_SC920_LI_0", #1, #1, 0);
+    Screen_WipeIn(2);
+    Music_PlayBGM(0, "MN_B_SC_920_000", 127, 40);
+    if (Parameter_GetCh1Param(3, 130) == 3){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome to the disco \"Young Prince\"!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Gosh, surprisingly, people are\nshowing up.\nIt's getting so hectic that I'm\nfeeling faint...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Voice_PlayVoice("", 3, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hikami＊＊｝. You came.");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(3, 2, (#1));
+        Voice_PlayVoice("P1303000_C00000", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Aah, the student council's executive\nis in charge of managing the culture\nfestival.\nTherefore, I'm on patrol duty.");
+        Character_ChFace(0, 2, 1);
+        Character_BlinkStart(3, 3, (#1));
+        Character_ChFace(0, 3, 2);
+        Voice_PlayVoice("P1303000_C00100", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "... Nevertheless, it's noisy.\nI'm unable to understand why people\ngather for this.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I wonder about things like that,\ntoo.");
+        Character_BlinkStart(3, 0, (#1));
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("P1303000_C00200", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "...\nHowever reluctant I am, it's not\nwrong to check the inside.\nYou'll have to give me a tour.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Please, please....\nIt looks like I have one person to\nguide!");
+        }
+    else if (Parameter_GetCh1Param(3, 130) >= 4){
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Welcome to the disco, \"Young\nPrince\"!");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(Gosh, surprisingly, people are\nshowing up.\nIt's getting so hectic that I'm\nfeeling faint...)");
+        Character_ChFace(0, 0, 0);
+        Character_Chara_GS2(3, "M3_01F", 0);
+        Voice_PlayVoice("", 3, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "｛主人公｝.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "｛Hikami＊＊｝. You came.");
+        Character_ChFace(0, 0, 10);
+        Character_BlinkStart(3, 2, (#1));
+        Voice_PlayVoice("P1303000_C00300", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Aah, the student council's executive\nis in charge of managing the culture\nfestival.\nI came on patrol duty.");
+        Character_ChFace(0, 2, 2);
+        Character_ChFace(0, 3, 0);
+        Voice_PlayVoice("P1303000_C00400", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "How many...\nI don't know why you must come to\nsuch a noisy place like this.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "I see...");
+        Character_ChFace(0, 0, 11);
+        Character_BlinkStart(3, 2, (#1));
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("P1303000_C00500", #1, "");
+        Message_Who(3);
+        Message_MsgDisp("Hikami", "Oh, no, but...\nI cannot judge it without looking on\nthe inside...\nUmm, I wonder if you would please be\nmy guide.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Of course....\nIt looks like I have one person to\nguide!");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    System_Call_GS2("P24", "M3", 0);
+    }

@@ -1,0 +1,12 @@
+section "b03_m2_110"{
+    Character_Chara_GS2(2, "M2_??F", 0, 1, 1);
+    Background_Bg_GS2("BG_FP600_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("B0302110_B00000", #1, "");
+    Message_Who(2);
+    Message_MsgDisp("Shiba", "It would be nicer if it wasn't so\ncrowded.\nLet's go.");
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    System_Call_GS2("B04", "M2", 110);
+    }

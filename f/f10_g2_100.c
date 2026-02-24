@@ -1,0 +1,98 @@
+section "f10_g2_100"{
+    Character_BlinkStart(11, 1, (#1), 1);
+    Character_BlinkStart(11, 1, (#1), 2);
+    Character_ChFace(0, 0, 0);
+    Character_ChFace(1, 0, 0);
+    Background_Bg_GS2("BG_SC210_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Character_ChFace(0, 0, 0);
+    if (Parameter_GetCh1Param(11, 326) == 0){
+        Parameter_AddCh1Param(11, 326, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, it's ｛Onoda＊＊｝.");
+        Character_Chara_GS2(11, "G2_01F", 0);
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("F1011100_K00000", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Hello.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "What are you doing?");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("F1011100_K00100", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "I'm hanging up a poster with this\nmonth's school objective.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ehh.\nDid you draw this,\n｛Onoda＊＊｝?");
+        Character_ChFace(0, 0, 9);
+        Character_ChFace(0, 3, 3);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("F1011100_K00200", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Eh... Well...\nI didn't have the time to ask\nsomeone else to do it, so...");
+        Character_ChFace(0, 0, 3);
+        Character_ChFace(0, 4, 1);
+        Voice_PlayVoice("F1011100_K00300", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Now then.\nI am in a hurry, so I will see you\nlater.");
+        Character_Chara_GS2(11, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(\"Running in the corridors is\ndangerous\", huh...)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(.........)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(I wonder what kind of people run in\nthe corridors...)");
+        }
+    else if (Parameter_GetCh1Param(11, 326) == 1){
+        Parameter_AddCh1Param(11, 326, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, it's ｛Onoda＊＊｝.");
+        Character_Chara_GS2(11, "G2_01F", 0);
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("F1011100_K00400", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Hello.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Are you putting up a poster again?\nIt must be tough.");
+        Character_ChFace(0, 0, 0);
+        Voice_PlayVoice("F1011100_K00500", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Yes. Now then...\nI am in a hurry, so I will see you\nlater...");
+        Character_Chara_GS2(11, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(\"Let's aim for zero lateness\",\nhuh...)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(｛Onoda＊＊｝ drew this\nposter again...)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(The drawings have too much of an\nimpact, so people won't remember the\nslogan...)");
+        }
+    else if (Parameter_GetCh1Param(11, 326) == 2){
+        Parameter_AddCh1Param(11, 326, 1);
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Ah, it's ｛Onoda＊＊｝.");
+        Character_Chara_GS2(11, "G2_01F", 0);
+        Character_ChFace(0, 2, 0);
+        Character_ChFace(0, 3, 3);
+        Voice_PlayVoice("F1011100_K00600", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Hello.");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "Is that poster for the new objective\nfor this month?");
+        Character_ChFace(0, 0, 3);
+        Voice_PlayVoice("F1011100_K00700", #1, "");
+        Message_Who(11);
+        Message_MsgDisp("Onoda", "Yes. Now then.\nI am in a hurry, so I will see you\nlater...");
+        Character_Chara_GS2(11, "NON");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(\"Let's keep our school clean\",\nhuh...)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(...\nThere's a picture of a bear throwing\naway garbage.)");
+        Message_Who(0);
+        Message_MsgDisp("主人公", "(By looking at\n｛Onoda＊＊｝'s drawings,\nI'm slowly starting to get the\nidea...)");
+        }
+    Message_CloseMsg();
+    Screen_WipeOut(2);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(11, 86, 1);
+    }

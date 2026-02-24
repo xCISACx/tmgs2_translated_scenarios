@@ -1,0 +1,34 @@
+section "h5g_m3_000"{
+    Background_Bg_GS2("BG_HO000_?_0", 1, #1, 0);
+    Screen_WipeIn(2);
+    Voice_PlayVoice("", 3, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "｛主人公｝.");
+    Character_ChFace(0, 0, 0);
+    Character_Chara_GS2(3, "M3_??F", 0);
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Ah, ｛Hikami＊＊｝.");
+    Character_ChFace(0, 2, 0);
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H5G03000_C00000", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "I heard you won a prize in an art\ncontest.\nCongratulations.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "Yeah! Thanks!");
+    Character_ChFace(0, 0, 3);
+    Voice_PlayVoice("H5G03000_C00100", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "I don't know much about art, but it\nis not just about talent.\nIf you don't practice, you cannot\nimprove, can you?");
+    Character_ChFace(0, 2, 0);
+    Character_BlinkStart(3, 2, (#1));
+    Character_ChFace(0, 3, 3);
+    Voice_PlayVoice("H5G03000_C00200", #1, "");
+    Message_Who(3);
+    Message_MsgDisp("Hikami", "I'm glad your efforts were\nrecognized.\nIf you paint something again, show\nme....\nWith an explanation.");
+    Message_Who(0);
+    Message_MsgDisp("主人公", "(I'm glad that I did my best to\ncomplete the painting.)");
+    Message_CloseMsg();
+    Screen_WipeOut(1);
+    Screen_ClearScreen();
+    Parameter_AddCh1Param(3, 86, 1);
+    }
