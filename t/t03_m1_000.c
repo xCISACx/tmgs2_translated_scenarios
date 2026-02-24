@@ -21,7 +21,7 @@ section "t03_m1_000"{
         Message_DispMsg(1);
         System_Call_GS2("T03", "PL", 10);
         Message_Who(0);
-        Message_MsgDisp("　　　", "My friends and I often talk about\nthe legend.\nI don't know what is true, but one\nday, I will be able to discover my\nown legend...");
+        Message_MsgDisp("　　　", "My friends and I often talk about\nthe legend.\nI don't know what is true, but one\nday, I will be able to discover my\nown legend...\nlive test");
         Message_Epilog_Text(16, 1);
         Message_Who(0);
         Message_MsgDisp("　　　", "Surely... in the future.");
