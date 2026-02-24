@@ -122,7 +122,7 @@ section "d02_s1_001"{
     Character_BlinkStart(14, 2, (#1), 1);
     Voice_PlayVoice("D0214001_N01100", #1, "");
     Message_Who(14);
-    Message_MsgDisp("Yuu", "Roller coaster!! No...\nwait a second.");
+    Message_MsgDisp("Yuu", "Roller coaster!! No...\nwait a second. test");
     Message_Who(0);
     Message_MsgDisp("主人公", "?");
     Character_ChFace(0, 2, 4);
