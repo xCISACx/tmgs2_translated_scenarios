@@ -117,7 +117,7 @@ section "d02_s1_001"{
     Message_Who(14);
     Message_MsgDisp("Yuu", "What... Don't talk about my mother!\nIt's not late at all!");
     Message_Who(0);
-    Message_MsgDisp("主人公", "S-Sorry...\nSo, should we ride the roller\ncoaster once more?");
+    Message_MsgDisp("主人公", "S-Sorry...\nSo, should we ride the roller\ncoaster once more? test");
     Character_ChFace(0, 3, 2);
     Character_BlinkStart(14, 2, (#1), 1);
     Voice_PlayVoice("D0214001_N01100", #1, "");
