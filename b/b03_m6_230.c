@@ -119,7 +119,7 @@ section "b03_m6_230"{
         Background_Bg_GS2("BG_TR501_?_0", 1, #1, 0);
         Screen_WipeIn(2);
         while (var1 == 0){
-            Message_MsgSel("I prefer the Roller Coaster.", "Let's ride the Ferris Wheel.", "Or we could...");
+            Message_MsgSel("I prefer the Roller Coaster. test\ntest", "Let's ride the Ferris Wheel.", "Or we could...");
             switch (Message_TextSelect()){
                 case 0:
                 var1 = 1;
