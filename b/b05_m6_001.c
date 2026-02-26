@@ -80,7 +80,7 @@ section "b05_m6_001"{
     Still_StillFace(0, 3, 1);
     Voice_PlayVoice("B0506001_F01000", #1, "");
     Message_Who(6);
-    Message_MsgDisp("Amachi", "... Both are... Hahaha.");
+    Message_MsgDisp("Amachi", "...yeah you're both... Hahaha.");
     Still_Approach(6, 152, 0, 0, 1, 1);
     Message_Who(0);
     Message_MsgDisp("主人公", "(.........\nWhat exactly was that about...)");
