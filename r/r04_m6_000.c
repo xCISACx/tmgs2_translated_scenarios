@@ -96,7 +96,7 @@ section "r04_m6_000"{
         Character_ChFace(0, 3, 3);
         Voice_PlayVoice("R0406000_F01100", #1, "");
         Message_Who(6);
-        Message_MsgDisp("Amachi", "Oh, I will try my best to keep you\ncompany today!\n... Is that okay?");
+        Message_MsgDisp("Amachi", "Tonight, you're giving me your full \nattention! That's okay with you, right?");
         if (Parameter_ChkPlayer(17) == 1){
             Character_ChFace(0, 0, 3);
             Character_ChFace(0, 4, 1);
