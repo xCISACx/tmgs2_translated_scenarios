@@ -119,7 +119,7 @@ section "r04_m6_000"{
         Character_ChFace(0, 3, 3);
         Voice_PlayVoice("R0406000_F01400", #1, "");
         Message_Who(6);
-        Message_MsgDisp("Amachi", "I really want us to be together.\nI'll eventually be free of my\ninnocence....\nBye!");
+        Message_MsgDisp("Amachi", "To be honest I want to stay with you even \nlonger, but I'll stop hogging you for now. \nSee ya!");
         }
     Character_Chara_GS2(6, "NON");
     Parameter_AddCh1Param(6, 86, 1);
