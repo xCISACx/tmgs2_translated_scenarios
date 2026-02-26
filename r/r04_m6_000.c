@@ -110,7 +110,7 @@ section "r04_m6_000"{
             Character_ChFace(0, 3, 3);
             Voice_PlayVoice("R0406000_F01300", #1, "");
             Message_Who(6);
-            Message_MsgDisp("Amachi", "Ah... No, nothing!\nThe way your dressed is different...\nI'm a little fascinated.");
+            Message_MsgDisp("Amachi", "Ah... No, nothing!\nThe way you're dressed is different...\nI'm a little fascinated.");
             }
         Message_Who(0);
         Message_MsgDisp("　　　", "　　　　　　・\n　　　　　　・\n　　　　　　・");
