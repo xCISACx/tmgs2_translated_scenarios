@@ -260,7 +260,7 @@ section "b06_m6_000"{
                 Character_ChFace(1, 3, 3);
                 Voice_PlayVoice("B0606000_F02100", #1, "");
                 Message_Who(6);
-                Message_MsgDisp("Amachi", "Just as I thought, spending time\nwith Senpai was the best fun!\nLet's play, again!");
+                Message_MsgDisp("Amachi", "I knew it! Being with you is the most fun, \nSenpai. Let’s hang out again, yeah?");
                 }
             }
         else if (Date_Date_Data(124) == 2){
