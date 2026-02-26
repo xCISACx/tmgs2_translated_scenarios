@@ -74,7 +74,7 @@ section "b05_m6_001"{
     Message_MsgDisp("主人公", "(... I am?)");
     Voice_PlayVoice("B0506001_F00900", #1, "");
     Message_Who(6);
-    Message_MsgDisp("Amachi", "Senpai is an idiot....\nOr an ignorant person?");
+    Message_MsgDisp("Amachi", "Is senpai...Little Miss Airhead...or \nLady Blockhead...?");
     Message_Who(0);
     Message_MsgDisp("主人公", "What!?");
     Still_StillFace(0, 3, 1);
