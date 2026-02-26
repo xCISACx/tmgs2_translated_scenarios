@@ -68,7 +68,7 @@ section "r06_m6_000"{
         Character_ChFace(0, 4, 1);
         Voice_PlayVoice("R0606000_F00600", #1, "");
         Message_Who(6);
-        Message_MsgDisp("Amachi", "This coincidence makes me happy!\nHey, can I open it?");
+        Message_MsgDisp("Amachi", "Even if it's just a coincidence, \nit makes me happy. Say, can I open it?");
         }
     if (System_GlobalWork(0, 1) == 1){
         var0 = 3;
