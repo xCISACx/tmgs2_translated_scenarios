@@ -162,7 +162,7 @@ section "b04_m6_152"{
                 Message_PauseSkinship();
                 Voice_PlayVoice("B0406152_F01200", #1, "");
                 Message_Who(6);
-                Message_MsgDisp("Amachi", "Really?\nActually, it was very amazing at one\npoint and so I practiced it quite a\nlot.");
+                Message_MsgDisp("Amachi", "Really? Am I? \nActually I went through a phase where I was \nsuper into it and practiced a ton.");
                 Message_ResumeSkinship();
                 Message_SkinshipSet(1);
                 Message_Who(0);
