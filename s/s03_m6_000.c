@@ -123,7 +123,7 @@ section "s03_m6_000"{
         if (System_GlobalWork(23, 1) == 6){
             Voice_PlayVoice("FD_06_180_00000", #1, "");
             Message_Who(6);
-            Message_MsgDisp("Amachi", "Eh, me?\nI have a feeling this is something\nfunny...");
+            Message_MsgDisp("Amachi", "Eh, with me?\nThat doesn't sound right...");
             }
         Voice_PlayVoice("S0306000_F00700", #1, "");
         Message_Who(6);
