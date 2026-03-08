@@ -78,7 +78,7 @@ section "b06_m6_000"{
                     Character_ChFace(1, 3, 3);
                     Voice_PlayVoice("FD_06_170_00100", #1, "");
                     Message_Who(6);
-                    Message_MsgDisp("Amachi", "It kinda felt alright.\nDo you have any self-confidence,\nthough?");
+                    Message_MsgDisp("Amachi", "You should be good if you do it like\nwe practiced today. Have confidence in it!");
                     }
                 else {
                     Character_ChFace(1, 0, 3);
