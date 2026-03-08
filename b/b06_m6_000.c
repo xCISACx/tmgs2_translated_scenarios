@@ -45,7 +45,7 @@ section "b06_m6_000"{
                     Character_ChFace(1, 3, 3);
                     Voice_PlayVoice("FD_06_170_00000", #1, "");
                     Message_Who(6);
-                    Message_MsgDisp("Amachi", "Does that mean you practiced to the\nvery end?\nToday's date was a huge success!\nI'll give you a passing grade.");
+                    Message_MsgDisp("Amachi", "I'm saying this in the context of it being\na practice round; Today's date was a huge \nsuccess! You scored a passing grade.");
                     }
                 else {
                     Character_ChFace(1, 0, 10);
