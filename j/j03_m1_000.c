@@ -22,7 +22,7 @@ section "j03_m1_000"{
         else if (Parameter_GetCh1Param(1, 130) == 3){
             Voice_PlayVoice("J0301000_A00300", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "...... I'm actually curious.");
+            Message_MsgDisp("Saeki", "...... you're seriously odd.");
             Message_Who(0);
             Message_MsgDisp("主人公", "Really?");
             Voice_PlayVoice("J0301000_A00400", #1, "");
