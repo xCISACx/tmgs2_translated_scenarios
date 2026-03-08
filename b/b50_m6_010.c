@@ -31,7 +31,7 @@ section "b50_m6_010"{
     Character_ChFace(0, 0, 10);
     Voice_PlayVoice("FD_06_010_00400", #1, "");
     Message_Who(6);
-    Message_MsgDisp("Amachi", "Then it's settled!\nAs an expression of gratitude, some\ngood cake!\nSee ya!");
+    Message_MsgDisp("Amachi", "Then it's settled!\nI take pastries as payment.\nSee ya!");
     SoundEffect_PlayStream(3, "SS_DSE_060_000");
     Character_Chara_GS2(6, "NON");
     Message_Who(0);
