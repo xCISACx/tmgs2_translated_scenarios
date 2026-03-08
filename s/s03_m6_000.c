@@ -127,7 +127,7 @@ section "s03_m6_000"{
             }
         Voice_PlayVoice("S0306000_F00700", #1, "");
         Message_Who(6);
-        Message_MsgDisp("Amachi", "Yes, it's fine.\nI'll need someone to hold me down at\nan event like this!");
+        Message_MsgDisp("Amachi", "Well, it's fine. \nThese sort of events are something you need\nto become adept at after all.");
         Message_Who(0);
         Message_MsgDisp("主人公", "Well, where would you like to meet?");
         Voice_PlayVoice("S0306000_F00800", #1, "");
