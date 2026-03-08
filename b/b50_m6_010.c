@@ -25,7 +25,7 @@ section "b50_m6_010"{
     Message_MsgDisp("Amachi", "In the long run, it's nothing......\nWell, it's a long story to listen\nto.");
     Voice_PlayVoice("FD_06_010_00300", #1, "");
     Message_Who(6);
-    Message_MsgDisp("Amachi", "You hesitate to tell people to avoid\nthem from getting hurt?");
+    Message_MsgDisp("Amachi", "I bet you got no one else but me to ask \nfor advice anyway.");
     Message_Who(0);
     Message_MsgDisp("主人公", "Y-Yeah...");
     Character_ChFace(0, 0, 10);
