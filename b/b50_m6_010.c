@@ -22,7 +22,7 @@ section "b50_m6_010"{
     Character_ChFace(0, 3, 0);
     Voice_PlayVoice("FD_06_010_00200", #1, "");
     Message_Who(6);
-    Message_MsgDisp("Amachi", "In the long run, it's nothing......\nWell, it's a long story to listen\nto.");
+    Message_MsgDisp("Amachi", "\"how\" you ask...well, I can at least hear \nyou out.");
     Voice_PlayVoice("FD_06_010_00300", #1, "");
     Message_Who(6);
     Message_MsgDisp("Amachi", "You hesitate to tell people to avoid\nthem from getting hurt?");
