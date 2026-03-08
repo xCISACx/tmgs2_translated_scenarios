@@ -117,7 +117,7 @@ section "s03_m6_000"{
         Message_MsgDisp("主人公", "Oh, ｛Amachi＊＊｝?\nUmm, ｛主人公苗字｝\n｛主人公名前｝.");
         Voice_PlayVoice("S0306000_F00600", #1, "");
         Message_Who(6);
-        Message_MsgDisp("Amachi", "Aah, Senpai?\nCongratulations on a new year!");
+        Message_MsgDisp("Amachi", "Aah, Senpai?\nHappy new year!");
         Message_Who(0);
         Message_MsgDisp("主人公", "Happy New Year!\nHey, would you like to go visit the\nshrine together for New Year's Day?");
         if (System_GlobalWork(23, 1) == 6){
