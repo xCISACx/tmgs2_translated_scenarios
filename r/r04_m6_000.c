@@ -16,7 +16,7 @@ section "r04_m6_000"{
         Character_BlinkStart(6, 3, (#1));
         Voice_PlayVoice("FD_06_040_00100", #1, "");
         Message_Who(6);
-        Message_MsgDisp("Amachi", "Ahahaha, sorry!\nMerry Christmas, Senpai!\nI'll fill you in on more details\nlater!");
+        Message_MsgDisp("Amachi", "Ahahaha, sorry!\nMerry Christmas, Senpai!\nFill me in on the details later!");
         }
     else if (Parameter_GetCh1Param(6, 130) <= 2){
         Character_ChFace(0, 0, 0);
