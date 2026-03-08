@@ -360,7 +360,7 @@ section "b06_m6_000"{
                 Message_ResumeSkinship();
                 Message_SkinshipSet(1);
                 Message_Who(0);
-                Message_MsgDisp("主人公", "｛Amachi＊＊｝.\nI want to listen to you talk for a\nwhile...");
+                Message_MsgDisp("主人公", "｛Amachi＊＊｝.\nCould you hear me out for a little?");
                 Message_SkinshipSet(0);
                 Message_CloseMsg();
                 Screen_WipeOut(2);
