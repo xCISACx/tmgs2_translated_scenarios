@@ -610,7 +610,7 @@ section "b07_m6_000"{
                 Message_MsgDisp("Amachi", "Well, even though it is only\npainful, it's not like you won't go\non.");
                 Voice_PlayVoice("FD_06_110_00200", #1, "");
                 Message_Who(6);
-                Message_MsgDisp("Amachi", "Doesn't it mean there is nothing\nthat can make you think that it's\nfun?");
+                Message_MsgDisp("Amachi", "That doesn't mean it's all bad, there's \nparts that feel fun right?");
                 Message_Who(0);
                 Message_MsgDisp("主人公", "Yeah, well...");
                 Voice_PlayVoice("FD_06_110_00300", #1, "");
