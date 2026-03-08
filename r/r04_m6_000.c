@@ -8,7 +8,7 @@ section "r04_m6_000"{
         Character_Chara_GS2(6, "M6_12F", 0);
         Voice_PlayVoice("FD_06_040_00000", #1, "");
         Message_Who(6);
-        Message_MsgDisp("Amachi", "Hmm, lively isn't it? ...\nEspecially after I tracked down my\nfavorite person to spend time with\nthem, right?");
+        Message_MsgDisp("Amachi", "Well aren't you jolly? Did I find you in the \nafterglow of spending a wonderful time with \nthe guy you like?");
         Message_Who(0);
         Message_MsgDisp("主人公", "Oh, ｛Amachi＊＊｝!\nYou're talking really loud!!");
         Character_ChFace(0, 2, 0);
