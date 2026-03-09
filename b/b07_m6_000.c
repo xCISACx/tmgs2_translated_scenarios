@@ -911,7 +911,7 @@ section "b07_m6_000"{
                 Character_ChFace(0, 4, 0);
                 Voice_PlayVoice("FD_06_100_00700", #1, "");
                 Message_Who(6);
-                Message_MsgDisp("Amachi", "Because of that, even if that other\nperson takes no notice of Senpai, I\nwouldn't know.");
+                Message_MsgDisp("Amachi", "If that ends up making the guy you like \ncompletely disinterested in you it's not \nmy fault.");
                 Character_ChFace(0, 2, 1);
                 Character_BlinkStart(6, 3, (#1), 1);
                 Character_ChFace(0, 3, 2);
