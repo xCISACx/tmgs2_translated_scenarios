@@ -27,7 +27,7 @@ section "j03_m1_000"{
             Message_MsgDisp("主人公", "Really?");
             Voice_PlayVoice("J0301000_A00400", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Yeah.... What are you scheming?");
+            Message_MsgDisp("Saeki", "I know so. You're definitely\nplotting something.");
             Message_Who(0);
             Message_MsgDisp("主人公", "I'm not s-scheming anything!");
             if (System_GlobalWork(23, 1) == 1){
