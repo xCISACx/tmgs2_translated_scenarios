@@ -4,12 +4,12 @@ section "j03_m1_000"{
         if (Parameter_GetCh1Param(1, 130) <= 2){
             Voice_PlayVoice("J0301000_A00000", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Me and you? ... Why?");
+            Message_MsgDisp("Saeki", "Me and you? ...Why?");
             Message_Who(0);
             Message_MsgDisp("主人公", "Eh? There's no specific reason...");
             Voice_PlayVoice("J0301000_A00100", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "... Well, it's fine.");
+            Message_MsgDisp("Saeki", "...Well, it's fine.");
             Message_Who(0);
             Message_MsgDisp("主人公", "Then I'll see you at the\n｛待ち合わせ場所｝ on\n｛日付｝.");
             Voice_PlayVoice("J0301000_A00200", #1, "");
@@ -22,18 +22,18 @@ section "j03_m1_000"{
         else if (Parameter_GetCh1Param(1, 130) == 3){
             Voice_PlayVoice("J0301000_A00300", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "...... I'm actually curious.");
+            Message_MsgDisp("Saeki", "...You've really got weird taste,\nhaven't you?");
             Message_Who(0);
-            Message_MsgDisp("主人公", "Really?");
+            Message_MsgDisp("主人公", "You think so?");
             Voice_PlayVoice("J0301000_A00400", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Yeah.... What are you scheming?");
+            Message_MsgDisp("Saeki", "I know so. You're definitely\nplotting something.");
             Message_Who(0);
-            Message_MsgDisp("主人公", "I'm not s-scheming anything!");
+            Message_MsgDisp("主人公", "I-I'm not plotting anything!");
             if (System_GlobalWork(23, 1) == 1){
                 Voice_PlayVoice("FD_01_160_00000", #1, "");
                 Message_Who(1);
-                Message_MsgDisp("Saeki", "It's fine.\nI'll tag along with you if it's a\nrehearsal.\nI'm also quite curious.");
+                Message_MsgDisp("Saeki", "If it's just for practice, I'll go\nalong with it.\nGuess that makes me just as much of\na weirdo as you.");
                 }
             else {
                 Voice_PlayVoice("J0301000_A00500", #1, "");
@@ -62,7 +62,7 @@ section "j03_m1_000"{
             Message_MsgDisp("主人公", "So?\nWhat do you need,\n｛Saeki＊＊｝?");
             Voice_PlayVoice("J0301000_A00900", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Hmm? ... Ah, don't worry about it.\nLater.");
+            Message_MsgDisp("Saeki", "Hmm? ...Ah, don't worry about it.\nLater.");
             Message_Who(0);
             Message_MsgDisp("主人公", "Okay, I'll see you later!");
             SoundEffect_PlaySE(20, 127);
@@ -79,10 +79,10 @@ section "j03_m1_000"{
             Message_MsgDisp("主人公", "I see...");
             Voice_PlayVoice("J0301000_A01400", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "... Later.");
+            Message_MsgDisp("Saeki", "...Later.");
             SoundEffect_PlaySE(20, 127);
             Message_Who(0);
-            Message_MsgDisp("主人公", "(Hmm, that's too bad...)");
+            Message_MsgDisp("主人公", "(Hmm, that's too bad)");
             }
         else if (Parameter_GetCh1Param(1, 130) == 3){
             Voice_PlayVoice("J0301000_A01500", #1, "");
@@ -92,7 +92,7 @@ section "j03_m1_000"{
             Message_MsgDisp("主人公", "Uhh...");
             Voice_PlayVoice("J0301000_A01600", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Sorry, I don't want to....\nI'm hanging up, okay?");
+            Message_MsgDisp("Saeki", "Sorry, I don't want to...\nI'm hanging up, okay?");
             SoundEffect_PlaySE(20, 127);
             Message_Who(0);
             Message_MsgDisp("主人公", "(Hmm, that's too bad...)");
@@ -105,7 +105,7 @@ section "j03_m1_000"{
             Message_MsgDisp("主人公", "Is that so...");
             Voice_PlayVoice("J0301000_A01800", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Sorry....\nI should have told you that first.");
+            Message_MsgDisp("Saeki", "Sorry...\nI should have told you that first.");
             Message_Who(0);
             Message_MsgDisp("主人公", "It's fine, it can't be helped.");
             Voice_PlayVoice("J0301000_A01900", #1, "");
@@ -124,12 +124,12 @@ section "j03_m1_000"{
         Message_MsgDisp("主人公", "Uhh...");
         Voice_PlayVoice("J0301000_A02100", #1, "");
         Message_Who(1);
-        Message_MsgDisp("Saeki", "... I can't.\nI work at Sangosho on Wednesdays and\nFridays.");
+        Message_MsgDisp("Saeki", "...I can't.\nI work at Sangosho on Wednesdays and\nFridays.");
         Message_Who(0);
         Message_MsgDisp("主人公", "Is that so?\nThen I guess it can't be helped.");
         Voice_PlayVoice("J0301000_A02200", #1, "");
         Message_Who(1);
-        Message_MsgDisp("Saeki", "That's how it is....\nWe'll go somewhere next time.");
+        Message_MsgDisp("Saeki", "That's how it is...\nWe'll go somewhere next time.");
         SoundEffect_PlaySE(20, 127);
         Message_Who(0);
         Message_MsgDisp("主人公", "(Right, Sangosho...\nI have to be aware of that the next\ntime I call him.)");
