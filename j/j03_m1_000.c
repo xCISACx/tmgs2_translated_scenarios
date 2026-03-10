@@ -33,7 +33,7 @@ section "j03_m1_000"{
             if (System_GlobalWork(23, 1) == 1){
                 Voice_PlayVoice("FD_01_160_00000", #1, "");
                 Message_Who(1);
-                Message_MsgDisp("Saeki", "It's fine.\nI'll tag along with you if it's a\nrehearsal.\nI'm also quite curious.");
+                Message_MsgDisp("Saeki", "If it's just for practice, I'll go\nalong with it.\nGuess that makes me just as much of\na weirdo as you.");
                 }
             else {
                 Voice_PlayVoice("J0301000_A00500", #1, "");
