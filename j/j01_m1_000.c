@@ -66,7 +66,7 @@ section "j01_m1_000"{
                     Message_MsgDisp("主人公", "Ah, ｛Saeki＊＊｝?\nIt's me, ｛主人公苗字｝\n｛主人公名前｝.");
                     Voice_PlayVoice("J0101000_A00400", #1, "");
                     Message_Who(1);
-                    Message_MsgDisp("Saeki", "I know, your number shows up on my\nphone screen.\nSo, do you need something?");
+                    Message_MsgDisp("Saeki", "I know, I can see your number.\nWhat's up?");
                     Message_Who(0);
                     Message_MsgDisp("主人公", "Uhh...");
                     }
