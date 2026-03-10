@@ -29,7 +29,7 @@ section "j03_m1_000"{
             Message_Who(1);
             Message_MsgDisp("Saeki", "Yeah.... What are you scheming?");
             Message_Who(0);
-            Message_MsgDisp("主人公", "I'm not s-scheming anything!");
+            Message_MsgDisp("主人公", "I-I'm not plotting anything!");
             if (System_GlobalWork(23, 1) == 1){
                 Voice_PlayVoice("FD_01_160_00000", #1, "");
                 Message_Who(1);
