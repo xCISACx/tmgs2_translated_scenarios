@@ -85,7 +85,7 @@ section "r04_m6_000"{
         Character_Chara_GS2(6, "M6_12F", 0);
         Voice_PlayVoice("", 6, "R0406000_F00900");
         Message_Who(6);
-        Message_MsgDisp("Amachi", "｛主人公｝.\nI was looking for you!");
+        Message_MsgDisp("Amachi", "｛主人公｝.\nThere you are, I've been looking all over \nfor you!");
         Message_Who(0);
         Message_MsgDisp("主人公", "Ah, ｛Amachi＊＊｝.");
         Voice_PlayVoice("R0406000_F01000", #1, "");
