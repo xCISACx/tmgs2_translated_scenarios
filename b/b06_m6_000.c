@@ -277,7 +277,7 @@ section "b06_m6_000"{
                 Character_ChFace(1, 3, 3);
                 Voice_PlayVoice("B0606000_F02300", #1, "");
                 Message_Who(6);
-                Message_MsgDisp("Amachi", "That wasn't very interesting, was\nit?\nI didn't think it was great...\nLet's go somewhere that's more fun\nnext time.");
+                Message_MsgDisp("Amachi", "You didn't have much fun did you?\nI thought it was pretty good, but next \ntime let's go somewhere more exciting.");
                 }
             }
         else if (Date_Date_Data(124) == 1){
