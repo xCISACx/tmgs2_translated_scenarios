@@ -294,7 +294,7 @@ section "b06_m6_000"{
                 Character_ChFace(1, 3, 0);
                 Voice_PlayVoice("B0606000_F02500", #1, "");
                 Message_Who(6);
-                Message_MsgDisp("Amachi", "Did you feel like...\ndoing something like that?\nIf not, then it's okay not to invite\nme.");
+                Message_MsgDisp("Amachi", "Were you not really feeling up to it? \nI probably shouldn't have asked you to \ncome...I'm sorry");
                 }
             }
         else if (Date_Date_Data(124) == 0){
