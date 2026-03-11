@@ -200,7 +200,7 @@ section "b04_m6_152"{
             else {
                 Voice_PlayVoice("B0406152_F01500", #1, "");
                 Message_Who(6);
-                Message_MsgDisp("Amachi", "... I've practiced, Senpai.");
+                Message_MsgDisp("Amachi", "...Practice makes perfect, Senpai.");
                 Message_Who(0);
                 Message_MsgDisp("主人公", "(Ugh... I made a bad impression.)");
                 }
