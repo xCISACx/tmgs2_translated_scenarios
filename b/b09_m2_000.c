@@ -17,7 +17,7 @@ section "b09_m2_000"{
     Screen_WipeIn(2);
     if (System_GlobalWork(7, 1) == 0){
         Message_Who(0);
-        Message_MsgDisp("主人公", "(Ah, there's a message on my phone's\nvoicemail...\nWho is it...)");
+        Message_MsgDisp("主人公", "(Ah, there's a message on my phone's\nvoicemail...\nWho is it...)test");
         SoundEffect_PlaySE(20, 127);
         Voice_PlayVoice("B0902000_B00000", #1, "");
         Message_Who(2);
@@ -31,7 +31,7 @@ section "b09_m2_000"{
         Message_MsgDisp("主人公", "(Eh?)");
         Voice_PlayVoice("B0902000_B00200", #1, "");
         Message_Who(2);
-        Message_MsgDisp("Shiba", "No... I wasn't... was I?\nAnyway, I was waiting.\nFor a long time. Later...");
+        Message_MsgDisp("Shiba", "No... I wasn't... was I?\nAnyway, I was waiting.\nFor a long time. Later...test");
         SoundEffect_PlaySE(24, 127);
         Message_Who(0);
         Message_MsgDisp("主人公", "(Crap!\nWe had plans for a date today!)");
