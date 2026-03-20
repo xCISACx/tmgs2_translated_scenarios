@@ -64,7 +64,7 @@ section "f01_m1_000"{
             Parameter_AddCh1Param(1, 60, #2);
             Parameter_AddCh1Param(1, 62, 2);
             Message_Who(0);
-            Message_MsgDisp("主人公", "｛Saeki＊＊｝.");
+            Message_MsgDisp("主人公", "test｛Saeki＊＊｝.");
             if (Parameter_GetCh1Param(1, 130) >= 4){
                 Character_Chara_GS2(1, "M1_02F", 0);
                 Character_ChFace(0, 2, 0);
@@ -73,7 +73,7 @@ section "f01_m1_000"{
                 Music_PlayBGM(0, "MN_C_01_000_D02", 127, 40);
                 Voice_PlayVoice("F0101000_A00500", #1, "");
                 Message_Who(1);
-                Message_MsgDisp("Saeki", "...\nDon't get too carried away, okay?");
+                Message_MsgDisp("Saeki", "test...\nDon't get too carried away, okay?");
                 Message_Who(0);
                 Message_MsgDisp("主人公", "Did you not like being called that?");
                 Voice_PlayVoice("F0101000_A00600", #1, "");
@@ -91,7 +91,7 @@ section "f01_m1_000"{
                 SoundEffect_PlayStream(3, "SS_T_00_004_M00");
                 Character_Chara_GS2(1, "NON");
                 Message_Who(0);
-                Message_MsgDisp("主人公", "(Ah, he ran away.\nIt seems like he doesn't like what I\njust called him...)");
+                Message_MsgDisp("主人公", "(Ah, he ran away.\nIt seems like he doesn't like what I\njust called him...)test");
                 Parameter_InCh1Param(1, 59, var6);
                 Parameter_InCh1Param(1, 548, 53);
                 }
