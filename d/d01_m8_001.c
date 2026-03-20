@@ -89,7 +89,7 @@ section "d01_m8_001"{
     Message_MsgDisp("主人公", "......");
     Voice_PlayVoice("D0108001_H01100", #1, "");
     Message_Who(8);
-    Message_MsgDisp("Masaki", "If you ask her to give you some of\nher summary notes, you can clear the\nfinal boss with ease.");
+    Message_MsgDisp("Masaki", "If you ask her to give you some of\nher summary notes, you can clear the\nfinal boss with ease.test");
     Character_BlinkStart(8, 3, (#1), 1);
     Voice_PlayVoice("D0108001_H01200", #1, "");
     Message_Who(8);
