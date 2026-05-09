@@ -53,12 +53,12 @@ section "k01_g4_000"{
                     Parameter_AddPl1Param(23, #1);
                     SoundEffect_PlayStream(3, "SS_T_00_037_M00");
                     Message_Who(0);
-                    Message_MsgDisp("主人公", "I got her a present.\nIt would be nice if she liked it!");
+                    Message_MsgDisp("主人公", "I got her a present.\nIt would be nice if she liked it!test");
                     }
                 else if (Parameter_GetPl1Param(23) == 0){
                     Parameter_InCh1Param(13, 67, 0);
                     Message_Who(0);
-                    Message_MsgDisp("主人公", "Crap!\nI can't buy it because I don't have\nenough money...");
+                    Message_MsgDisp("主人公", "Crap!\nI can't buy it because I don't have\nenough money...test");
                     }
                 break ;
                 case 1:
