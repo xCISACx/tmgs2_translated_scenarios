@@ -20,7 +20,7 @@ section "d01_m8_001"{
     Message_Who(8);
     Message_MsgDisp("Masaki", "Wah, tests! I miss those!");
     Message_Who(0);
-    Message_MsgDisp("主人公", "Ahaha. But that's all.");
+    Message_MsgDisp("主人公", "Ahaha. But that's all.test");
     Message_Who(0);
     Message_MsgDisp("主人公", "I don't understand the parts that\nthe teachers said would be in the\ntests.");
     Character_ChFace(0, 0, 0);
@@ -28,7 +28,7 @@ section "d01_m8_001"{
     Message_Who(8);
     Message_MsgDisp("Masaki", "Hmm.\nDo you have your textbook with you?");
     Message_Who(0);
-    Message_MsgDisp("主人公", "Ah, yes.");
+    Message_MsgDisp("主人公", "Ah, yes.test");
     SoundEffect_PlayStream(2, "SEQ_SE_EV_005");
     Message_Who(0);
     Message_MsgDisp("主人公", "Umm, it's this part...");
