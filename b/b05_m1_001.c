@@ -49,7 +49,7 @@ section "b05_m1_001"{
     Still_StillFace(0, 6, 0);
     Voice_PlayVoice("B0501001_A00500", #1, "");
     Message_Who(1);
-    Message_MsgDisp("Saeki", "Even though my grandpa looks like\nthat, he used to be quite wild, you\nknow?\nYou didn't know that at all...");
+    Message_MsgDisp("Saeki", "My grandpa might not look it,\nbut he used to be pretty wild back \nin the day, you know?\nHonestly, he hasn't changed a bit...");
     Message_Who(0);
     Message_MsgDisp("主人公", "But the sun is setting.\nIf you don't get out now, you'll\ncatch a cold.");
     Still_StillFace(0, 6, 2);
