@@ -7,7 +7,7 @@ section "s09_m1_000"{
         Screen_WipeIn(2);
         Voice_PlayVoice("S0901000_A00000", #1, "");
         Message_Who(1);
-        Message_MsgDisp("Saeki", "Ah, fortunes.... Wanna pull?");
+        Message_MsgDisp("Saeki", "Ah, fortune slips.... \nWanna pull?");
         Message_Who(0);
         Message_MsgDisp("主人公", "Hmm, should I?");
         Message_MsgSel("Okay, let's pull one!", "Umm, I'll pass.");
@@ -17,15 +17,15 @@ section "s09_m1_000"{
             Character_BlinkStart(1, 2, (#1));
             Voice_PlayVoice("S0901000_A00100", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Pull one?");
+            Message_MsgDisp("Saeki", "So, you're actually pulling one?");
             Message_Who(0);
-            Message_MsgDisp("主人公", "Yes.\nAre you going to pull one,\n｛Saeki＊＊｝?");
+            Message_MsgDisp("主人公", "Yes. You should pull one too,\n｛Saeki＊＊｝");
             Character_ChFace(0, 0, 9);
             Character_ChFace(0, 3, 1);
             Character_BlinkStart(1, 3, (#1));
             Voice_PlayVoice("S0901000_A00200", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "It's really like a woman to love\nfortunes.");
+            Message_MsgDisp("Saeki", "Man, girls seriously love fortunes\nand stuff like that.");
             Message_Who(0);
             Message_MsgDisp("主人公", "(I hope I get a good result...!)");
             var0 = 0;
@@ -50,7 +50,7 @@ section "s09_m1_000"{
         Screen_WipeIn(2);
         Voice_PlayVoice("S0901000_A00400", #1, "");
         Message_Who(1);
-        Message_MsgDisp("Saeki", "Ah, fortunes....\nWhat do you want to do? Wanna pull?");
+        Message_MsgDisp("Saeki", "Ah, fortune slips...\nWhat do you want to do? Wanna pull?");
         Message_Who(0);
         Message_MsgDisp("主人公", "Hmm, should I?");
         Message_MsgSel("Okay, let's pull one!", "Umm, I'll pass.");
@@ -59,13 +59,13 @@ section "s09_m1_000"{
             Character_BlinkStart(1, 3, (#1));
             Voice_PlayVoice("S0901000_A00500", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Okay. Well, I'm leaving. Good luck.");
+            Message_MsgDisp("Saeki", "Okay. Well, I'll stay right here.\nGood luck.");
             Message_Who(0);
-            Message_MsgDisp("主人公", "Pull one, ｛Saeki＊＊｝!");
+            Message_MsgDisp("主人公", "You're pulling one too, ｛Saeki＊＊｝!");
             Character_ChFace(0, 0, 11);
             Voice_PlayVoice("S0901000_A00600", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Eeek! It's crowded!");
+            Message_MsgDisp("Saeki", "Ehh! It's so crowded!");
             Message_Who(0);
             Message_MsgDisp("主人公", "(My turn to pull.\nI hope I get a good result...!)");
             var0 = 0;
@@ -84,7 +84,7 @@ section "s09_m1_000"{
             Message_Who(1);
             Message_MsgDisp("Saeki", "Hmm... Wonder why.");
             Message_Who(0);
-            Message_MsgDisp("主人公", "(... Did I do something bad?)");
+            Message_MsgDisp("主人公", "(...Did I do something bad?)");
             var0 = 1;
             break ;
             }
@@ -95,10 +95,10 @@ section "s09_m1_000"{
         Background_Bg_GS2("BG_EX142_LI_0", #1, #1, 0);
         Screen_WipeIn(2);
         Message_Who(0);
-        Message_MsgDisp("主人公", "Ah, fortunes!");
+        Message_MsgDisp("主人公", "Ah, fortune slips!");
         Voice_PlayVoice("S0901000_A00900", #1, "");
         Message_Who(1);
-        Message_MsgDisp("Saeki", "What do you want to do?\nDo you want to pull one?");
+        Message_MsgDisp("Saeki", "What do you want to do?\nYou want to pull one, don't you?");
         Message_MsgSel("Yeah, let's pull!", "Eh, I'll pass.");
         switch (Message_TextSelect()){
             case 0:
@@ -106,13 +106,13 @@ section "s09_m1_000"{
             Character_BlinkStart(1, 2, (#1));
             Voice_PlayVoice("S0901000_A01000", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Okay. Then go pull.\nI'll be waiting like a father.");
+            Message_MsgDisp("Saeki", "Alright. Go on and pull one, then. \nDad will wait right here.");
             Message_Who(0);
-            Message_MsgDisp("主人公", "Ugh. Fathers pull, too.");
+            Message_MsgDisp("主人公", "No way. Dad has to pull one, too!");
             Character_ChFace(0, 0, 11);
             Voice_PlayVoice("S0901000_A01100", #1, "");
             Message_Who(1);
-            Message_MsgDisp("Saeki", "Aah... It's crowded!");
+            Message_MsgDisp("Saeki", "Aah... but it's so crowded!");
             Message_Who(0);
             Message_MsgDisp("主人公", "(Okay, time to pull!\nI hope I get a good result...!)");
             var0 = 0;
