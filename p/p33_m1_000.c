@@ -48,7 +48,7 @@ section "p33_m1_000"{
         Message_MsgDisp("主人公", "(*Phew* I'm tired.)");
         Voice_PlayVoice("", 1, "P2301000_A00400");
         Message_Who(1);
-        Message_MsgDisp("Saeki", "｛主人公｝.\nYou look tired.");
+        Message_MsgDisp("Saeki", "｛主人公｝, good work.");
         Character_ChFace(0, 0, 0);
         Character_Chara_GS2(1, "M1_08F", 0);
         Message_Who(0);
